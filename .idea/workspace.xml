@@ -2,151 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8cc035ab-2575-4296-8356-739b78e12539" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/YueJu-Culture.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/animate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/bootsnav.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/hover-min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/owl.carousel.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/owl.theme.default.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Linearicons-Free (shazu ahmed's conflicted copy 2017-11-07).svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Linearicons-Free.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Linearicons-Free.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Linearicons-Free.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Linearicons-Free.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/Linearicons-Free.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont (shazu ahmed's conflicted copy 2017-11-07).svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular (shazu ahmed's conflicted copy 2017-11-07).svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/about/02_About-us_.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/about/02_About-us_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/about/ab1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/about/ab2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/about/about-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/about/about-part.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/banner/banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/1561689624640097.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/bl1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/bl2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/bl3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/bl4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/bl5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/bl6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/bl7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/bl8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/blog-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/blog1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/blog1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/blog2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/blog3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/cmn1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/cmn2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/cmn3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/facebook.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/g.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/linkedin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/play-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/rp1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/rp2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/rp3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/rp4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/blog/tw.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client/client1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client/client2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client/client3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client/client4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client/client5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client/testimonial1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/client/testimonial2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/counter/counter-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/counter/counter1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/counter/counter2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/counter/counter3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/counter/counter4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/footer/map.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/home/busisness_grow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/home/consultency.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/home/support-logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/project/project-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/project/project1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/project/project2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/project/project3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/project/project4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/project/project5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/service/service-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/service/service1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/service/service2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/service/service3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/service/service4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/service/service5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/service/service6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/team/team-banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/team/team.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/team/team2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/team/team3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/controls.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/bootsnav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jak-menusearch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery.counterup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery.hc-sticky.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery.magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/jquery.sticky.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/owl.carousel.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/js/waypoints.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog_single.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/project.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/service.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/team.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/bootstrap.min.js.map" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -176,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="748" column="62" selection-start-line="748" selection-start-column="62" selection-end-line="748" selection-end-column="62" />
+            <state relative-caret-position="237">
+              <caret line="745" column="66" selection-start-line="745" selection-start-column="66" selection-end-line="745" selection-end-column="66" />
               <folding>
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#6;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#6;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -208,6 +84,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -242,12 +119,6 @@
               <item name="YueJu-Culture" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="YueJu-Culture" type="b2602c69:ProjectViewProjectNode" />
-              <item name="YueJu-Culture" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -257,12 +128,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="" />
     <property name="MANAGE_IGNORE_FILES_PROPERTY" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../git/Git/cmd/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -294,15 +167,25 @@
       <updated>1561714912403</updated>
       <workItem from="1561714915646" duration="419000" />
       <workItem from="1561720435895" duration="3561000" />
-      <workItem from="1561788670659" duration="233000" />
+      <workItem from="1561788670659" duration="1297000" />
+      <workItem from="1561792380860" duration="293000" />
+      <workItem from="1561816211413" duration="599000" />
     </task>
+    <task id="LOCAL-00001" summary="start">
+      <created>1561789069040</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1561789069040</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4222000" />
+    <option name="totallyTimeSpent" value="6169000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2494043" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -315,7 +198,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -325,6 +208,50 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="start" />
+    <option name="LAST_COMMIT_MESSAGE" value="start" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/bootstrap.css">
@@ -368,8 +295,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="748" column="62" selection-start-line="748" selection-start-column="62" selection-end-line="748" selection-end-column="62" />
+        <state relative-caret-position="237">
+          <caret line="745" column="66" selection-start-line="745" selection-start-column="66" selection-end-line="745" selection-end-column="66" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#section#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#section#6;n#body#0;n#html#0;n#!!top" expanded="true" />
