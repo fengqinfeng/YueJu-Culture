@@ -2046,11 +2046,11 @@ a:active.learn-btn{
     transition: .5s;
 }
 
-.blogs-widget .btn:hover{	
-	color:#908edf;
-	border:1px solid #908edf;
+.blogs-widget .btn:hover {
+	color: #908edf;
+	border: 1px solid #908edf;
 }
-/*-blog button-*/\
+/*-blog button-*/
 
 /*pagination*/
 .pagination-part {
