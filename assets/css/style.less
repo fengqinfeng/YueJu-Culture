@@ -29,10 +29,12 @@ font-family: 'Lato', sans-serif;
 ===========*/
 /*-------------------------------------
 		1.General css (Reset code)
---------------------------------------*/
-@navigation-color: rgb(115,112,216,1);
-
-
+//--------------------------------------*/
+//rgb(115,112,216,1);
+@navigation-color: rgba(0, 0, 0, 0.65);
+@box-inner-color:rgba(32, 35, 35, 0.53);
+@box-inner-font-color:#fff;
+@isotope-overlay-color:rgba(67, 67, 74, 0.75);
 *{
   padding: 0;
   margin: 0;
@@ -401,7 +403,7 @@ html,body{
   z-index:1;
 }
 .single-slide-item.slide-1:before,.single-slide-item.slide-2:before{
-  background:rgba(115,112,215,.6);
+  //background:rgba(115,112,215,.6);
   position:absolute;
   left:0;
   top:0;
@@ -816,7 +818,7 @@ a:focus.service-btn{
   position:absolute;
   height:100%;
   width:100%;
-  background:rgba(115,112,216,.75);
+  background:@isotope-overlay-color;
   display:flex;
   align-items:center;
   text-transform: capitalize;
@@ -957,7 +959,7 @@ a:focus.service-btn{
   left: 0;
   width: 100%;
   padding: 19px 0 0px 30px;
-  background: rgba(65,62,126,.8);
+  background: @box-inner-color;
   height: 90px;
   -webkit-transition: .7s;
   -moz-transition: .7s;
@@ -987,7 +989,7 @@ a.learn-btn,
 a:hover.learn-btn,
 a:focus.learn-btn,
 a:active.learn-btn{
-  color: #7086e6;
+  color: @box-inner-font-color;
   font-size:12px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -1297,7 +1299,7 @@ a.learn-btn,
 a:hover.learn-btn,
 a:focus.learn-btn,
 a:active.learn-btn{
-  color: #7086e6;
+  color: @box-inner-font-color;
   font-size:12px;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
@@ -1752,7 +1754,7 @@ a:active.learn-btn{
 
 .about-part{
   position:relative;
-  background:url(../../assets/images/about/about-banner.jpg)no-repeat;
+  background:url(../../assets/images/banner/banner3.jpg)no-repeat;
   background-position:center;
   background-size:cover;
   padding: 124px 0 144px;
@@ -1773,7 +1775,7 @@ a:active.learn-btn{
 .about-part:before{
   position:absolute;
   content:'';
-  background: rgba(115,112,216,.6);
+  //background: rgba(115,112,216,.6);
   height:100%;
   width:100%;
   top:0;
