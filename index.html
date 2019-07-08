@@ -1480,38 +1480,36 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-7">
-                <div class="foot-copyright pull-left">
 
-                </div><!--/.foot-copyright-->
             </div><!--/.col-->
             <div class="col-sm-5">
                 <div class="foot-menu pull-right
 						">
                     <ul>
-                        <li><a href="#">legal</a></li>
-                        <li><a href="#">sitemap</a></li>
-                        <li><a href="#">privacy policy</a></li>
+                        <li ><a href="#">legal</a></li>
+                        <li ><a href="#">sitemap</a></li>
+                        <li ><a href="#">privacy policy</a></li>
                     </ul>
                 </div><!-- /.foot-menu-->
             </div><!--/.col-->
         </div><!--/.row-->
+        <div id="scroll-Top">
+            <i class="fa fa-angle-double-up return-to-top" id="scroll-top1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+        </div><!--/.scroll-Top-->
     </div><!-- /.container-->
 
 </footer><!-- /.footer-copyright-->
 <!-- footer-copyright end -->
 
 <!--<img id="music2" src="assets/images/login/log3.jpg" onClick="play()" class="stop"/>-->
-<audio id="music" src="assets/music/繁华唱遍.mp3" loop="loop" autoplay></audio>
+<audio id="music" src="assets/music/繁华唱遍.mp3" loop autoplay></audio>
 
 <!-- jaquery link -->
 
 <script src="assets/js/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 
-<!--背景音乐-->
-<link rel="stylesheet" href="assets/css/back-music.css">
-<script src="assets/js/back-music.js"></script>
-<!--endif-->
+
 
 <!--modernizr.min.js-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -1544,8 +1542,61 @@
 <script type="text/javascript" src="assets/js/jak-menusearch.js">kkk</script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
 
+<!--背景音乐-->
+<link rel="stylesheet" href="assets/css/back-music.css">
+<script src="assets/js/back-music.js"></script>
+<!--endif-->
+<!--<script>-->
+<!--    $("body").one('click',function () {-->
+<!--        var audio = document.getElementById('music');-->
+<!--        audio.play();-->
+<!--    });-->
+<!--    // $(function() {-->
+<!--    //     $("#sdsd").trigger("click");//触发button的click事件-->
+<!--    // });-->
+<!--    function play() {-->
+<!--        var audio = document.getElementById('music');-->
+<!--        if (audio.paused) {-->
+<!--            $("#musicicon").removeClass("stop");-->
+<!--            $("#musicicon").addClass("xuanzhuan");-->
+<!--            audio.play();-->
 
+<!--            //document.getElementById('musicImg').src="images/play.png";-->
+<!--        }else{-->
+<!--            $("#musicicon").removeClass("xuanzhuan");-->
+<!--            $("#musicicon").addClass("stop");-->
 
+<!--            audio.pause();-->
+<!--            audio.currentTime = 0;//音乐从头播放-->
+
+<!--            //document.getElementById('musicImg').src="images/stop.png";-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<!--<style>-->
+<!--    .xuanzhuan {-->
+<!--        animation: xz 2s linear infinite ;-->
+<!--    }-->
+<!--    .stop {-->
+<!--        animation: st 2s linear infinite ;-->
+<!--    }-->
+<!--    @keyframes xz {-->
+<!--        from {-->
+<!--            transform: rotate(0deg);-->
+<!--        }-->
+<!--        to {-->
+<!--            transform: rotate(360deg);-->
+<!--        }-->
+<!--    }-->
+<!--    @keyframes st {-->
+<!--        from {-->
+<!--            transform: rotate(0deg);-->
+<!--        }-->
+<!--        to {-->
+<!--            transform: rotate(0deg);-->
+<!--        }-->
+<!--    }-->
+<!--</style>-->
 </body>
 
 </html>

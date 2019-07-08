@@ -1,3 +1,7 @@
+$("body").one('click',function () {
+    var audio = document.getElementById('music');
+    audio.play();
+});
 function play() {
     var audio = document.getElementById('music');
     if (audio.paused) {
