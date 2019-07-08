@@ -1,90 +1,208 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="en">
+
 <head>
-    <meta charset=utf-8>
-    <meta http-equiv=x-ua-compatible content="ie=edge">
-    <meta name=keywords content="">
-    <meta name=description content="xxxxxxxxxxxxxxxxx平台">
-    <title>用户登录 - xxxxxxxxxx</title>
+    <!-- META DATA -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <script language="javascript" type="text/javascript">
-        function checkInCorrect()      //判断用户名和密码是否为空
-        {
-            if (document.getElementById('username').value == "") {
-                alert('请输入用户名！')
-                document.getElementById('username').focus();
-                return false
-            }
-            if (document.getElementById('password').value == "") {
-                alert('请输入密码！')
-                document.getElementById('password').focus();
-                return false
-            }
-            else {
-                saveInfo();
-                return true;
-            }
-        }
 
-        saveInfo = function () {
-            try {
-                var isSave = document.getElementById('remember_password').checked;   //保存按键是否选中
-                if (isSave) {
-                    var username = document.getElementById('username').value;
-                    var password = document.getElementById('password').value;
-                    if (username != "" && password != "") {
-                        SetCookie(username, password);
-                    }
-                } else {
-                    SetCookie("", "");
-                }
-            } catch (e) {
+    <!--font-family-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
 
-            }
-        }
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-        function SetCookie(username, password) {
-            var Then = new Date();
-            Then.setTime(Then.getTime() + 1866240000000);
-            document.cookie = "username=" + username + "%%" + password + ";expires=" + Then.toGMTString();
-        }
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
 
-        function GetCookie() {
-            var nmpsd;
-            var nm;
-            var psd;
-            var cookieString = new String(document.cookie);
-            var cookieHeader = "username=";
-            var beginPosition = cookieString.indexOf(cookieHeader);
-            cookieString = cookieString.substring(beginPosition);
-            var ends = cookieString.indexOf(";");
-            if (ends != -1) {
-                cookieString = cookieString.substring(0, ends);
-            }
-            if (beginPosition > -1) {
-                nmpsd = cookieString.substring(cookieHeader.length);
-                if (nmpsd != "") {
-                    beginPosition = nmpsd.indexOf("%%");
-                    nm = nmpsd.substring(0, beginPosition);
-                    psd = nmpsd.substring(beginPosition + 2);
-                    document.getElementById('username').value = nm;
-                    document.getElementById('password').value = psd;
-                    if (nm != "" && psd != "") {
-                        // document.forms[0].checkbox.checked = true;
-                        document.getElementById('remember_password').checked = true;
-                    }
-                }
-            }
-        }
-    </script>
+    <!-- TITLE OF SITE -->
+    <title>越动嵊州城</title>
+
+    <!-- For title img -->
+    <link rel="shortcut icon" type="image/icon" href="assets/images/logo/favicon.png"/>
+
+    <!--font-awesome.min.css-->
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+    <!--linear icon css-->
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+    <!--animate.css-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+
+    <!--hover.css-->
+    <link rel="stylesheet" href="assets/css/hover-min.css">
+
+    <!--owl.carousel.css-->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet"/>
+
+    <!--vedio player css-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+
+
+    <!--bootstrap.min.css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- bootsnav -->
+    <link href="assets/css/bootsnav.css" rel="stylesheet"/>
+
+    <!--style.css-->
+    <!--    <link rel="stylesheet" href="assets/css/style.css">-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <!--less-->
+    <script type="text/javascript" src="assets/js/less.js"></script>
+    <!--endif-->
+
+    <!--responsive.css-->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--    登录页面css-->
+    <link rel="stylesheet" type="text/css" href="assets/css/login.css"/>
+    <!--    endif-->
+
 </head>
-<body onLoad="document.getElementById('username').focus();GetCookie();">
-<form>
-    <!--onblur="GetPwdAndChk()"-->
-    用户名:<input type="text" id="username">
-    密 码:<input type="password" id="password">
-    <input type="checkbox" id="remember_password"/>记住密码
-    <input type="button" OnClick="checkInCorrect()" value="进入"/>
-</form>
+
+<body>
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+    your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!--menu start-->
+<section id="menu">
+    <div class="container">
+        <div class="menubar">
+            <nav class="navbar navbar-default">
+
+
+            </nav><!--/nav -->
+        </div><!--/.menubar -->
+    </div><!-- /.container -->
+
+</section><!--/#menu-->
+<!--menu end-->
+<section class="login">
+    <div class="row">
+
+        <div class="col-md-2"></div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-5 ">
+                    <p>台前一眼，把戏缘偷染，从此后生世不倦。</p>
+                    <p>以心火绵绵，护薪火相传。</p>
+                    <p>这一切，世间看不尽演不完的美的好的真的易逝的永恒的一切，都在继续。</p>
+                    <p>有人继，有人承，有人守，有人传。</p>
+                    <p>你我亦然。</p>
+                    <p>——————纳兰寻风</p>
+                </div>
+                <div class="col-md-7">
+                    <img class="login-image" src="assets/images/login/log1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <form action="">
+                <div class="panel panel-default ">
+                    <div class="panel-heading col-md-12">
+                        <p class="text-center">用户登录</p>
+                    </div>
+                    <div class="panel-body">
+                        <div class="  col-md-12">
+                            <input type="text" class="form-control login-input" id="lastname" placeholder="请输入账号">
+                        </div>
+                        <div class="  col-md-12">
+                            <input type="text" class="form-control login-input" id="lastname" placeholder="请输入密码">
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-6">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox">请记住我
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-11 login-button">
+                                <button type="submit" class="btn btn-default col-md-10">登录</button>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <br>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="text-center">
+                                <a href="">扫码快捷登录</a>
+                            </p>
+                        </div>
+                        <div class="col-md-12">
+                            <br>
+                        </div>
+                        <div class="col-md-12">
+                            <p class="text-right">
+                                <a href="">忘了密码？</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- jaquery link -->
+
+<script src="assets/js/jquery.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!--modernizr.min.js-->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+
+<!--bootstrap.min.js-->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+<!-- bootsnav js -->
+<script src="assets/js/bootsnav.js"></script>
+
+<!-- for manu -->
+<script src="assets/js/jquery.hc-sticky.min.js" type="text/javascript"></script>
+
+
+<!-- vedio player js -->
+<script src="assets/js/jquery.magnific-popup.min.js"></script>
+
+
+<script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+<!--owl.carousel.js-->
+<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+
+<!-- counter js -->
+<script src="assets/js/jquery.counterup.min.js"></script>
+<script src="assets/js/waypoints.min.js"></script>
+
+
+<!--Custom JS-->
+<script type="text/javascript" src="assets/js/jak-menusearch.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+
 </body>
+
 </html>
