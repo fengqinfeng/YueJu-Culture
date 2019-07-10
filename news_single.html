@@ -146,8 +146,8 @@
 						<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 							<ul class="nav navbar-nav navbar-right">
 								<li class="active"><a href="index.html">首页</a></li>
-								<li><a href="yueju_infomation.html">资讯</a></li>
-								<li><a href="yueju_museum.html">越剧博物馆</a></li>
+								<li><a href="yueju_infomation.html?pn=1">资讯</a></li>
+								<li><a href="yueju_museum.html?pn=1">越剧博物馆</a></li>
 								<li><a href="project.html"></a></li>
 								<li><a href="team.html"></a></li>
 								<li><a href="blog.html"></a></li>
@@ -196,7 +196,7 @@
 		<!--about-part end-->
 
 		<!--nwes start -->
-		<section  class="news">
+		<section  class="news" >
 			<div class="container">
 				<div class="news-details">
 					<div class="section-header text-center">
@@ -209,7 +209,7 @@
 						<div class="row">
 
 							<div class="col-md-8">
-								<div class="blog-left">
+								<div class="blog-left" id="newsingle">
 
 									<div class="bl-article-post-img">
 										<a href="blogsinglesideber.html">
@@ -217,66 +217,52 @@
 										</a>
 									</div><!--/.bl-article-post-img-->
 
-									<div class="bl-article-single-txt">
+									<div class="bl-article-single-txt" >
 
 										<div class="bl-single-head">
 											<h3>
 												<a href="#">
-													Solving Property Finance Cashflow
+													{{rows.title}}
 												</a>
 											</h3>
 											<p>
-												Posted By :  <span>stephen Heynes</span>  On <span>17th august, 2016</span>
+												来源 :  <span>{{rows.author}}</span>  时间： <span>{{rows.publishTime}}</span>
 											</p>
 										</div><!--/.bl-single-head-->
 
 										<div class="bl-single-para">
-											<h3>
-												Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuda doloremque laudantium.
-											</h3>
-											<p>
-												The problem was reported by the BBC back in 2013 and has never gone away. The Construction Index reported that late payments had increased by 27% in 2015, in fact the construction sector has the worst problem for late payment than any other industry sector and accounted for 31% of all payment problems in 2015.
-											</p>
+											<p style="text-indent: 2em" v-for="newscontent in (rows.content || '').split('|')">{{newscontent}}</p>
 
-											<blockquote>
-												‘Lorem ipsum dolor sit amet, consectetur pisicing elit,  do he eiusmod tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim veniam jalalaad’  
-											</blockquote>
+<!--											<div class="blog-xtra-body">-->
+<!--												<div class="row">-->
+<!--												-->
+<!--													<div class="col-md-6 col-sm-12 hidden-xs">-->
+
+<!--														<div class="blog-xtra-img">-->
+<!--															<div class="news-box-bg blog-body-img">-->
+<!--																<img src="assets/images/blog/bl8.jpg" alt="blog image">-->
+<!--															</div>&lt;!&ndash;/.news-box-bg&ndash;&gt;-->
+<!--															<div class="blog-single-musiq">-->
+<!--																<a href="https://www.youtube.com/watch?v=lQXzmGg291E" class="vedio-play-icon mfp-iframe">-->
+<!--																	<img src="assets/images/blog/play-icon.png" alt="play-icon">-->
+<!--																</a>-->
+<!--															</div>&lt;!&ndash;/.blog-single-musiq&ndash;&gt;-->
+<!--														</div>&lt;!&ndash;/.blog-xtra-img&ndash;&gt;-->
+<!--													</div>&lt;!&ndash; /.end of col-md-6 &ndash;&gt;-->
+
+<!--													<div class="col-md-6 col-sm-12">-->
+<!--															-->
+<!--														<p class="xtra-para">-->
+<!--															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.Duis aute irure dolor in reprehenderit in volu essa -->
+<!--														</p>-->
+<!--													</div>&lt;!&ndash;/.col&ndash;&gt;-->
+<!--												</div>&lt;!&ndash; /.row&ndash;&gt;-->
+<!--											</div>&lt;!&ndash;/.blog-xtra-body&ndash;&gt;-->
 											
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-												
-											</p>
-
-											<div class="blog-xtra-body">
-												<div class="row">
-												
-													<div class="col-md-6 col-sm-12 hidden-xs">
-
-														<div class="blog-xtra-img">
-															<div class="news-box-bg blog-body-img">
-																<img src="assets/images/blog/bl8.jpg" alt="blog image">
-															</div><!--/.news-box-bg-->
-															<div class="blog-single-musiq">
-																<a href="https://www.youtube.com/watch?v=lQXzmGg291E" class="vedio-play-icon mfp-iframe">
-																	<img src="assets/images/blog/play-icon.png" alt="play-icon">
-																</a>
-															</div><!--/.blog-single-musiq-->
-														</div><!--/.blog-xtra-img-->
-													</div><!-- /.end of col-md-6 -->
-
-													<div class="col-md-6 col-sm-12">
-															
-														<p class="xtra-para">
-															Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.Duis aute irure dolor in reprehenderit in volu essa 
-														</p>
-													</div><!--/.col-->
-												</div><!-- /.row-->
-											</div><!--/.blog-xtra-body-->
-											
-											<p>
-												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-												
-											</p>
+<!--											<p>-->
+<!--												Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
+<!--												-->
+<!--											</p>-->
 										</div><!--/.bl-single-para-->
 
 										<div class="bl-single-contact-box">
@@ -461,33 +447,7 @@
 							<div class="col-md-4">
 								<div class="blog-right">
 
-<!--									<div class="blogs-widget">-->
-<!--										<form>-->
-<!--											<input type="text" class="form-control" placeholder="Search">-->
-<!--										</form>&lt;!&ndash;/.form&ndash;&gt;-->
-<!--										<div class="blog-search-icon">-->
-<!--											<a href="#">-->
-<!--												<span class="lnr lnr-magnifier">-->
-<!--													-->
-<!--												</span>-->
-<!--											</a>-->
-<!--										</div>&lt;!&ndash;/.blog-search-icon&ndash;&gt;-->
-<!--									</div>&lt;!&ndash;/.blog-widget&ndash;&gt;-->
-
-<!--									<div class="blogs-widget">-->
-<!--										<h2>categories</h2>-->
-<!--										<div class="blog-categories-list">-->
-<!--											<ul>-->
-<!--												<li><a href="#">all</a></li>-->
-<!--												<li><a href="#">busisness</a></li>-->
-<!--												<li><a href="#">consultency</a></li>-->
-<!--												<li><a href="#">corporate</a></li>-->
-<!--												<li><a href="#">politics</a></li>-->
-<!--												<li><a href="#">marketing</a></li>-->
-<!--												<li><a href="#">lifestyle</a></li>-->
-<!--											</ul>-->
-<!--										</div>&lt;!&ndash;/.blog-categories-list&ndash;&gt;-->
-<!--									</div>&lt;!&ndash;/.blog-widget&ndash;&gt;-->
+<!--
 
 									<div class="blogs-widget">
 										<h2>related news</h2>
@@ -497,13 +457,13 @@
 													<a href="#">
 														<img src="assets/images/blog/rp1.jpg" alt="image" />
 													</a>
-												</div><!--/.bl-img-->
-												<p>
-													<a href="#">
-														CFOs focused on retaining key talent
-													</a>
-													<span>25th Feb, 2017</span>
-												</p>
+												</div>/.bl-img-->
+<!--												<p>-->
+<!--													<a href="#">-->
+<!--														CFOs focused on retaining key talent-->
+<!--													</a>-->
+<!--													<span>25th Feb, 2017</span>-->
+<!--												</p>-->
 											</div><!--/.bl-txt-->
 											<div class="bl-txt">
 												<div class="bl-img">
@@ -534,62 +494,7 @@
 										</div><!--/.blog-related-news-->
 									</div><!--/.blog-widget-->
 
-<!--									<div class="blogs-widget">-->
-<!--										<h2>Archives</h2>-->
-<!--										<div class="blog-categories-list">-->
-<!--											<ul>-->
-<!--												<li>-->
-<!--													<a href="#">-->
-<!--														<i class="fa fa-angle-right" aria-hidden="true">-->
-<!--															-->
-<!--														</i>-->
-<!--														November 2017-->
-<!--													</a>-->
-<!--												</li>-->
-<!--												<li>-->
-<!--													<a href="#">-->
-<!--														<i class="fa fa-angle-right" aria-hidden="true">-->
-<!--															-->
-<!--														</i>-->
-<!--														October 2017-->
-<!--													</a>-->
-<!--												</li>-->
-<!--												<li>-->
-<!--													<a href="#">-->
-<!--														<i class="fa fa-angle-right" aria-hidden="true">-->
-<!--															-->
-<!--														</i>-->
-<!--														September 2017-->
-<!--													</a>-->
-<!--												</li>-->
-<!--												<li>-->
-<!--													<a href="#">-->
-<!--														<i class="fa fa-angle-right" aria-hidden="true">-->
-<!--													-->
-<!--														</i>-->
-<!--														August 2017-->
-<!--													</a>-->
-<!--												</li>-->
-<!--												<li>-->
-<!--													<a href="#">-->
-<!--														<i class="fa fa-angle-right" aria-hidden="true">-->
-<!--													-->
-<!--														</i>-->
-<!--														July 2017-->
-<!--													</a>-->
-<!--												</li>-->
-<!--												<li>-->
-<!--													<a href="#">-->
-<!--														<i class="fa fa-angle-right" aria-hidden="true">-->
-<!--													-->
-<!--														</i>-->
-<!--														June 2017-->
-<!--													</a>-->
-<!--												</li>-->
-<!--												-->
-<!--											</ul>-->
-<!--										</div>-->
-<!--									</div>&lt;!&ndash;/.blog-widget&ndash;&gt;-->
+
 
 									<div class="blogs-widget">
 										<h2>popular tags</h2>
@@ -615,34 +520,9 @@
 		</section><!--/news-->
 		<!--news end-->
 		
-		<!-- new-project start -->
-<!--		<section  class="new-project">-->
-<!--				<div class="container">-->
-<!--					<div class="new-project-details">-->
-<!--						<div class="row">-->
-<!--							<div class="col-md-10 col-sm-8">-->
-<!--								<div class="single-new-project">-->
-<!--									<h3>-->
-<!--										Want to start a new project with us? Let’s Start!-->
-<!--									</h3>-->
-<!--								</div>&lt;!&ndash; /.single-new-project&ndash;&gt;	-->
-<!--							</div>&lt;!&ndash; /.col&ndash;&gt;	-->
-<!--							<div class="col-md-2 col-sm-4">-->
-<!--								<div class="single-new-project">-->
-<!--									<a href="#" class="slide-btn">-->
-<!--										start now-->
-<!--									</a>-->
-<!--								</div>&lt;!&ndash; /.single-new-project&ndash;&gt;	-->
-<!--							</div>&lt;!&ndash; /.col&ndash;&gt;	-->
-<!--						</div>&lt;!&ndash; /.row&ndash;&gt;	-->
-<!--					</div>&lt;!&ndash; /.new-project-details&ndash;&gt;	-->
-<!--				</div>&lt;!&ndash; /.container&ndash;&gt;	-->
 
-<!--		</section>&lt;!&ndash; /.new-project&ndash;&gt;	-->
-		<!-- new-project end -->
-		
 		<!--hm-footer start-->
-		<section class="hm-footer">
+		<section class="hm-footer" >
 			<div class="container">
 				<div class="hm-footer-details">
 					<div class="row">
@@ -741,11 +621,6 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-7">
-<!--						<div class="foot-copyright pull-left">-->
-<!--							<p>-->
-<!--								&copy; All Rights Reserve-->
-<!--							 	ThemeSINE / More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>-->
-<!--						</div>&lt;!&ndash;/.foot-copyright&ndash;&gt;-->
 					</div><!--/.col-->
 					<div class="col-sm-5">
 						<div class="foot-menu pull-right
@@ -771,7 +646,12 @@
 
 		<script src="assets/js/jquery.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        
+
+		<!--vue-->
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="assets/js/news-single.js"></script>
+		<!--endif-->
+
         <!--modernizr.min.js-->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
 		

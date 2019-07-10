@@ -147,8 +147,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">首页</a></li>
-                        <li><a href="yueju_infomation.html">资讯</a></li>
-                        <li><a href="yueju_museum.html">越剧博物馆</a></li>
+                        <li><a href="yueju_infomation.html?pn=1">资讯</a></li>
+                        <li><a href="yueju_museum.html?pn=1">越剧博物馆</a></li>
                         <li><a href="project.html"></a></li>
                         <li><a href="team.html"></a></li>
                         <li><a href="blog.html"></a></li>
@@ -199,9 +199,9 @@
 <!--nwes start -->
 <section  class="news">
     <div class="container">
-        <div class="news-details">
+        <div class="news-details" id="chardetails">
             <div class="section-header text-center">
-                <h2>經典人物（越劇中）</h2>
+                <h2>{{rows.title}}</h2>
                 <!--						<p>-->
                 <!--							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
                 <!--						</p>-->
@@ -222,184 +222,53 @@
 
 
                                 <div class="bl-single-para">
-                                    <h3>
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuda doloremque laudantium.
-                                    </h3>
-                                    <p>
-                                        The problem was reported by the BBC back in 2013 and has never gone away. The Construction Index reported that late payments had increased by 27% in 2015, in fact the construction sector has the worst problem for late payment than any other industry sector and accounted for 31% of all payment problems in 2015.
-                                    </p>
-
-
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-                                    </p>
-
-
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
+                                    <p style="text-indent: 2em" v-for="char in (rows.content).split('|')">
+                                        {{char}}
                                     </p>
                                 </div><!--/.bl-single-para-->
 
-                                <div class="bl-single-contact-box">
+<!--                                <div class="bl-single-contact-box">-->
 
-                                    <ul>
+<!--                                    <ul>-->
 
-                                        <li>
-                                            <div class="bl-list-icon">
-                                                <ul>
+<!--                                        <li>-->
+<!--                                            <div class="bl-list-icon">-->
+<!--                                                <ul>-->
 
-                                                    <li>
-                                                        <a href="#">
-                                                            share :
-                                                        </a>
-                                                    </li><!-- / li -->
-                                                    <li>
-                                                        <a href="#">
-                                                            <img src="assets/images/blog/facebook.png" alt="facebook">
-                                                        </a>
-                                                    </li><!-- / li -->
-                                                    <li>
-                                                        <a href="#">
-                                                            <img src="assets/images/blog/g.png" alt="google-plus">
-                                                        </a>
+<!--                                                    <li>-->
+<!--                                                        <a href="#">-->
+<!--                                                            share :-->
+<!--                                                        </a>-->
+<!--                                                    </li>&lt;!&ndash; / li &ndash;&gt;-->
+<!--                                                    <li>-->
+<!--                                                        <a href="#">-->
+<!--                                                            <img src="assets/images/blog/facebook.png" alt="facebook">-->
+<!--                                                        </a>-->
+<!--                                                    </li>&lt;!&ndash; / li &ndash;&gt;-->
+<!--                                                    <li>-->
+<!--                                                        <a href="#">-->
+<!--                                                            <img src="assets/images/blog/g.png" alt="google-plus">-->
+<!--                                                        </a>-->
 
-                                                    </li><!-- / li -->
-                                                    <li>
-                                                        <a href="#">
-                                                            <img src="assets/images/blog/linkedin.png" alt="linkedin">
-                                                        </a>
+<!--                                                    </li>&lt;!&ndash; / li &ndash;&gt;-->
+<!--                                                    <li>-->
+<!--                                                        <a href="#">-->
+<!--                                                            <img src="assets/images/blog/linkedin.png" alt="linkedin">-->
+<!--                                                        </a>-->
 
-                                                    </li><!-- / li -->
-                                                    <li>
-                                                        <a href="#">
-                                                            <img src="assets/images/blog/tw.png" alt="twitter">
-                                                        </a>
-                                                    </li><!-- / li -->
-                                                </ul><!-- / ul -->
-                                            </div><!-- /.bl-list-icon -->
-                                        </li>
-                                    </ul><!--/ul-->
-                                </div><!--/.bl-single-contact-box-->
+<!--                                                    </li>&lt;!&ndash; / li &ndash;&gt;-->
+<!--                                                    <li>-->
+<!--                                                        <a href="#">-->
+<!--                                                            <img src="assets/images/blog/tw.png" alt="twitter">-->
+<!--                                                        </a>-->
+<!--                                                    </li>&lt;!&ndash; / li &ndash;&gt;-->
+<!--                                                </ul>&lt;!&ndash; / ul &ndash;&gt;-->
+<!--                                            </div>&lt;!&ndash; /.bl-list-icon &ndash;&gt;-->
+<!--                                        </li>-->
+<!--                                    </ul>&lt;!&ndash;/ul&ndash;&gt;-->
+<!--                                </div>&lt;!&ndash;/.bl-single-contact-box&ndash;&gt;-->
 
-                                <!--                                <div  class="comments-area">-->
-                                <!--                                    <h3>3 comments</h3>-->
-                                <!--                                    <ol class="comment-list">-->
-                                <!--                                        <li  class="comment">-->
 
-                                <!--                                            <div  class="comment-body xtra-comment-body">-->
-                                <!--                                                <div class="comment-meta">-->
-                                <!--                                                    <div class="comment-author">-->
-                                <!--                                                        <img src="assets/images/blog/cmn1.jpg" alt="image"/>-->
-                                <!--                                                    </div>&lt;!&ndash; .comment-author &ndash;&gt;-->
-                                <!--                                                </div>&lt;!&ndash; .comment-meta &ndash;&gt;-->
-
-                                <!--                                                <div class="comment-content">-->
-                                <!--                                                    <b class="fn">-->
-                                <!--                                                        <a href="#">-->
-                                <!--                                                            jone doe-->
-                                <!--                                                            <span>17th June 2017</span>-->
-                                <!--                                                        </a>-->
-                                <!--                                                    </b>-->
-
-                                <!--                                                    <div class="reply">-->
-                                <!--                                                        <a href="#">Reply</a>-->
-                                <!--                                                    </div>-->
-                                <!--                                                    <p>-->
-                                <!--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempo in the khabo koi jab cidid unt ut labore et dolore magna aliqua.-->
-                                <!--                                                    </p>-->
-                                <!--                                                </div>&lt;!&ndash; .comment-content &ndash;&gt;-->
-                                <!--                                            </div>&lt;!&ndash; .comment-body &ndash;&gt;-->
-
-                                <!--                                            <ol class="children">-->
-                                <!--                                                <li class="comment">-->
-                                <!--                                                    <div class="comment-body xtra-comment-body">-->
-                                <!--                                                        <div class="comment-meta">-->
-                                <!--                                                            <div class="comment-author">-->
-                                <!--                                                                <img src="assets/images/blog/cmn2.jpg" alt="image"/>-->
-                                <!--                                                            </div>&lt;!&ndash; .comment-author &ndash;&gt;-->
-                                <!--                                                        </div>&lt;!&ndash; .comment-meta &ndash;&gt;-->
-
-                                <!--                                                        <div class="comment-content">-->
-                                <!--                                                            <b class="fn">-->
-                                <!--                                                                <a href="#">-->
-                                <!--                                                                    jone doe-->
-                                <!--                                                                    <span>17th June 2017</span>-->
-                                <!--                                                                </a>-->
-                                <!--                                                            </b>-->
-
-                                <!--                                                            <div class="reply">-->
-                                <!--                                                                <a href="#">Reply</a>-->
-                                <!--                                                            </div>-->
-                                <!--                                                            <p>-->
-                                <!--                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempo in the khabo koi jab cidid unt ut labore et dolore magna aliqua.-->
-                                <!--                                                            </p>-->
-                                <!--                                                        </div>&lt;!&ndash; .comment-content &ndash;&gt;-->
-                                <!--                                                    </div>&lt;!&ndash; .comment-body &ndash;&gt;-->
-                                <!--                                                </li>&lt;!&ndash; #comment-## &ndash;&gt;-->
-                                <!--                                            </ol>&lt;!&ndash; .children &ndash;&gt;-->
-
-                                <!--                                            <div  class="comment-body">-->
-                                <!--                                                <div class="comment-meta">-->
-                                <!--                                                    <div class="comment-author">-->
-                                <!--                                                        <img src="assets/images/blog/cmn3.jpg" alt="image"/>-->
-                                <!--                                                    </div>&lt;!&ndash; .comment-author &ndash;&gt;-->
-                                <!--                                                </div>&lt;!&ndash; .comment-meta &ndash;&gt;-->
-
-                                <!--                                                <div class="comment-content">-->
-                                <!--                                                    <b class="fn">-->
-                                <!--                                                        <a href="#">-->
-                                <!--                                                            jone doe-->
-                                <!--                                                            <span>17th June 2017</span>-->
-                                <!--                                                        </a>-->
-                                <!--                                                    </b>-->
-
-                                <!--                                                    <div class="reply">-->
-                                <!--                                                        <a href="#">Reply</a>-->
-                                <!--                                                    </div>-->
-                                <!--                                                    <p>-->
-                                <!--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempo in the khabo koi jab cidid unt ut labore et dolore magna aliqua.-->
-                                <!--                                                    </p>-->
-                                <!--                                                </div>&lt;!&ndash; .comment-content &ndash;&gt;-->
-                                <!--                                            </div>&lt;!&ndash; .comment-body &ndash;&gt;-->
-                                <!--                                        </li>&lt;!&ndash;/.comment&ndash;&gt;-->
-                                <!--                                    </ol>&lt;!&ndash;/.comment-list&ndash;&gt;-->
-
-                                <!--                                </div>&lt;!&ndash;/.comments-area&ndash;&gt;-->
-
-                                <!--                                <div class="contact-form blog-single-form">-->
-                                <!--                                    <h3>Leave us a comment Here</h3>-->
-                                <!--                                    <form>-->
-                                <!--                                        <div class="row">-->
-                                <!--                                            <div class="col-sm-6 col-xs-12">-->
-                                <!--                                                <div class="form-group">-->
-                                <!--                                                    <input type="text" class="form-control" id="firstname" placeholder="Name" name="firstname">-->
-                                <!--                                                </div>&lt;!&ndash;/.form-group&ndash;&gt;-->
-                                <!--                                            </div>&lt;!&ndash;/.col&ndash;&gt;-->
-                                <!--                                            <div class="col-sm-6 col-xs-12">-->
-                                <!--                                                <div class="form-group">-->
-                                <!--                                                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">-->
-                                <!--                                                </div>&lt;!&ndash;/.form-group&ndash;&gt;-->
-                                <!--                                            </div>&lt;!&ndash;/.col&ndash;&gt;-->
-                                <!--                                        </div>&lt;!&ndash;/.row&ndash;&gt;-->
-                                <!--                                        <div class="row">-->
-                                <!--                                            <div class="col-sm-12">-->
-                                <!--                                                <div class="form-group">-->
-                                <!--                                                    <textarea class="form-control" rows="7" id="comment" placeholder="Message" ></textarea>-->
-                                <!--                                                </div>&lt;!&ndash;/.form-group&ndash;&gt;-->
-                                <!--                                            </div>&lt;!&ndash;/.col&ndash;&gt;-->
-                                <!--                                        </div>&lt;!&ndash;/.row&ndash;&gt;-->
-                                <!--                                        <div class="row">-->
-                                <!--                                            <div class="col-sm-12">-->
-                                <!--                                                <div class="single-contact-btn">-->
-                                <!--                                                    <button class="contact-btn" href="#" role="button">send message</button>-->
-                                <!--                                                </div>&lt;!&ndash;/.single-single-contact-btn&ndash;&gt;-->
-                                <!--                                            </div>&lt;!&ndash;/.col&ndash;&gt;-->
-                                <!--                                        </div>&lt;!&ndash;/.row&ndash;&gt;-->
-                                <!--                                    </form>&lt;!&ndash;/form&ndash;&gt;-->
-
-                                <!--                                </div>&lt;!&ndash;/.contact-form&ndash;&gt;-->
 
                             </div><!--/.bl-article-single-txt-->
                         </div><!--/.blog-left-->
@@ -715,6 +584,11 @@
 
 <script src="assets/js/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!--vue-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="assets/js/museum-characters-details.js"></script>
+<!--endif-->
 
 <!--modernizr.min.js-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>

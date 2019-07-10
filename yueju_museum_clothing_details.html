@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 
 <head>
     <!-- META DATA -->
@@ -147,8 +147,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">首页</a></li>
-                        <li><a href="yueju_infomation.html">资讯</a></li>
-                        <li><a href="yueju_museum.html">越剧博物馆</a></li>
+                        <li><a href="yueju_infomation.html?pn=1">资讯</a></li>
+                        <li><a href="yueju_museum.html?pn=1">越剧博物馆</a></li>
                         <li><a href="project.html"></a></li>
                         <li><a href="team.html"></a></li>
                         <li><a href="blog.html"></a></li>
@@ -199,9 +199,9 @@
 <!--nwes start -->
 <section  class="news">
     <div class="container">
-        <div class="news-details">
+        <div class="news-details" id="clothdetail">
             <div class="section-header text-center">
-                <h2>衣服名</h2>
+                <h2>{{rows.title}}</h2>
                 <!--						<p>-->
                 <!--							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
                 <!--						</p>-->
@@ -222,50 +222,47 @@
 
 
                                 <div class="bl-single-para">
-                                    <h3>
-                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accuda doloremque laudantium.
-                                    </h3>
-                                    <p>
-                                        The problem was reported by the BBC back in 2013 and has never gone away. The Construction Index reported that late payments had increased by 27% in 2015, in fact the construction sector has the worst problem for late payment than any other industry sector and accounted for 31% of all payment problems in 2015.
+                                    <p style="text-indent: 2em" v-for="cloth in (rows.content).split('|')">
+                                        {{cloth}}
                                     </p>
-                                    <div class="blog-xtra-body">
-                                        <div class="row">
+<!--                                    <div class="blog-xtra-body">-->
+<!--                                        <div class="row">-->
 
-                                            <div class="col-md-6 col-sm-12 hidden-xs">
+<!--                                            <div class="col-md-6 col-sm-12 hidden-xs">-->
 
-<!--                                                <div class="blog-xtra-img">-->
-<!--                                                    <div class="news-box-bg blog-body-img">-->
-<!--                                                        <img src="assets/images/blog/bl8.jpg" alt="blog image">-->
-<!--                                                    </div>&lt;!&ndash;/.news-box-bg&ndash;&gt;-->
-<!--                                                    <div class="blog-single-musiq">-->
-<!--                                                        <a href="https://www.youtube.com/watch?v=lQXzmGg291E" class="vedio-play-icon mfp-iframe">-->
-<!--                                                            <img src="assets/images/blog/play-icon.png" alt="play-icon">-->
-<!--                                                        </a>-->
-<!--                                                    </div>&lt;!&ndash;/.blog-single-musiq&ndash;&gt;-->
-<!--                                                </div>&lt;!&ndash;/.blog-xtra-img&ndash;&gt;-->
-                                                <img src="assets/images/clothing/clo1.png" alt="">
-                                            </div><!-- /.end of col-md-6 -->
+<!--&lt;!&ndash;                                                <div class="blog-xtra-img">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    <div class="news-box-bg blog-body-img">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        <img src="assets/images/blog/bl8.jpg" alt="blog image">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    </div>&lt;!&ndash;/.news-box-bg&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    <div class="blog-single-musiq">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        <a href="https://www.youtube.com/watch?v=lQXzmGg291E" class="vedio-play-icon mfp-iframe">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                            <img src="assets/images/blog/play-icon.png" alt="play-icon">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        </a>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    </div>&lt;!&ndash;/.blog-single-musiq&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                                                </div>&lt;!&ndash;/.blog-xtra-img&ndash;&gt;&ndash;&gt;-->
+<!--                                                <img  v-bind:src="'assets/images/clothing/'+rows.picture" alt="">-->
+<!--                                            </div>&lt;!&ndash; /.end of col-md-6 &ndash;&gt;-->
 
-                                            <div class="col-md-6 col-sm-12">
+<!--                                            <div class="col-md-6 col-sm-12">-->
 
-                                                <p class="xtra-para">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.Duis aute irure dolor in reprehenderit in volu essa
-                                                </p>
-                                            </div><!--/.col-->
-                                        </div><!-- /.row-->
-                                    </div><!--/.blog-xtra-body-->
-
-
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-                                    </p>
+<!--                                                <p class="xtra-para">-->
+<!--                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.Duis aute irure dolor in reprehenderit in volu essa-->
+<!--                                                </p>-->
+<!--                                            </div>&lt;!&ndash;/.col&ndash;&gt;-->
+<!--                                        </div>&lt;!&ndash; /.row&ndash;&gt;-->
+<!--                                    </div>&lt;!&ndash;/.blog-xtra-body&ndash;&gt;-->
 
 
-                                    <p>
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+<!--                                    <p>-->
+<!--                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.-->
 
-                                    </p>
+<!--                                    </p>-->
+
+
+<!--                                    <p>-->
+<!--                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.-->
+
+<!--                                    </p>-->
                                 </div><!--/.bl-single-para-->
 
                                 <div class="bl-single-contact-box">
@@ -741,6 +738,11 @@
 
 <script src="assets/js/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!--vue-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="assets/js/museum-clothing-details.js"></script>
+<!--endif-->
 
 <!--modernizr.min.js-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>

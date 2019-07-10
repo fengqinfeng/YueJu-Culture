@@ -1,11 +1,11 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 
 <head>
     <!-- META DATA -->
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!--font-family-->
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i" rel="stylesheet">
@@ -19,43 +19,43 @@
 
 
     <!-- for title img -->
-    <link rel="shortcut icon" type="image/icon" href="assets/images/logo/favicon.png"/>
+    <link href="assets/images/logo/favicon.png" rel="shortcut icon" type="image/icon"/>
 
     <!--font-awesome.min.css-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
 
     <!--linear icon css-->
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css" rel="stylesheet">
 
     <!--animate.css-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <link href="assets/css/animate.css" rel="stylesheet">
 
     <!--hover.css-->
-    <link rel="stylesheet" href="assets/css/hover-min.css">
+    <link href="assets/css/hover-min.css" rel="stylesheet">
 
     <!--vedio player css-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link href="assets/css/magnific-popup.css" rel="stylesheet">
 
     <!--owl.carousel.css-->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/css/owl.theme.default.min.css" rel="stylesheet"/>
 
 
     <!--bootstrap.min.css-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- bootsnav -->
     <link href="assets/css/bootsnav.css" rel="stylesheet"/>
 
     <!--style.css-->
     <!--    <link rel="stylesheet" href="assets/css/style.css">-->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"/>
     <!--less-->
-    <script type="text/javascript" src="assets/js/less.js"></script>
+    <script src="assets/js/less.js" type="text/javascript"></script>
     <!--endif-->
 
     <!--responsive.css-->
-    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link href="assets/css/responsive.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -108,7 +108,8 @@
                     </a>
                 </li><!--/li -->
                 <li>
-                    <img src="assets/images/home/music2.png" style="width: 28px;height: 28px;" id="musicicon" class="img-circle xuanzhuan" alt="" onClick="play()">
+                    <img alt="" class="img-circle xuanzhuan" id="musicicon"
+                         onClick="play()" src="assets/images/home/music2.png" style="width: 28px;height: 28px;">
                 </li>
                 <li>
                     <div class="social-icon">
@@ -135,8 +136,9 @@
 
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                            data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <button aria-expanded="false" class="navbar-toggle collapsed"
+                            data-target="#bs-example-navbar-collapse-1"
+                            data-toggle="collapse" type="button">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
@@ -151,8 +153,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">首页</a></li>
-                        <li><a href="yueju_infomation.html">资讯</a></li>
-                        <li><a href="yueju_museum.html">越剧博物馆</a></li>
+                        <li><a href="yueju_infomation.html?pn=1">资讯</a></li>
+                        <li><a href="yueju_museum.html?pn=1">越剧博物馆</a></li>
                         <li><a href="yueju_museum_troupe.html"></a></li>
                         <li><a href="yueju_museum.html"></a></li>
                         <li><a href="blog.html"></a></li>
@@ -164,7 +166,7 @@
                         </li>
                         <li class="search">
                             <form action="">
-                                <input type="text" name="search" placeholder="Search....">
+                                <input name="search" placeholder="Search...." type="text">
                                 <a href="#">
                                     <span class="lnr lnr-magnifier"></span>
                                 </a>
@@ -181,12 +183,12 @@
 
 <!-- header-slider-area start -->
 <section class="header-slider-area">
-    <div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
+    <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel-example-generic">
 
         <!-- Indicators -->
         <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
+            <li data-slide-to="1" data-target="#carousel-example-generic"></li>
         </ol>
 
         <!-- Wrapper for slides -->
@@ -202,10 +204,10 @@
                                         We are the unique Consultancy Farm for your business solution, That is ready to
                                         take challenge and knockout your business problems.
                                     </p>
-                                    <button type="button" class="slide-btn">
+                                    <button class="slide-btn" type="button">
                                         get started
                                     </button>
-                                    <button type="button" class="slide-btn">
+                                    <button class="slide-btn" type="button">
                                         explore more
                                     </button>
 
@@ -228,10 +230,10 @@
                                         We are the unique Consultancy Farm for your business solution, That is ready to
                                         take challenge and knockout your business problems.
                                     </p>
-                                    <button type="button" class="slide-btn">
+                                    <button class="slide-btn" type="button">
                                         get started
                                     </button>
-                                    <button type="button" class="slide-btn">
+                                    <button class="slide-btn" type="button">
                                         explore more
                                     </button>
                                 </div><!-- /.single-slide-item-content-->
@@ -244,10 +246,10 @@
         </div><!-- /.carousel-inner-->
 
         <!-- Controls -->
-        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <a class="left carousel-control" data-slide="prev" href="#carousel-example-generic" role="button">
             <span class="lnr lnr-chevron-left"></span>
         </a>
-        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <a class="right carousel-control" data-slide="next" href="#carousel-example-generic" role="button">
             <span class="lnr lnr-chevron-right"></span>
         </a>
     </div><!-- /.carousel-->
@@ -361,7 +363,7 @@
                                 dolor in reprehenderit in voluptate velit esse.
                             </p>
                             <div class="project-btn">
-                                <a href="#" class="project-view">learn more
+                                <a class="project-view" href="#">learn more
                                 </a>
                             </div><!--/.project-btn-->
                         </div><!--/.about-us-txt-->
@@ -370,7 +372,7 @@
                 <div class="col-sm-6">
                     <div class="single-about-us">
                         <div class="about-us-img">
-                            <img src="assets/images/about/about-part.jpg" alt="about images">
+                            <img alt="about images" src="assets/images/about/about-part.jpg">
                         </div><!--/.about-us-img-->
                     </div><!--/.single-about-us-->
                 </div><!--/.col-->
@@ -569,7 +571,7 @@
 <!--statistics end-->
 
 <!--project start-->
-<section id="project" class="project">
+<section class="project" id="project">
     <div class="container">
         <div class="project-details">
             <div class="project-header text-left">
@@ -584,7 +586,7 @@
                         <div class="row">
                             <div class=" col-md-4 col-sm-12">
                                 <div class="item big-height">
-                                    <img src="assets/images/project/project1.jpg" alt="portfolio image"/>
+                                    <img alt="portfolio image" src="assets/images/project/project1.jpg"/>
                                     <div class="isotope-overlay">
                                         <a href="yueju_museum_troupe_details.html">
                                             <span class="lnr lnr-link"></span>
@@ -603,7 +605,7 @@
                                 <div class="row">
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="item">
-                                            <img src="assets/images/project/project2.jpg" alt="portfolio image"/>
+                                            <img alt="portfolio image" src="assets/images/project/project2.jpg"/>
                                             <div class="isotope-overlay">
                                                 <a href="yueju_museum_troupe_details.html">
                                                     <span class="lnr lnr-link"></span>
@@ -620,7 +622,7 @@
                                     </div><!-- /.col -->
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="item">
-                                            <img src="assets/images/project/project3.jpg" alt="portfolio image"/>
+                                            <img alt="portfolio image" src="assets/images/project/project3.jpg"/>
                                             <div class="isotope-overlay">
                                                 <a href="yueju_museum_troupe_details.html">
                                                     <span class="lnr lnr-link"></span>
@@ -639,7 +641,7 @@
                                 <div class="row">
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="item">
-                                            <img src="assets/images/project/project4.jpg" alt="portfolio image"/>
+                                            <img alt="portfolio image" src="assets/images/project/project4.jpg"/>
                                             <div class="isotope-overlay">
                                                 <a href="yueju_museum_troupe_details.html">
                                                     <span class="lnr lnr-link"></span>
@@ -657,7 +659,7 @@
                                     </div><!-- /.col -->
                                     <div class="col-sm-6 col-xs-12">
                                         <div class="item">
-                                            <img src="assets/images/project/project5.jpg" alt="portfolio image"/>
+                                            <img alt="portfolio image" src="assets/images/project/project5.jpg"/>
                                             <div class="isotope-overlay">
                                                 <a href="yueju_museum_troupe_details.html">
                                                     <span class="lnr lnr-link"></span>
@@ -683,7 +685,7 @@
             </div><!--/.project-content-->
         </div><!--/.project-details-->
         <div class="project-btn text-center">
-            <a href="yueju_museum_troupe.html" class="project-view">了解更多
+            <a class="project-view" href="yueju_museum_troupe.html">了解更多
             </a>
         </div><!--/.project-btn-->
     </div><!--/.container-->
@@ -712,7 +714,7 @@
                                     <div class="team-box-inner">
                                         <h3>单仰萍</h3>
                                         <p class="team-meta">越剧一级演员</p>
-                                        <a href="yueju_museum_people_details.html" class="learn-btn">
+                                        <a class="learn-btn" href="yueju_museum_people_details.html">
                                             learn more
                                         </a>
                                     </div><!--/.team-box-inner-->
@@ -726,7 +728,7 @@
                                         <p class="team-meta">
                                             Director, Management & Research
                                         </p>
-                                        <a href="yueju_museum_people_details.html" class="learn-btn">
+                                        <a class="learn-btn" href="yueju_museum_people_details.html">
                                             learn more
                                         </a>
                                     </div><!--/.team-box-inner-->
@@ -739,7 +741,7 @@
                                         <p class="team-meta">
                                             Director, Finance Solution
                                         </p>
-                                        <a href="yueju_museum_people_details.html" class="learn-btn">
+                                        <a class="learn-btn" href="yueju_museum_people_details.html">
                                             learn more
                                         </a>
                                     </div><!--/.team-box-inner-->
@@ -752,7 +754,7 @@
                                         <p class="team-meta">
                                             Head, Legal Advising
                                         </p>
-                                        <a href="yueju_museum_people_details.html" class="learn-btn">
+                                        <a class="learn-btn" href="yueju_museum_people_details.html">
                                             learn more
                                         </a>
                                     </div><!--/.team-box-inner-->
@@ -765,7 +767,7 @@
         </div><!--/.team-details-->
     </div><!--/.container-->
     <div class="project-btn text-center">
-        <a href="yueju_museum.html" class="project-view">了解更多
+        <a class="project-view" href="yueju_museum.html">了解更多
         </a>
     </div><!--/.project-btn-->
 </section><!--/.team-->
@@ -934,115 +936,37 @@
             </div><!--/.section-header-->
             <br>
             <div class="mu-from-blog-content">
-                <div class="row">
-                    <div class="col-md-3">
-                        <article class="mu-blog-item">
-                            <a href="#"><img src="assets/images/blog/bl2.jpg" alt="blgo image"></a>
-                            <div class="mu-blog-item-content">
-                                <ul class="mu-blog-meta">
-                                    <li>来源: <span>ADMIN</span></li>
-                                    <!--                                    <li><a href="#"><i class="fa fa-comment-o"></i>26</a></li>-->
-                                    <!--                                    <li><i class="fa fa-heart-o"></i>250</li>-->
-                                    <li>发布时间：<span>2019-06-28</span></li>
-                                </ul>
-                                <h2 class="mu-blog-item-title"><a href="#">Seeing the big picture of information and
-                                    information management</a></h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis. </p>
-                                <a class="mu-blg-readmore-btn" href="blog_single.html">Read more <i
-                                        class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-3">
-                        <article class="mu-blog-item">
-                            <a href="#"><img src="assets/images/blog/bl2.jpg" alt="blgo image"></a>
-                            <div class="mu-blog-item-content">
-                                <ul class="mu-blog-meta">
-                                    <li>来源: <span>ADMIN</span></li>
-                                    <!--                                    <li><a href="#"><i class="fa fa-comment-o"></i>26</a></li>-->
-                                    <!--                                    <li><i class="fa fa-heart-o"></i>250</li>-->
-                                    <li>发布时间：<span>2019-06-28</span></li>
-                                </ul>
-                                <h2 class="mu-blog-item-title"><a href="#">Seeing the big picture of information and
-                                    information management</a></h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis. </p>
-                                <a class="mu-blg-readmore-btn" href="blog_single.html">Read more <i
-                                        class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-3">
-                        <article class="mu-blog-item">
-                            <a href="#"><img src="assets/images/blog/bl2.jpg" alt="blgo image"></a>
-                            <div class="mu-blog-item-content">
-                                <ul class="mu-blog-meta">
-                                    <li>来源: <span>ADMIN</span></li>
-                                    <!--                                    <li><a href="#"><i class="fa fa-comment-o"></i>26</a></li>-->
-                                    <!--                                    <li><i class="fa fa-heart-o"></i>250</li>-->
-                                    <li>发布时间：<span>2019-06-28</span></li>
-                                </ul>
-                                <h2 class="mu-blog-item-title"><a href="#">Seeing the big picture of information and
-                                    information management</a></h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis. </p>
-                                <a class="mu-blg-readmore-btn" href="blog_single.html">Read more <i
-                                        class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <div class="col-md-3">
-                        <article class="mu-blog-item">
-                            <a href="#"><img src="assets/images/blog/bl2.jpg" alt="blgo image"></a>
-                            <div class="mu-blog-item-content">
-                                <ul class="mu-blog-meta">
-                                    <li>来源: <span>ADMIN</span></li>
-                                    <!--                                    <li><a href="#"><i class="fa fa-comment-o"></i>26</a></li>-->
-                                    <!--                                    <li><i class="fa fa-heart-o"></i>250</li>-->
-                                    <li>发布时间：<span>2019-06-28</span></li>
-                                </ul>
-                                <h2 class="mu-blog-item-title"><a href="#">Seeing the big picture of information and
-                                    information management</a></h2>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
-                                    dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis. </p>
-                                <a class="mu-blg-readmore-btn" href="blog_single.html">Read more <i
-                                        class="fa fa-long-arrow-right"></i></a>
-                            </div>
-                        </article>
-                    </div>
-                    <!--								<div class="col-md-4 col-sm-6">-->
-                    <!--									<div class="single-news-box">-->
-                    <!--										<div class="news-box-bg">-->
-                    <!--											<img src="assets/images/blog/1561689624640097.jpg" alt="blog image" style="width: 359px;height: 378px;">-->
-                    <!--											<div class="isotope-overlay">-->
-                    <!--												<a href="blog_single.html">-->
-                    <!--													<span class="lnr lnr-link"></span>-->
-                    <!--													-->
-                    <!--												</a>-->
-                    <!--											</div>-->
+                <div class="row" id="least-news">
+                    <div v-for="newinfo in rows">
+                        <div class="col-md-3">
+                            <article class="mu-blog-item">
+                                <a href="#"><img alt="blgo image" v-bind:src="newinfo.picture"></a>
+                                <div class="mu-blog-item-content">
+                                    <ul class="mu-blog-meta">
+                                        <li>来源: <span>{{newinfo.author}}</span></li>
+                                        <!--                                    <li><a href="#"><i class="fa fa-comment-o"></i>26</a></li>-->
+                                        <!--                                    <li><i class="fa fa-heart-o"></i>250</li>-->
+                                        <li><span>{{newinfo.publishTime}}</span></li>
+                                    </ul>
+                                    <h2 class="mu-blog-item-title"><a href="#">{{newinfo.title}}</a></h2>
 
-                    <!--										</div><!&ndash;/.team-box-bg&ndash;>-->
-                    <!--										<div class="news-box-inner">-->
-                    <!--											<h3>-->
-                    <!--												<a href="blog_single.html">-->
-                    <!--													陈飞收青年演员孙琴菲为徒-->
-                    <!--												</a>-->
-                    <!--											</h3>-->
-                    <!--											<p class="news-meta">-->
-                    <!--												发布时间:  <span>2019-06-28</span>  //  来源： <span>绍兴小百花越剧团</span>-->
-                    <!--											</p>-->
-                    <!--											<!&ndash; <a href="#" class="learn-btn">-->
-                    <!--												learn more-->
-                    <!--											</a> &ndash;>-->
-                    <!--										</div><!&ndash;/.news-box-inner&ndash;>-->
-                    <!--									</div><!&ndash;/.single-news-box&ndash;>-->
-                    <!--								</div><!&ndash;.col&ndash;>-->
-
-
+                                    <p style="width: 212px;height: 100px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word" >
+<!--                                        <div v-for="newcontent in newinfo.content.split('|')">-->
+<!--                                            {{newcontent}}-->
+<!--                                        </div>-->
+                                        <span v-for="newcontent in newinfo.content.split('|')">
+                                            {{newcontent}}
+                                        </span>
+                                    </p>
+                                    <a class="mu-blg-readmore-btn"  v-bind:href="'news_single.html?id='+newinfo.id">Read more <i
+                                            class="fa fa-long-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
                 </div><!--/.row-->
                 <div class="project-btn text-center">
-                    <a href="yueju_infomation.html" class="project-view">了解更多
+                    <a class="project-view" href="yueju_infomation.html?pn=1">了解更多
                     </a>
                 </div><!--/.project-btn-->
             </div><!--/.news-card-->
@@ -1052,118 +976,6 @@
 
 </section><!--/news-->
 <!--news end-->
-
-<!--<div class="ui recent-works vertical segment">-->
-<!--    <div class="ui very relaxed stackable centered page grid">-->
-<!--        <div class="row">-->
-<!--            <div class="eight wide centered column">-->
-<!--                <h1 class="center aligned ui inverted header">-->
-<!--                    越剧欣赏-->
-<!--                </h1>-->
-<!--                <div class="ui horizontal divider"><i class="white flaticon-camera icon"></i></div>-->
-<!--                <p class="ui centered lead">Checkout Our Recently Completed Works<br>you will be amazed!.</p>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="fourteen wide column">-->
-<!--            <div class="ui three column aligned stackable divided grid">-->
-
-
-<!--                <div class="column">-->
-
-<!--                    <div class="ui card"-->
-<!--                         data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">-->
-<!--                        <div class="image">-->
-<!--                            <img src="assets/images/video/totoro-horizontal.jpg">-->
-<!--                        </div>-->
-<!--                        <div class="content">-->
-<!--                            <div class="header">My Neighbor Totoro</div>-->
-<!--                            <div class="description">-->
-<!--                                Two sisters move to the country with their father in order to be closer to their-->
-<!--                                hospitalized mother, and discover the surrounding trees are inhabited by magical-->
-<!--                                spirits.-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="ui two bottom attached buttons">-->
-<!--                            <div class="ui button">-->
-<!--                                <i class="flaticon-plus icon"></i>-->
-<!--                                Queue-->
-<!--                            </div>-->
-<!--                            <div class="ui pink button">-->
-<!--                                <i class="flaticon-play icon"></i>-->
-<!--                                Watch-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                </div>-->
-<!--                <div class="column">-->
-
-<!--                    <div class="ui card"-->
-<!--                         data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">-->
-<!--                        <div class="image">-->
-<!--                            <img src="assets/images/video/totoro-horizontal.jpg">-->
-<!--                        </div>-->
-<!--                        <div class="content">-->
-<!--                            <div class="header">My Neighbor Totoro</div>-->
-<!--                            <div class="description">-->
-<!--                                Two sisters move to the country with their father in order to be closer to their-->
-<!--                                hospitalized mother, and discover the surrounding trees are inhabited by magical-->
-<!--                                spirits.-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="ui two bottom attached buttons">-->
-<!--                            <div class="ui button">-->
-<!--                                <i class="flaticon-plus icon"></i>-->
-<!--                                Queue-->
-<!--                            </div>-->
-<!--                            <div class="ui pink button">-->
-<!--                                <i class="flaticon-play icon"></i>-->
-<!--                                Watch-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                </div>-->
-
-
-<!--                <div class="column">-->
-
-<!--                    <div class="ui card"-->
-<!--                         data-html="<div class='header'>User Rating</div><div class='content'><div class='ui star rating'><i class='active icon'></i><i class='active icon'></i><i class='active icon'></i><i class='icon'></i><i class='icon'></i></div></div>">-->
-<!--                        <div class="image">-->
-<!--                            <img src="assets/images/video/totoro-horizontal.jpg">-->
-<!--                        </div>-->
-<!--                        <div class="content">-->
-<!--                            <div class="header">My Neighbor Totoro</div>-->
-<!--                            <div class="description">-->
-<!--                                Two sisters move to the country with their father in order to be closer to their-->
-<!--                                hospitalized mother, and discover the surrounding trees are inhabited by magical-->
-<!--                                spirits.-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="ui two bottom attached buttons">-->
-<!--                            <div class="ui button">-->
-<!--                                <i class="flaticon-plus icon"></i>-->
-<!--                                Queue-->
-<!--                            </div>-->
-<!--                            <div class="ui pink button">-->
-<!--                                <i class="flaticon-play icon"></i>-->
-<!--                                Watch-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-<!--                </div>-->
-<!--                <div class="project-btn text-center">-->
-<!--                    <a href="yueju_infomation.html" class="project-view">了解更多-->
-<!--                    </a>-->
-<!--                </div><!&ndash;/.project-btn&ndash;>-->
-
-
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
 
 
 <!-- testemonial Start -->
@@ -1180,11 +992,11 @@
             <div class="home1-testm item">
                 <div class="home1-testm-single text-center">
                     <div class="home1-testm-img">
-                        <img src="assets/images/client/testimonial1.jpg" alt="img"/>
+                        <img alt="img" src="assets/images/client/testimonial1.jpg"/>
                     </div><!--/.home1-testm-img-->
                     <div class="home1-testm-txt">
 								<span class="icon section-icon">
-									<i class="fa fa-quote-left" aria-hidden="true"></i>
+									<i aria-hidden="true" class="fa fa-quote-left"></i>
 								</span>
                         <p>
                             Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -1202,11 +1014,11 @@
             <div class="home1-testm item">
                 <div class="home1-testm-single text-center">
                     <div class="home1-testm-img">
-                        <img src="assets/images/client/testimonial2.jpg" alt="img"/>
+                        <img alt="img" src="assets/images/client/testimonial2.jpg"/>
                     </div><!--/.home1-testm-img-->
                     <div class="home1-testm-txt">
 								<span class="icon section-icon">
-									<i class="fa fa-quote-left" aria-hidden="true"></i>
+									<i aria-hidden="true" class="fa fa-quote-left"></i>
 								</span>
                         <p>
                             Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -1224,11 +1036,11 @@
             <div class="home1-testm item">
                 <div class="home1-testm-single text-center">
                     <div class="home1-testm-img">
-                        <img src="assets/images/client/testimonial1.jpg" alt="img"/>
+                        <img alt="img" src="assets/images/client/testimonial1.jpg"/>
                     </div><!--/.home1-testm-img-->
                     <div class="home1-testm-txt">
 								<span class="icon section-icon">
-									<i class="fa fa-quote-left" aria-hidden="true"></i>
+									<i aria-hidden="true" class="fa fa-quote-left"></i>
 								</span>
                         <p>
                             Lorem ipsum dolor sit amet conse adipisicing elit, sed do eiusmod tempor incididunt ut
@@ -1250,135 +1062,6 @@
 <!--		 testemonial End -->
 
 
-<!--contact start-->
-<!--		<section  class="contact">-->
-<!--			<div class="container">-->
-<!--				<div class="contact-details">-->
-<!--					<div class="section-header contact-head  text-center">-->
-<!--						<h2>contact us</h2>-->
-<!--						<p>-->
-<!--							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
-<!--						</p>-->
-<!--					</div><!&ndash;/.section-header&ndash;>-->
-<!--					<div class="contact-content">-->
-<!--						<div class="row">-->
-<!--							<div class="col-sm-offset-1 col-sm-5">-->
-<!--								<div class="single-contact-box">-->
-<!--									<div class="contact-right">-->
-<!--										<div class="contact-adress">-->
-<!--											<div class="contact-office-address">-->
-<!--												<h3>contact info</h3>-->
-<!--												<p>-->
-<!--													125, Park street avenue, Brocklyn, Newyork.-->
-<!--												</p>-->
-<!--												<div class="contact-online-address">-->
-<!--													<div class="single-online-address">-->
-<!--														<i class="fa fa-phone"></i>-->
-<!--														+11253678958-->
-<!--													</div><!&ndash;/.single-online-address&ndash;>-->
-<!--													-->
-<!--													<div class="single-online-address">-->
-<!--														<i class="fa fa-envelope-o"></i>-->
-<!--														<span>info@mail.com</span>-->
-<!--													</div><!&ndash;/.single-online-address&ndash;>-->
-<!--												</div><!&ndash;/.contact-online-address&ndash;>-->
-<!--											</div><!&ndash;/.contact-office-address&ndash;>-->
-<!--											<div class="contact-office-address">-->
-<!--												<h3>social partner</h3>-->
-<!--												<div class="contact-icon">-->
-<!--													<ul>-->
-<!--														<li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><!&ndash;/li&ndash;>-->
-<!--														<li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li><!&ndash;/li&ndash;>-->
-<!--														<li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><!&ndash;/li&ndash;>-->
-<!--														<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><!&ndash;/li&ndash;>-->
-<!--													</ul><!&ndash;/ul&ndash;>-->
-<!--												</div><!&ndash;/.contact-icon&ndash;>-->
-<!--											</div><!&ndash;/.contact-office-address&ndash;>-->
-<!--											-->
-<!--										</div><!&ndash;/.contact-address&ndash;>-->
-<!--									</div><!&ndash;/.contact-right&ndash;>-->
-<!--								</div><!&ndash;/.single-contact-box&ndash;>-->
-<!--							</div><!&ndash;/.col&ndash;>-->
-<!--							<div class="col-sm-5">-->
-<!--								<div class="single-contact-box">-->
-<!--									<div class="contact-form">-->
-<!--										<h3>Leave us a Massage Here</h3>-->
-<!--										<form>-->
-<!--											<div class="row">-->
-<!--												<div class="col-sm-6 col-xs-12">-->
-<!--													<div class="form-group">-->
-<!--													  <input type="text" class="form-control" id="firstname" placeholder="First Name" name="firstname">-->
-<!--													</div><!&ndash;/.form-group&ndash;>-->
-<!--												</div><!&ndash;/.col&ndash;>-->
-<!--												<div class="col-sm-6 col-xs-12">-->
-<!--													<div class="form-group">-->
-<!--													  <input type="text" class="form-control" id="lastname" placeholder="Last Name" name="laststname">-->
-<!--													</div><!&ndash;/.form-group&ndash;>-->
-<!--												</div><!&ndash;/.col&ndash;>-->
-<!--											</div><!&ndash;/.row&ndash;>-->
-<!--											<div class="row">-->
-<!--												<div class="col-sm-6 col-xs-12">-->
-<!--													<div class="form-group">-->
-<!--														<input type="email" class="form-control" id="email" placeholder="Email" name="email">-->
-<!--													</div><!&ndash;/.form-group&ndash;>-->
-<!--												</div><!&ndash;/.col&ndash;>-->
-<!--												<div class="col-sm-6 col-xs-12">-->
-<!--													<div class="form-group">-->
-<!--														<input type="text" class="form-control" id="phone" placeholder="Phone" name="phone">-->
-<!--													</div><!&ndash;/.form-group&ndash;>-->
-<!--												</div><!&ndash;/.col&ndash;>-->
-<!--											</div><!&ndash;/.row&ndash;>-->
-<!--											<div class="row">-->
-<!--												<div class="col-sm-12">-->
-<!--													<div class="form-group">-->
-<!--														<textarea class="form-control" rows="7" id="comment" placeholder="Message" ></textarea>-->
-<!--													</div><!&ndash;/.form-group&ndash;>-->
-<!--												</div><!&ndash;/.col&ndash;>-->
-<!--											</div><!&ndash;/.row&ndash;>-->
-<!--											<div class="row">-->
-<!--												<div class="col-sm-12">-->
-<!--													<div class="single-contact-btn pull-right">-->
-<!--														<button class="contact-btn" type="button">send message</button>-->
-<!--													</div><!&ndash;/.single-single-contact-btn&ndash;>-->
-<!--												</div><!&ndash;/.col&ndash;>-->
-<!--											</div><!&ndash;/.row&ndash;>-->
-<!--										</form><!&ndash;/form&ndash;>-->
-<!--									</div><!&ndash;/.contact-form&ndash;>-->
-<!--								</div><!&ndash;/.single-contact-box&ndash;>-->
-<!--							</div><!&ndash;/.col&ndash;>-->
-<!--						</div><!&ndash;/.row&ndash;>-->
-<!--					</div><!&ndash;/.contact-content&ndash;>-->
-<!--				</div><!&ndash;/.contact-details&ndash;>-->
-<!--			</div><!&ndash;/.container&ndash;>-->
-
-<!--		</section><!&ndash;/.contact&ndash;>-->
-
-<!-- new-project start -->
-<!--		<section  id="new-project" class="new-project">-->
-<!--				<div class="container">-->
-<!--					<div class="new-project-details">-->
-<!--						<div class="row">-->
-<!--							<div class="col-md-10 col-sm-8">-->
-<!--								<div class="single-new-project">-->
-<!--									<h3>-->
-<!--										Want to start a new project with us? Let’s Start!-->
-<!--									</h3>-->
-<!--								</div><!&ndash; /.single-new-project&ndash;>	-->
-<!--							</div><!&ndash; /.col&ndash;>	-->
-<!--							<div class="col-md-2 col-sm-4">-->
-<!--								<div class="single-new-project">-->
-<!--									<a href="#" class="slide-btn">-->
-<!--										start now-->
-<!--									</a>-->
-<!--								</div><!&ndash; /.single-new-project&ndash;>	-->
-<!--							</div><!&ndash; /.col&ndash;>	-->
-<!--						</div><!&ndash; /.row&ndash;>	-->
-<!--					</div><!&ndash; /.new-project-details&ndash;>	-->
-<!--				</div><!&ndash; /.container&ndash;>	-->
-
-<!--		</section><!&ndash; /.new-project&ndash;>	-->
-<!-- new-project end -->
-
 <!--hm-footer start-->
 <section class="hm-footer">
     <div class="container">
@@ -1389,7 +1072,7 @@
                         <div class="hm-foot-title ">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="assets/images/logo/logo.png" alt="logo"/>
+                                    <img alt="logo" src="assets/images/logo/logo.png"/>
                                 </a>
                             </div><!-- /.logo-->
                         </div><!--/.hm-foot-title-->
@@ -1401,10 +1084,10 @@
                         </div><!--/.hm-foot-para-->
                         <div class="hm-foot-icon">
                             <ul>
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li><!--/li-->
-                                <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li><!--/li-->
-                                <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li><!--/li-->
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li><!--/li-->
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-facebook"></i></a></li><!--/li-->
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-google-plus"></i></a></li><!--/li-->
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-linkedin"></i></a></li><!--/li-->
+                                <li><a href="#"><i aria-hidden="true" class="fa fa-twitter"></i></a></li><!--/li-->
                             </ul><!--/ul-->
                         </div><!--/.hm-foot-icon-->
                     </div><!--/.hm-footer-widget-->
@@ -1432,7 +1115,7 @@
                             <h4>from the news</h4>
                         </div><!--/.hm-foot-title-->
                         <div class="hm-para-news">
-                            <a href="blog_single.html">
+                            <a href="news_single.html">
                                 The Pros and Cons of Starting an Online Business.
                             </a>
                             <span>12th June 2017</span>
@@ -1441,7 +1124,7 @@
                             <div class="border-bottom"></div>
                         </div>
                         <div class="hm-para-news">
-                            <a href="blog_single.html">
+                            <a href="news_single.html">
                                 The Pros and Cons of Starting an Online Business.
                             </a>
                             <span>12th June 2017</span>
@@ -1460,7 +1143,7 @@
                         </div><!--/.hm-foot-para-->
                         <div class="hm-foot-email">
                             <div class="foot-email-box">
-                                <input type="text" class="form-control" placeholder="Email Address">
+                                <input class="form-control" placeholder="Email Address" type="text">
                             </div><!--/.foot-email-box-->
                             <div class="foot-email-subscribe">
                                 <button type="button">go</button>
@@ -1486,15 +1169,17 @@
                 <div class="foot-menu pull-right
 						">
                     <ul>
-                        <li ><a href="#">legal</a></li>
-                        <li ><a href="#">sitemap</a></li>
-                        <li ><a href="#">privacy policy</a></li>
+                        <li><a href="#">legal</a></li>
+                        <li><a href="#">sitemap</a></li>
+                        <li><a href="#">privacy policy</a></li>
                     </ul>
                 </div><!-- /.foot-menu-->
             </div><!--/.col-->
         </div><!--/.row-->
         <div id="scroll-Top">
-            <i class="fa fa-angle-double-up return-to-top" id="scroll-top1" data-toggle="tooltip" data-placement="top" title="" data-original-title="Back to Top" aria-hidden="true"></i>
+            <i aria-hidden="true" class="fa fa-angle-double-up return-to-top" data-original-title="Back to Top"
+               data-placement="top"
+               data-toggle="tooltip" id="scroll-top1" title=""></i>
         </div><!--/.scroll-Top-->
     </div><!-- /.container-->
 
@@ -1502,20 +1187,24 @@
 <!-- footer-copyright end -->
 
 <!--<img id="music2" src="assets/images/login/log3.jpg" onClick="play()" class="stop"/>-->
-<audio id="music" src="assets/music/繁华唱遍.mp3" loop autoplay></audio>
+<audio autoplay id="music" loop src="assets/music/繁华唱遍.mp3"></audio>
 
 <!-- jaquery link -->
 
 <script src="assets/js/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 
+<!--vue-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="assets/js/index.js"></script>
+<!--endif-->
 
 
 <!--modernizr.min.js-->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
 
 <!--bootstrap.min.js-->
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
 
 <!-- bootsnav js -->
 <script src="assets/js/bootsnav.js"></script>
@@ -1528,75 +1217,25 @@
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
 
 
-<script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
+        type="text/javascript"></script>
 
 <!--owl.carousel.js-->
-<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
 
 <!-- counter js -->
 <script src="assets/js/jquery.counterup.min.js"></script>
 <script src="assets/js/waypoints.min.js"></script>
 
 <!--Custom JS-->
-<script type="text/javascript" src="assets/js/jak-menusearch.js">kkk</script>
-<script type="text/javascript" src="assets/js/custom.js"></script>
+<script src="assets/js/jak-menusearch.js" type="text/javascript">kkk</script>
+<script src="assets/js/custom.js" type="text/javascript"></script>
 
 <!--背景音乐-->
-<link rel="stylesheet" href="assets/css/back-music.css">
+<link href="assets/css/back-music.css" rel="stylesheet">
 <script src="assets/js/back-music.js"></script>
 <!--endif-->
-<!--<script>-->
-<!--    $("body").one('click',function () {-->
-<!--        var audio = document.getElementById('music');-->
-<!--        audio.play();-->
-<!--    });-->
-<!--    // $(function() {-->
-<!--    //     $("#sdsd").trigger("click");//触发button的click事件-->
-<!--    // });-->
-<!--    function play() {-->
-<!--        var audio = document.getElementById('music');-->
-<!--        if (audio.paused) {-->
-<!--            $("#musicicon").removeClass("stop");-->
-<!--            $("#musicicon").addClass("xuanzhuan");-->
-<!--            audio.play();-->
 
-<!--            //document.getElementById('musicImg').src="images/play.png";-->
-<!--        }else{-->
-<!--            $("#musicicon").removeClass("xuanzhuan");-->
-<!--            $("#musicicon").addClass("stop");-->
-
-<!--            audio.pause();-->
-<!--            audio.currentTime = 0;//音乐从头播放-->
-
-<!--            //document.getElementById('musicImg').src="images/stop.png";-->
-<!--        }-->
-<!--    }-->
-<!--</script>-->
-<!--<style>-->
-<!--    .xuanzhuan {-->
-<!--        animation: xz 2s linear infinite ;-->
-<!--    }-->
-<!--    .stop {-->
-<!--        animation: st 2s linear infinite ;-->
-<!--    }-->
-<!--    @keyframes xz {-->
-<!--        from {-->
-<!--            transform: rotate(0deg);-->
-<!--        }-->
-<!--        to {-->
-<!--            transform: rotate(360deg);-->
-<!--        }-->
-<!--    }-->
-<!--    @keyframes st {-->
-<!--        from {-->
-<!--            transform: rotate(0deg);-->
-<!--        }-->
-<!--        to {-->
-<!--            transform: rotate(0deg);-->
-<!--        }-->
-<!--    }-->
-<!--</style>-->
 </body>
 
 </html>

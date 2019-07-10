@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 
 <head>
     <!-- META DATA -->
@@ -148,8 +148,8 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">首页</a></li>
-                        <li><a href="yueju_infomation.html">资讯</a></li>
-                        <li><a href="yueju_museum.html">越剧博物馆</a></li>
+                        <li><a href="yueju_infomation.html?pn=1">资讯</a></li>
+                        <li><a href="yueju_museum.html?pn=1">越剧博物馆</a></li>
                         <li><a href="project.html"></a></li>
                         <li><a href="yueju_museum_ characters_details.html"></a></li>
                         <li><a href="blog.html"></a></li>
@@ -213,15 +213,17 @@
                     <div class="col-md-8">
                         <div class="blog-left">
 
-                            <div class="row">
-                                <div class="col-md-4 col-sm-6">
+                            <div class="row" id="museumcharacters">
+                                <div class="col-md-4 col-sm-6" v-for="char in rows.list">
                                     <div class="team-card">
                                         <div class="single-team-box team-box-bg-1"
-                                             style="background: url(assets/images/team/team5.jpg) no-repeat;">
+                                             :style="'background:url(assets/images/characters/'+char.picture+') no-repeat'">
                                             <div class="team-box-inner">
-                                                <h3>单仰萍</h3>
-                                                <p class="team-meta">越剧一级演员</p>
-                                                <a href="yueju_museum_ characters_details.html" class="learn-btn">
+                                                <h3>{{char.title}}</h3>
+                                                <p class="team-meta" style="width: 189px;height: 17px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word" class="team-meta">
+                                                    {{char.remark}}
+                                                </p>
+                                                <a  v-bind:href="'yueju_museum_ characters_details.html?id='+char.id" class="learn-btn">
                                                     learn more
                                                 </a>
                                             </div><!--/.team-box-inner-->
@@ -229,70 +231,47 @@
                                         </div><!--/.single-team-box-->
                                     </div>
                                 </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="team-card">
-                                        <div class="single-team-box team-box-bg-1">
-                                            <div class="team-box-inner">
-                                                <h3>单仰萍</h3>
-                                                <p class="team-meta">越剧一级演员</p>
-                                                <a href="yueju_museum_ characters_details.html" class="learn-btn">
-                                                    learn more
-                                                </a>
-                                            </div><!--/.team-box-inner-->
 
-                                        </div><!--/.single-team-box-->
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="team-card">
-                                        <div class="single-team-box team-box-bg-1">
-                                            <div class="team-box-inner">
-                                                <h3>单仰萍</h3>
-                                                <p class="team-meta">越剧一级演员</p>
-                                                <a href="yueju_museum_ characters_details.html" class="learn-btn">
-                                                    learn more
-                                                </a>
-                                            </div><!--/.team-box-inner-->
 
-                                        </div><!--/.single-team-box-->
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-6">
-                                    <div class="team-card">
-                                        <div class="single-team-box team-box-bg-1">
-                                            <div class="team-box-inner">
-                                                <h3>单仰萍</h3>
-                                                <p class="team-meta">越剧一级演员</p>
-                                                <a href="yueju_museum_ characters_details.html" class="learn-btn">
-                                                    learn more
-                                                </a>
-                                            </div><!--/.team-box-inner-->
 
-                                        </div><!--/.single-team-box-->
-                                    </div>
-                                </div>
 
                             </div>
 
                             <div class="pagination-part text-center">
-                                <ul class="pagination">
-                                    <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li>
-                                        <a href="#">
-                                            Next
-                                            <span class="fa fa-angle-right">
-
-													</span>
-                                        </a>
-                                    </li>
-                                    <!--                                    <li>-->
-                                    <!--                                        <a href="#" aria-label="Next">-->
-
-                                    <!--                                        </a>-->
-                                    <!--                                    </li>-->
-                                </ul>
+                                <div class="col-md-6" id="paging">
+                                    <div class="col-md-12" style="position:relative;left:-77px;top: 20px;">
+                                        当前第 <span v-text="rows2.pageNum"></span>  页.总共 <span v-text="rows2.pages"></span>  页.一共 <span v-text="rows2.total"></span>  条记录
+                                    </div>
+                                    <nav aria-label="Page navigation" style="position:relative;left:126px;">
+                                        <ul class="pagination">
+                                            <li ><a v-bind:href="'yueju_museum_characters.html?pn='+rows2.firstPage">首页</a></li>
+                                            <!--上一页-->
+                                            <li id="">
+                                                <!--<div >-->
+                                                <a v-if="rows2.hasPreviousPage" v-bind:href="'yueju_museum_characters.html?pn='+rows2.prePage"
+                                                   aria-label="Previous">
+                                                    <span aria-hidden="true">«</span>
+                                                </a>
+                                                <!--</div>-->
+                                            </li>
+                                            <li  v-for="page_num in rows2.navigatepageNums" v-bind:class="page_num==rows2.pageNum?'active':''" >
+                                                <a v-if="page_num==rows2.pageNum" v-text="page_num" v-bind:href="'yueju_museum_characters.html?pn='+page_num"></a>
+                                                <a v-if="page_num!=rows2.pageNum" v-text="page_num" v-bind:href="'yueju_museum_characters.html?pn='+page_num"></a>
+                                            </li>
+                                            <!--下一页-->
+                                            <li >
+                                                <a v-if="rows2.hasNextPage" v-bind:href="'yueju_museum_characters.html?pn='+rows2.nextPage"
+                                                   aria-label="Next">
+                                                    <span aria-hidden="true">»</span>
+                                                </a>
+                                            </li>
+                                            <li >
+                                                <!--                                                <a th:href="@{qry_sku_info(pn=${pageInfo.pages},class_id='0401',sortField=sale_number,sortMode=desc)}">尾页</a>-->
+                                                <a v-bind:href="'yueju_museum_characters.html?pn='+rows2.lastPage">尾页</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
                             </div><!--/.pagination-part(&raquo;)-->
 
                         </div><!--/.blog-left-->
@@ -497,6 +476,11 @@
 
 <script src="assets/js/jquery.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<!--vue-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="assets/js/museum-characters.js"></script>
+<!--endif-->
 
 <!--modernizr.min.js-->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
