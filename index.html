@@ -583,100 +583,65 @@
             <div class="project-content">
                 <div class="gallery-content">
                     <div class="isotope">
-                        <div class="row">
-                            <div class=" col-md-4 col-sm-12">
+                        <div class="row" id="troupe">
+                            <div class=" col-md-4 col-sm-12" v-for="(trou,index) in rows2" v-if="index==0">
                                 <div class="item big-height">
-                                    <img alt="portfolio image" src="assets/images/project/project1.jpg"/>
+                                    <img alt="portfolio image" v-bind:src="'assets/images/troupe/'+trou.picture" />
                                     <div class="isotope-overlay">
-                                        <a href="yueju_museum_troupe_details.html">
+                                        <a v-bind:href="'yueju_museum_troupe_details.html?id='+trou.id">
                                             <span class="lnr lnr-link"></span>
 
                                         </a>
                                         <h3>
-                                            <a href="yueju_museum_troupe_details.html">
-                                                aquisition plan
+                                            <a v-bind:href="'yueju_museum_troupe_details.html?id='+trou.id">
+                                                {{trou.title}}
                                             </a>
                                         </h3>
-                                        <p>busisness planning</p>
+<!--                                        <p>busisness planning</p>-->
                                     </div><!-- /.isotope-overlay -->
                                 </div><!-- /.item -->
                             </div><!-- /.col -->
                             <div class="col-md-8 col-sm-12">
                                 <div class="row">
-                                    <div class="col-sm-6 col-xs-12">
+                                    <div class="col-sm-6 col-xs-12" v-for="(trou,index) in rows2" v-if="index>0&&index<=2">
                                         <div class="item">
-                                            <img alt="portfolio image" src="assets/images/project/project2.jpg"/>
+                                            <img alt="portfolio image" v-bind:src="'assets/images/troupe/'+trou.picture" style="width: 334px;height: 334px;"/>
                                             <div class="isotope-overlay">
-                                                <a href="yueju_museum_troupe_details.html">
+                                                <a v-bind:href="'yueju_museum_troupe_details.html?id='+trou.id">
                                                     <span class="lnr lnr-link"></span>
 
                                                 </a>
                                                 <h3>
-                                                    <a href="yueju_museum_troupe_details.html">
-                                                        aquisition plan
+                                                    <a v-bind:href="'yueju_museum_troupe_details.html?id='+trou.id">
+                                                        {{trou.title}}
                                                     </a>
                                                 </h3>
-                                                <p>busisness planning</p>
-                                            </div><!-- /.isotope-overlay -->
-                                        </div><!-- /.item -->
-                                    </div><!-- /.col -->
-                                    <div class="col-sm-6 col-xs-12">
-                                        <div class="item">
-                                            <img alt="portfolio image" src="assets/images/project/project3.jpg"/>
-                                            <div class="isotope-overlay">
-                                                <a href="yueju_museum_troupe_details.html">
-                                                    <span class="lnr lnr-link"></span>
-
-                                                </a>
-                                                <h3>
-                                                    <a href="yueju_museum_troupe_details.html">
-                                                        aquisition plan
-                                                    </a>
-                                                </h3>
-                                                <p>busisness planning</p>
+<!--                                                <p>busisness planning</p>-->
                                             </div><!-- /.isotope-overlay -->
                                         </div><!-- /.item -->
                                     </div><!-- /.col -->
                                 </div><!-- /.row-->
                                 <div class="row">
-                                    <div class="col-sm-6 col-xs-12">
+                                    <div class="col-sm-6 col-xs-12" v-for="(trou,index) in rows2" v-if="index>2">
                                         <div class="item">
-                                            <img alt="portfolio image" src="assets/images/project/project4.jpg"/>
+                                            <img alt="portfolio image" v-bind:src="'assets/images/troupe/'+trou.picture" style="width: 334px;height: 334px;"/>
                                             <div class="isotope-overlay">
-                                                <a href="yueju_museum_troupe_details.html">
+                                                <a  v-bind:href="'yueju_museum_troupe_details.html?id='+trou.id">
                                                     <span class="lnr lnr-link"></span>
 
                                                 </a>
                                                 <h3>
-                                                    <a href="yueju_museum_troupe_details.html">
-                                                        aquisition plan
+                                                    <a  v-bind:href="'yueju_museum_troupe_details.html?id='+trou.id">
+                                                        {{trou.title}}
                                                     </a>
                                                 </h3>
-                                                <p>busisness planning
-                                                </p>
+<!--                                                <p>busisness planning-->
+<!--                                                </p>-->
                                             </div><!-- /.isotope-overlay -->
                                         </div><!-- /.item -->
                                     </div><!-- /.col -->
-                                    <div class="col-sm-6 col-xs-12">
-                                        <div class="item">
-                                            <img alt="portfolio image" src="assets/images/project/project5.jpg"/>
-                                            <div class="isotope-overlay">
-                                                <a href="yueju_museum_troupe_details.html">
-                                                    <span class="lnr lnr-link"></span>
 
-                                                </a>
-                                                <h3>
-                                                    <a href="yueju_museum_troupe_details.html">
-                                                        aquisition plan
-                                                    </a>
-                                                </h3>
-                                                <p>busisness planning
-                                                </p>
-                                            </div><!-- /.isotope-overlay -->
-                                        </div><!--/.item -->
-                                    </div><!-- /.col -->
                                 </div><!-- /.row-->
-
                             </div><!-- /.col -->
                         </div><!-- /.row -->
 
@@ -707,59 +672,24 @@
             <div class="team-card">
                 <div class="container">
                     <div class="row">
-                        <div class="owl-carousel  team-carousel">
-                            <div class="col-sm-3 col-xs-12">
+                        <div class="owl-carousel  team-carousel" id="people">
+
+                            <div class="col-md-3 " v-for="peo in rows3">
                                 <div class="single-team-box team-box-bg-1"
-                                     style="background: url(assets/images/team/team5.jpg) no-repeat;">
+                                :style="'background:url(assets/images/team/'+peo.picture+') no-repeat'">
                                     <div class="team-box-inner">
-                                        <h3>单仰萍</h3>
-                                        <p class="team-meta">越剧一级演员</p>
-                                        <a class="learn-btn" href="yueju_museum_people_details.html">
+                                        <h3>{{peo.title}}</h3>
+                                        <p class="team-meta" style="width: 189px;height: 17px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word">
+                                            {{peo.remark}}
+                                        </p>
+                                        <a class="learn-btn" v-bind:href="'yueju_museum_people_details.html?id='+peo.id" >
                                             learn more
                                         </a>
                                     </div><!--/.team-box-inner-->
 
                                 </div><!--/.single-team-box-->
                             </div><!--.col-->
-                            <div class="col-sm-3 col-xs-12">
-                                <div class="single-team-box team-box-bg-2">
-                                    <div class="team-box-inner">
-                                        <h3>alex browne</h3>
-                                        <p class="team-meta">
-                                            Director, Management & Research
-                                        </p>
-                                        <a class="learn-btn" href="yueju_museum_people_details.html">
-                                            learn more
-                                        </a>
-                                    </div><!--/.team-box-inner-->
-                                </div><!--/.single-team-box-->
-                            </div><!--.col-->
-                            <div class="col-sm-3 col-xs-12">
-                                <div class="single-team-box team-box-bg-3">
-                                    <div class="team-box-inner">
-                                        <h3>darren j. stevens</h3>
-                                        <p class="team-meta">
-                                            Director, Finance Solution
-                                        </p>
-                                        <a class="learn-btn" href="yueju_museum_people_details.html">
-                                            learn more
-                                        </a>
-                                    </div><!--/.team-box-inner-->
-                                </div><!--/.single-team-box-->
-                            </div><!--.col-->
-                            <div class="col-sm-3 col-xs-12">
-                                <div class="single-team-box team-box-bg-4">
-                                    <div class="team-box-inner">
-                                        <h3>kevin thomson</h3>
-                                        <p class="team-meta">
-                                            Head, Legal Advising
-                                        </p>
-                                        <a class="learn-btn" href="yueju_museum_people_details.html">
-                                            learn more
-                                        </a>
-                                    </div><!--/.team-box-inner-->
-                                </div><!--/.single-team-box-->
-                            </div><!--.col-->
+
                         </div><!--/.team-carousel-->
                     </div><!--/.row-->
                 </div><!--/.container-->
@@ -1236,6 +1166,48 @@
 <script src="assets/js/back-music.js"></script>
 <!--endif-->
 
+<script>
+    var troupeinfo=new Vue({
+        el: '#troupe',
+        data: {
+            rows2:{},
+        }
+    });
+    var peopleinfo=new Vue({
+        el: '#people',
+        data: {
+            rows3:{},
+        }
+    });
+    $.ajax({
+        type : "POST",
+        url : path+"/home/famous",
+        data : '',
+        contentType : "application/json",
+        dataType :"json" ,
+        success:function(msg) {
+            //alert(msg);
+            peopleinfo.rows3=msg;
+        },
+        error:function(err){
+            alert("request failed！");
+        }
+    });
+    $.ajax({
+        type : "POST",
+        url : path+"/home/troupe",
+        data : '',
+        contentType : "application/json",
+        dataType :"json" ,
+        success:function(msg) {
+            //alert(msg);
+            troupeinfo.rows2=msg;
+        },
+        error:function(err){
+            alert("request failed！");
+        }
+    });
+</script>
 </body>
 
 </html>

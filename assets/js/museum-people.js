@@ -11,25 +11,8 @@ var newspage=new Vue({
         rows2:{},
     }
 });
-// var muclassification=new Vue({
-//     el: '#classification',
-//     data: {
-//         rows3:{},
-//     }
-// });
-// $.ajax({
-//     type : "POST",
-//     url : path+"/museum/showclass",
-//     data : '',
-//     contentType : "application/json",
-//     dataType :"json" ,
-//     success:function(msg) {
-//         muclassification.rows3=msg;
-//     },
-//     error:function(err){
-//         alert("request failed！");
-//     }
-// });
+
+
 $(function () {
 
     (function ($) {
@@ -59,4 +42,5 @@ $(function () {
 
     //alert(currentpage);
 });
+
 

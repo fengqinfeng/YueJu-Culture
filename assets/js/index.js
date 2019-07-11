@@ -1,4 +1,5 @@
 var path="http://47.95.218.93:8080";
+
 $.ajax({
     type : "POST",
     url : path+"/home/news",

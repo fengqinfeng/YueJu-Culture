@@ -296,15 +296,12 @@
 
                             <div class="blogs-widget">
                                 <h2>分类</h2>
-                                <div class="blog-categories-list">
+                                <div class="blog-categories-list" id="classi">
                                     <ul>
-                                        <li><a href="yueju_museum.html">越剧名家</a></li>
-                                        <li><a href="yueju_museum_clothing.html">戏服展示</a></li>
-                                        <li><a href="yueju_museum_prop.html">道具百科</a></li>
-                                        <li><a href="yueju_museum_characters.html">经典人物</a></li>
-                                        <li><a href="yueju_museum_repertoire.html">经典剧目</a></li>
-                                        <li><a href="yueju_museum_troupe.html">越剧艺术团</a></li>
-                                        <li><a href="yueju_museum_photo.html">剧照</a></li>
+                                        <li v-for="classify in rows3">
+                                            <a v-bind:href="classify.url+'?pn=1'">{{classify.name}}</a>
+                                        </li>
+
                                     </ul>
                                 </div><!--/.blog-categories-list-->
                             </div><!--/.blog-widget-->
@@ -515,7 +512,27 @@
 <script type="text/javascript" src="assets/js/jak-menusearch.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
 
-
+<script>
+    var classi=new Vue({
+        el: '#classi',
+        data: {
+            rows3:{},
+        }
+    });
+    $.ajax({
+        type : "POST",
+        url : path+"/museum/showclass",
+        data : '',
+        contentType : "application/json",
+        dataType :"json" ,
+        success:function(msg) {
+            classi.rows3=msg;
+        },
+        error:function(err){
+            alert("request failed！");
+        }
+    });
+</script>
 </body>
 
 </html>
