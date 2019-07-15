@@ -294,8 +294,8 @@ about what's required to play video. */
     display: block;
     z-index: 2;
     position: absolute;
-    top: 169px;
-    left: 295px;
+    top: 1px;
+    left: 0px;
     padding: 0;
     cursor: pointer;
     opacity: 1;

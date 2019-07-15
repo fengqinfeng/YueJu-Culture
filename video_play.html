@@ -146,8 +146,8 @@
                 <p style="color:#999;font-size: 12px;">49.9万播放 · 4570弹幕 <span
                         class="glyphicon glyphicon-warning-sign"></span>未经作者授权，禁止转载</p>
             </div>
-            <!--                         视频播放-->
-            <video id="my_video_1" class="video-js vjs-default-skin" controls preload="auto" width="640"
+            <!--视频播放-->
+            <video id="my_video_1" class="video-js vjs-default-skin vjs-playback-rate vjs-big-play-centered" controls preload="auto" width="640"
                    height="382"
                    poster="http://vjs.zencdn.net/v/oceans.png" data-setup="{}">
                 <source src="http://vjs.zencdn.net/v/oceans.mp4" type="video/mp4">
@@ -331,7 +331,7 @@
             <div>
                 <p style="font-size: 16px;">相关推荐</p>
                 <div style="margin-top: 20px;width: 346px;height:96px;">
-                    <img src="assets/images/project/project1.jpg" alt="" width="168px" height="95px">
+                    <img src="assets/images/repertoire/reper1.png" alt="" width="168px" height="95px">
                     <p style="width: 177px;position: relative;left: 173px;top: -94px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                         【用小猪佩奇的方式打开明日方舟】德克萨斯&能天使
                     </p>
@@ -343,7 +343,7 @@
                     </p>
                 </div>
                 <div style="margin-top: 20px;width: 346px;height:96px;">
-                    <img src="assets/images/project/project1.jpg" alt="" width="168px" height="95px">
+                    <img src="assets/images/repertoire/reper1.png" alt="" width="168px" height="95px">
                     <p style="width: 177px;position: relative;left: 173px;top: -94px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                         【用小猪佩奇的方式打开明日方舟】德克萨斯&能天使
                     </p>
@@ -355,7 +355,7 @@
                     </p>
                 </div>
                 <div style="margin-top: 20px;width: 346px;height:96px;">
-                    <img src="assets/images/project/project1.jpg" alt="" width="168px" height="95px">
+                    <img src="assets/images/repertoire/reper1.png" alt="" width="168px" height="95px">
                     <p style="width: 177px;position: relative;left: 173px;top: -94px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                         【用小猪佩奇的方式打开明日方舟】德克萨斯&能天使
                     </p>
@@ -367,7 +367,7 @@
                     </p>
                 </div>
                 <div style="margin-top: 20px;width: 346px;height:96px;">
-                    <img src="assets/images/project/project1.jpg" alt="" width="168px" height="95px">
+                    <img src="assets/images/repertoire/reper1.png" alt="" width="168px" height="95px">
                     <p style="width: 177px;position: relative;left: 173px;top: -94px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                         【用小猪佩奇的方式打开明日方舟】德克萨斯&能天使
                     </p>
@@ -379,7 +379,7 @@
                     </p>
                 </div>
                 <div style="margin-top: 20px;width: 346px;height:96px;">
-                    <img src="assets/images/project/project1.jpg" alt="" width="168px" height="95px">
+                    <img src="assets/images/repertoire/reper1.png" alt="" width="168px" height="95px">
                     <p style="width: 177px;position: relative;left: 173px;top: -94px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                         【用小猪佩奇的方式打开明日方舟】德克萨斯&能天使
                     </p>
@@ -391,7 +391,7 @@
                     </p>
                 </div>
                 <div style="margin-top: 20px;width: 346px;height:96px;">
-                    <img src="assets/images/project/project1.jpg" alt="" width="168px" height="95px">
+                    <img src="assets/images/repertoire/reper1.png" alt="" width="168px" height="95px">
                     <p style="width: 177px;position: relative;left: 173px;top: -94px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                         【用小猪佩奇的方式打开明日方舟】德克萨斯&能天使
                     </p>
@@ -452,7 +452,12 @@
 <!--Custom JS-->
 <script src="assets/js/jak-menusearch.js" type="text/javascript">kkk</script>
 <script src="assets/js/custom.js" type="text/javascript"></script>
+<script>
+    videojs('my_video_1', {
+        playbackRates: [0.5, 1, 1.5, 2]
+    });
 
+</script>
 
 </body>
 
