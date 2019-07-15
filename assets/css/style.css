@@ -215,12 +215,8 @@ body {
 /* sticky */
 .sticky {
   background: rgba(255, 153, 102, 0.8);
-  padding: 10px 0px 0px;
   height: 80px;
   color: #fff;
-}
-.sticky .navbar-brand {
-  margin-top: 20px;
 }
 .sticky .navbar-default .navbar-nav li a,
 .sticky .navbar-default .navbar-nav li a:active,
@@ -229,14 +225,6 @@ body {
   color: #fff;
   margin: 0px 0px;
 }
-.sticky .navbar-default .navbar-toggle,
-.sticky .navbar-default .navbar-toggle:focus,
-.sticky .navbar-default .navbar-toggle:hover {
-  background-color: transparent;
-  border: 1px solid #000;
-  margin-top: 15px;
-}
-/* sticky */
 /* wrapper-sticky */
 /* navbar-default */
 .navbar-default {
