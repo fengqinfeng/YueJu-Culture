@@ -201,15 +201,14 @@
             <div class="news-card">
                 <div class="row">
 
-                    <div class="col-md-8">
+                    <div class="col-md-7 col-md-offset-1">
                         <div class="blog-left">
 
                             <div class="row" id="museumpeople">
-                                <div class="col-md-4 col-sm-6" v-for="people in rows.list">
+                                <div class="col-md-4" v-for="people in rows.list">
                                     <div class="team-card">
                                         <div class="single-team-box "
-
-                                        :style="'background:url(assets/images/team/'+people.picture+') no-repeat'">
+                                        :style="'background:url(assets/images/famous/'+people.picture+') no-repeat'">
                                             <div class="team-box-inner">
                                                 <h3>{{people.title}}</h3>
                                                 <p class="team-meta" style="width: 189px;height: 17px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word">
@@ -218,16 +217,16 @@
                                                 <a v-bind:href="'yueju_museum_people_details.html?id='+people.id" class="learn-btn">
                                                     learn more
                                                 </a>
-                                            </div><!--/.team-box-inner-->
+                                            </div><!--/.famous-box-inner-->
 
-                                        </div><!--/.single-team-box-->
+                                        </div><!--/.single-famous-box-->
                                     </div>
                                 </div>
 
                             </div>
 
                             <div class="pagination-part text-center">
-                                <div class="col-md-6" id="paging">
+                                <div class="col-md-8" id="paging">
                                     <div class="col-md-12" style="position:relative;left:-77px;top: 20px;">
                                         当前第 <span v-text="rows2.pageNum"></span>  页.总共 <span v-text="rows2.pages"></span>  页.一共 <span v-text="rows2.total"></span>  条记录
                                     </div>
@@ -267,7 +266,7 @@
 
                     </div><!--/.col-->
 
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="blog-right">
 
                             <div class="blogs-widget">

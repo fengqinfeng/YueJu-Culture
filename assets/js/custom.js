@@ -51,10 +51,10 @@ $(document).ready(function(){
 	
 	// 4. owl carousel
 
-		// i. .team-carousel 
+		// i. .famous-carousel
 	
 		
-		var owl=$('.team-carousel');
+		var owl=$('.famous-carousel');
 		owl.owlCarousel({
 			items:4,
 			margin:0,

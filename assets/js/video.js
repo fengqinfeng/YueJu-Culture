@@ -16,6 +16,11 @@ $('.video-section').hover(function () {
     //$(this).children().next().css("opacity", "1");
     $(this).children().next().animate({opacity:"1"});
 });
+$('.sidenavigation-item').hover(function () {
+    $(this).css("background","#00a1d6");
+}, function () {
+    $(this).css("background","#e5e9ef");
+});
 $(document).ready(function () {//在文档加载完毕后执行
     $(window).scroll(function () {//开始监听滚动条
         var topp = $(document).scrollTop();
@@ -31,9 +36,5 @@ $(document).ready(function () {//在文档加载完毕后执行
     })
 
 });
-$('.sidenavigation-item').hover(function () {
-    $(this).css("background","#00a1d6");
-}, function () {
-    $(this).css("background","#e5e9ef");
-});
+
 

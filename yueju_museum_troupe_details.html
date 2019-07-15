@@ -210,7 +210,7 @@
 
                             <div class="bl-article-post-img">
                                 <a href="blogsinglesideber.html">
-                                    <img src="assets/images/blog/bl7.jpg" alt="image" />
+                                    <img src="assets/images/blog/bl7.jpg" alt="image" width="750px"/>
                                 </a>
                             </div><!--/.bl-article-post-img-->
 
@@ -218,7 +218,7 @@
 
 
                                 <div class="bl-single-para">
-                                    <p style="text-indent: 2em" v-for="troupe in (rows.content).split('|')">
+                                    <p style="text-indent: 2em" v-for="troupe in (rows.content|| '').split('|')">
                                         {{troupe}}
                                     </p>
                                 </div><!--/.bl-single-para-->
@@ -514,17 +514,17 @@
                             <!--										</div>-->
                             <!--									</div>&lt;!&ndash;/.blog-widget&ndash;&gt;-->
 
-                            <div class="blogs-widget">
-                                <h2>popular tags</h2>
-                                <div class="blog-tags">
-                                    <button type="button" class="btn btn-default">busisness</button>
-                                    <button type="button" class="btn btn-default">consultency</button>
-                                    <button type="button" class="btn btn-default">market</button><br />
-                                    <button type="button" class="btn btn-default">sales</button>
-                                    <button type="button" class="btn btn-default">corporate</button>
-                                    <button type="button" class="btn btn-default">politics</button>
-                                </div><!--/.blog-tags-->
-                            </div><!--/.blog-widget-->
+<!--                            <div class="blogs-widget">-->
+<!--                                <h2>popular tags</h2>-->
+<!--                                <div class="blog-tags">-->
+<!--                                    <button type="button" class="btn btn-default">busisness</button>-->
+<!--                                    <button type="button" class="btn btn-default">consultency</button>-->
+<!--                                    <button type="button" class="btn btn-default">market</button><br />-->
+<!--                                    <button type="button" class="btn btn-default">sales</button>-->
+<!--                                    <button type="button" class="btn btn-default">corporate</button>-->
+<!--                                    <button type="button" class="btn btn-default">politics</button>-->
+<!--                                </div>&lt;!&ndash;/.blog-tags&ndash;&gt;-->
+<!--                            </div>&lt;!&ndash;/.blog-widget&ndash;&gt;-->
 
                         </div><!--/.blog-right-->
 

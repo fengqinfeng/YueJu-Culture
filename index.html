@@ -153,12 +153,12 @@
                         <li><a href="yueju_infomation.html?pn=1">资讯</a></li>
                         <li><a href="yueju_museum.html?pn=1">越剧博物馆</a></li>
 
-                        <li style="background: gray;border-radius: 60px;position: relative;top: 12px;" onClick="play()">
+<!--                        <li style="background: gray;border-radius: 60px;position: relative;top: 12px;" onClick="play()">-->
 
-                                <img alt="" class="img-circle xuanzhuan" id="musicicon"
-                                 src="assets/images/home/music3.png" style="width: 28px;height: 28px;">
+<!--                                <img alt="" class="img-circle xuanzhuan" id="musicicon"-->
+<!--                                 src="assets/images/home/music3.png" style="width: 28px;height: 28px;">-->
 
-                        </li>
+<!--                        </li>-->
                         <li>
                             <a href="#">
                                 <span class="lnr lnr-cart"></span>
@@ -661,7 +661,7 @@
 <!--project end-->
 
 
-<!--team start -->
+<!--famous start -->
 <section class="team" style="background: #f9faff;">
     <div class="container">
         <div class="team-details">
@@ -678,7 +678,7 @@
 
                             <div class="col-md-3 " v-for="peo in rows3">
                                 <div class="single-team-box team-box-bg-1"
-                                :style="'background:url(assets/images/team/'+peo.picture+') no-repeat'">
+                                     :style="'background:url(assets/images/famous/'+peo.picture+') no-repeat'">
                                     <div class="team-box-inner">
                                         <h3>{{peo.title}}</h3>
                                         <p class="team-meta" style="width: 189px;height: 17px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word">
@@ -687,23 +687,23 @@
                                         <a class="learn-btn" v-bind:href="'yueju_museum_people_details.html?id='+peo.id" >
                                             learn more
                                         </a>
-                                    </div><!--/.team-box-inner-->
+                                    </div><!--/.famous-box-inner-->
 
-                                </div><!--/.single-team-box-->
+                                </div><!--/.single-famous-box-->
                             </div><!--.col-->
 
-                        </div><!--/.team-carousel-->
+                        </div><!--/.famous-carousel-->
                     </div><!--/.row-->
                 </div><!--/.container-->
-            </div><!--/.team-card-->
-        </div><!--/.team-details-->
+            </div><!--/.famous-card-->
+        </div><!--/.famous-details-->
     </div><!--/.container-->
     <div class="project-btn text-center">
         <a class="project-view" href="yueju_museum.html">了解更多
         </a>
     </div><!--/.project-btn-->
-</section><!--/.team-->
-<!--team end-->
+</section><!--/.famous-->
+<!--famous end-->
 
 <!--pricing start -->
 <!--		<section id="pricing" class="pricing">-->
@@ -727,7 +727,7 @@
 <!--									<ul class="plan-lists">-->
 <!--										<li>01 user</li>-->
 <!--										<li>01 project</li>-->
-<!--										<li>01 advisor team</li>-->
+<!--										<li>01 advisor famous</li>-->
 <!--										<li>complete statistics</li>-->
 <!--										<li>E-Mail support</li>-->
 <!--									</ul><!&ndash;/ul&ndash;>-->
@@ -750,7 +750,7 @@
 <!--									<ul class="plan-lists">-->
 <!--										<li>05 user</li>-->
 <!--										<li>05 project</li>-->
-<!--										<li>05 advisor team</li>-->
+<!--										<li>05 advisor famous</li>-->
 <!--										<li>complete statistics</li>-->
 <!--										<li>full support</li>-->
 <!--									</ul><!&ndash;/ul&ndash;>-->
@@ -773,7 +773,7 @@
 <!--									<ul class="plan-lists">-->
 <!--										<li>10 user</li>-->
 <!--										<li>10 project</li>-->
-<!--										<li>10 advisor team</li>-->
+<!--										<li>10 advisor famous</li>-->
 <!--										<li>complete statistics</li>-->
 <!--										<li>full support</li>-->
 <!--									</ul><!&ndash;/ul&ndash;>-->
@@ -796,7 +796,7 @@
 <!--									<ul class="plan-lists">-->
 <!--										<li>unlimited user</li>-->
 <!--										<li>unlimited project</li>-->
-<!--										<li>unlimited advisor team</li>-->
+<!--										<li>unlimited advisor famous</li>-->
 <!--										<li>complete statistics</li>-->
 <!--										<li>full support</li>-->
 <!--									</ul><!&ndash;/ul&ndash;>-->
@@ -872,7 +872,7 @@
                     <div v-for="newinfo in rows">
                         <div class="col-md-3">
                             <article class="mu-blog-item">
-                                <a href="#"><img alt="blgo image" v-bind:src="newinfo.picture"></a>
+                                <a href="#"><img alt="blgo image" v-bind:src="'assets/images/news/'+newinfo.picture"></a>
                                 <div class="mu-blog-item-content">
                                     <ul class="mu-blog-meta">
                                         <li>来源: <span>{{newinfo.author}}</span></li>
@@ -1119,7 +1119,7 @@
 <!-- footer-copyright end -->
 
 <!--<img id="music2" src="assets/images/login/log3.jpg" onClick="play()" class="stop"/>-->
-<audio autoplay id="music" loop src="assets/music/繁华唱遍.mp3"></audio>
+<!--<audio autoplay id="music" loop src="assets/music/繁华唱遍.mp3"></audio>-->
 
 <!-- jaquery link -->
 
@@ -1144,10 +1144,8 @@
 <!-- for manu -->
 <script src="assets/js/jquery.hc-sticky.min.js" type="text/javascript"></script>
 
-
 <!-- vedio player js -->
 <script src="assets/js/jquery.magnific-popup.min.js"></script>
-
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"
         type="text/javascript"></script>
@@ -1164,8 +1162,8 @@
 <script src="assets/js/custom.js" type="text/javascript"></script>
 
 <!--背景音乐-->
-<link href="assets/css/back-music.css" rel="stylesheet">
-<script src="assets/js/back-music.js"></script>
+<!--<link href="assets/css/back-music.css" rel="stylesheet">-->
+<!--<script src="assets/js/back-music.js"></script>-->
 <!--endif-->
 
 <script>
@@ -1211,7 +1209,6 @@
     });
 </script>
 </body>
-
 </html>
 
 
