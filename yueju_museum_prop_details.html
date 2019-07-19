@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" lang="en" xmlns:v-bind="http://www.w3.org/1999/xhtml">
 
 <head>
     <!-- META DATA -->
@@ -75,54 +75,6 @@
 <![endif]-->
 
 
-<!--header start-->
-<section class="header">
-    <div class="container">
-        <div class="header-left">
-            <ul class="pull-left">
-                <!--						<li>-->
-                <!--							<a href="#">-->
-                <!--								<i class="fa fa-phone" aria-hidden="true"></i> +992 563 542-->
-                <!--							</a>-->
-                <!--						</li>&lt;!&ndash;/li&ndash;&gt;-->
-                <!--						<li>-->
-                <!--							<a href="#">-->
-                <!--								<i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com-->
-                <!--							</a>-->
-                <!--						</li>&lt;!&ndash;/li&ndash;&gt;-->
-            </ul><!--/ul-->
-        </div><!--/.header-left -->
-        <div class="header-right pull-right">
-            <ul>
-                <li class="reg">
-                    <a href="#" >
-                        Register
-                    </a>
-                    /
-                    <a href="login.html" >
-                        Log in
-                    </a>
-
-
-
-
-                </li><!--/li -->
-                <li>
-                    <div class="social-icon">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        </ul><!--/.ul -->
-                    </div><!--/.social-icon -->
-                </li><!--/li -->
-            </ul><!--/ul -->
-        </div><!--/.header-right -->
-    </div><!--/.container -->
-
-</section><!--/.header-->
-<!--header end-->
 
 <!--menu start-->
 <section id="menu">
@@ -179,7 +131,7 @@
 <section class="about-part">
     <div class="container">
         <div class="about-part-details text-center">
-            <h2>prop</h2>
+            <h2>道具百科</h2>
             <div class="about-part-content">
                 <div class="breadcrumbs">
                     <div class="container">
@@ -197,387 +149,103 @@
 <!--about-part end-->
 
 <!--nwes start -->
-<section  class="news">
+<section  class="news" style="margin-top: -129px;">
     <div class="container">
-        <div class="news-details" id="propinfo">
+        <div class="news-details" id="clothdetail">
             <div class="section-header text-center">
-                <h2>{{rows.title}}</h2>
-                <!--						<p>-->
-                <!--							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
-                <!--						</p>-->
             </div><!--/.section-header-->
             <div class="news-card">
                 <div class="row">
-
-                    <div class="col-md-8">
-                        <div class="blog-left">
-
-                            <div class="bl-article-post-img">
-                                <a href="blogsinglesideber.html">
-                                    <img src="assets/images/blog/bl7.jpg" alt="image" />
-                                </a>
-                            </div><!--/.bl-article-post-img-->
-
-                            <div class="bl-article-single-txt">
-
+                    <div class="col-md-9 col-md-offset-1">
+                        <div class="blog-left" id="newsingle" style="width:787px;margin-left: 57px;">
+                            <div class="bl-article-single-txt" >
+                                <div class="bl-single-head">
+                                    <h3 style="text-align: center;">
+                                        <a >
+                                            刘志霞
+                                        </a>
+                                    </h3>
+                                    <p>
+                                        来源 :  <span>中国越剧戏迷网</span>  时间： <span>2019年07月10日</span>责任编辑：<span>何东铭
+												作者：<span>xxx</span>最后更新：<span>2019年07月10日</span>
+</span>
+                                    </p>
+                                </div><!--/.bl-single-head-->
 
                                 <div class="bl-single-para">
-                                    <p style="text-indent: 2em"v-if="rows" v-for="propinfo in (rows.content || '').split('|')">
-                                        {{propinfo}}
+                                    <p style="text-indent: 2em;width: 787px;">
+                                        雅歌春韵，芬芳四季。80年来，已故越剧名家毕春芳所创的毕派艺术为越剧贡献了独树一帜的喜剧表演风格和美学价值。为纪念这样一位德艺双馨的艺术家，今天起，纪念毕春芳先生舞台艺术80周年“
+                                        深入基层、扎根人民”系列活动在静安区文化馆拉开帷幕，而这里也正是当年戚雅仙、毕春芳携手重建静安越剧团的起点。
                                     </p>
-<!--                                    <div class="blog-xtra-body">-->
-<!--                                        <div class="row">-->
-
-<!--                                            <div class="col-md-6 col-sm-12 hidden-xs">-->
-
-<!--                                                &lt;!&ndash;                                                <div class="blog-xtra-img">&ndash;&gt;-->
-<!--                                                &lt;!&ndash;                                                    <div class="news-box-bg blog-body-img">&ndash;&gt;-->
-<!--                                                &lt;!&ndash;                                                        <img src="assets/images/blog/bl8.jpg" alt="blog image">&ndash;&gt;-->
-<!--                                                &lt;!&ndash;                                                    </div>&lt;!&ndash;/.news-box-bg&ndash;&gt;&ndash;&gt;-->
-<!--                                                &lt;!&ndash;                                                    <div class="blog-single-musiq">&ndash;&gt;-->
-<!--                                                &lt;!&ndash;                                                        <a href="https://www.youtube.com/watch?v=lQXzmGg291E" class="vedio-play-icon mfp-iframe">&ndash;&gt;-->
-<!--                                                &lt;!&ndash;                                                            <img src="assets/images/blog/play-icon.png" alt="play-icon">&ndash;&gt;-->
-<!--                                                &lt;!&ndash;                                                        </a>&ndash;&gt;-->
-<!--                                                &lt;!&ndash;                                                    </div>&lt;!&ndash;/.blog-single-musiq&ndash;&gt;&ndash;&gt;-->
-<!--                                                &lt;!&ndash;                                                </div>&lt;!&ndash;/.blog-xtra-img&ndash;&gt;&ndash;&gt;-->
-<!--                                                <img src="assets/images/clothing/clo1.png" alt="">-->
-<!--                                            </div>&lt;!&ndash; /.end of col-md-6 &ndash;&gt;-->
-
-<!--                                            <div class="col-md-6 col-sm-12">-->
-
-<!--                                                <p class="xtra-para">-->
-<!--                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non.Duis aute irure dolor in reprehenderit in volu essa-->
-<!--                                                </p>-->
-<!--                                            </div>&lt;!&ndash;/.col&ndash;&gt;-->
-<!--                                        </div>&lt;!&ndash; /.row&ndash;&gt;-->
-<!--                                    </div>&lt;!&ndash;/.blog-xtra-body&ndash;&gt;-->
-
-
-<!--                                    <p>-->
-<!--                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.-->
-
-<!--                                    </p>-->
-
-
-<!--                                    <p>-->
-<!--                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.-->
-
-<!--                                    </p>-->
                                 </div><!--/.bl-single-para-->
-
-                                <div class="bl-single-contact-box">
-
-                                    <ul>
-
-                                        <li>
-                                            <div class="bl-list-icon">
-                                                <ul>
-
-                                                    <li>
-                                                        <a href="#">
-                                                            share :
-                                                        </a>
-                                                    </li><!-- / li -->
-                                                    <li>
-                                                        <a href="#">
-                                                            <img src="assets/images/blog/facebook.png" alt="facebook">
-                                                        </a>
-                                                    </li><!-- / li -->
-                                                    <li>
-                                                        <a href="#">
-                                                            <img src="assets/images/blog/g.png" alt="google-plus">
-                                                        </a>
-
-                                                    </li><!-- / li -->
-                                                    <li>
-                                                        <a href="#">
-                                                            <img src="assets/images/blog/linkedin.png" alt="linkedin">
-                                                        </a>
-
-                                                    </li><!-- / li -->
-                                                    <li>
-                                                        <a href="#">
-                                                            <img src="assets/images/blog/tw.png" alt="twitter">
-                                                        </a>
-                                                    </li><!-- / li -->
-                                                </ul><!-- / ul -->
-                                            </div><!-- /.bl-list-icon -->
-                                        </li>
-                                    </ul><!--/ul-->
-                                </div><!--/.bl-single-contact-box-->
-
-                                <!--                                <div  class="comments-area">-->
-                                <!--                                    <h3>3 comments</h3>-->
-                                <!--                                    <ol class="comment-list">-->
-                                <!--                                        <li  class="comment">-->
-
-                                <!--                                            <div  class="comment-body xtra-comment-body">-->
-                                <!--                                                <div class="comment-meta">-->
-                                <!--                                                    <div class="comment-author">-->
-                                <!--                                                        <img src="assets/images/blog/cmn1.jpg" alt="image"/>-->
-                                <!--                                                    </div>&lt;!&ndash; .comment-author &ndash;&gt;-->
-                                <!--                                                </div>&lt;!&ndash; .comment-meta &ndash;&gt;-->
-
-                                <!--                                                <div class="comment-content">-->
-                                <!--                                                    <b class="fn">-->
-                                <!--                                                        <a href="#">-->
-                                <!--                                                            jone doe-->
-                                <!--                                                            <span>17th June 2017</span>-->
-                                <!--                                                        </a>-->
-                                <!--                                                    </b>-->
-
-                                <!--                                                    <div class="reply">-->
-                                <!--                                                        <a href="#">Reply</a>-->
-                                <!--                                                    </div>-->
-                                <!--                                                    <p>-->
-                                <!--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempo in the khabo koi jab cidid unt ut labore et dolore magna aliqua.-->
-                                <!--                                                    </p>-->
-                                <!--                                                </div>&lt;!&ndash; .comment-content &ndash;&gt;-->
-                                <!--                                            </div>&lt;!&ndash; .comment-body &ndash;&gt;-->
-
-                                <!--                                            <ol class="children">-->
-                                <!--                                                <li class="comment">-->
-                                <!--                                                    <div class="comment-body xtra-comment-body">-->
-                                <!--                                                        <div class="comment-meta">-->
-                                <!--                                                            <div class="comment-author">-->
-                                <!--                                                                <img src="assets/images/blog/cmn2.jpg" alt="image"/>-->
-                                <!--                                                            </div>&lt;!&ndash; .comment-author &ndash;&gt;-->
-                                <!--                                                        </div>&lt;!&ndash; .comment-meta &ndash;&gt;-->
-
-                                <!--                                                        <div class="comment-content">-->
-                                <!--                                                            <b class="fn">-->
-                                <!--                                                                <a href="#">-->
-                                <!--                                                                    jone doe-->
-                                <!--                                                                    <span>17th June 2017</span>-->
-                                <!--                                                                </a>-->
-                                <!--                                                            </b>-->
-
-                                <!--                                                            <div class="reply">-->
-                                <!--                                                                <a href="#">Reply</a>-->
-                                <!--                                                            </div>-->
-                                <!--                                                            <p>-->
-                                <!--                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempo in the khabo koi jab cidid unt ut labore et dolore magna aliqua.-->
-                                <!--                                                            </p>-->
-                                <!--                                                        </div>&lt;!&ndash; .comment-content &ndash;&gt;-->
-                                <!--                                                    </div>&lt;!&ndash; .comment-body &ndash;&gt;-->
-                                <!--                                                </li>&lt;!&ndash; #comment-## &ndash;&gt;-->
-                                <!--                                            </ol>&lt;!&ndash; .children &ndash;&gt;-->
-
-                                <!--                                            <div  class="comment-body">-->
-                                <!--                                                <div class="comment-meta">-->
-                                <!--                                                    <div class="comment-author">-->
-                                <!--                                                        <img src="assets/images/blog/cmn3.jpg" alt="image"/>-->
-                                <!--                                                    </div>&lt;!&ndash; .comment-author &ndash;&gt;-->
-                                <!--                                                </div>&lt;!&ndash; .comment-meta &ndash;&gt;-->
-
-                                <!--                                                <div class="comment-content">-->
-                                <!--                                                    <b class="fn">-->
-                                <!--                                                        <a href="#">-->
-                                <!--                                                            jone doe-->
-                                <!--                                                            <span>17th June 2017</span>-->
-                                <!--                                                        </a>-->
-                                <!--                                                    </b>-->
-
-                                <!--                                                    <div class="reply">-->
-                                <!--                                                        <a href="#">Reply</a>-->
-                                <!--                                                    </div>-->
-                                <!--                                                    <p>-->
-                                <!--                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempo in the khabo koi jab cidid unt ut labore et dolore magna aliqua.-->
-                                <!--                                                    </p>-->
-                                <!--                                                </div>&lt;!&ndash; .comment-content &ndash;&gt;-->
-                                <!--                                            </div>&lt;!&ndash; .comment-body &ndash;&gt;-->
-                                <!--                                        </li>&lt;!&ndash;/.comment&ndash;&gt;-->
-                                <!--                                    </ol>&lt;!&ndash;/.comment-list&ndash;&gt;-->
-
-                                <!--                                </div>&lt;!&ndash;/.comments-area&ndash;&gt;-->
-
-                                <!--                                <div class="contact-form blog-single-form">-->
-                                <!--                                    <h3>Leave us a comment Here</h3>-->
-                                <!--                                    <form>-->
-                                <!--                                        <div class="row">-->
-                                <!--                                            <div class="col-sm-6 col-xs-12">-->
-                                <!--                                                <div class="form-group">-->
-                                <!--                                                    <input type="text" class="form-control" id="firstname" placeholder="Name" name="firstname">-->
-                                <!--                                                </div>&lt;!&ndash;/.form-group&ndash;&gt;-->
-                                <!--                                            </div>&lt;!&ndash;/.col&ndash;&gt;-->
-                                <!--                                            <div class="col-sm-6 col-xs-12">-->
-                                <!--                                                <div class="form-group">-->
-                                <!--                                                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">-->
-                                <!--                                                </div>&lt;!&ndash;/.form-group&ndash;&gt;-->
-                                <!--                                            </div>&lt;!&ndash;/.col&ndash;&gt;-->
-                                <!--                                        </div>&lt;!&ndash;/.row&ndash;&gt;-->
-                                <!--                                        <div class="row">-->
-                                <!--                                            <div class="col-sm-12">-->
-                                <!--                                                <div class="form-group">-->
-                                <!--                                                    <textarea class="form-control" rows="7" id="comment" placeholder="Message" ></textarea>-->
-                                <!--                                                </div>&lt;!&ndash;/.form-group&ndash;&gt;-->
-                                <!--                                            </div>&lt;!&ndash;/.col&ndash;&gt;-->
-                                <!--                                        </div>&lt;!&ndash;/.row&ndash;&gt;-->
-                                <!--                                        <div class="row">-->
-                                <!--                                            <div class="col-sm-12">-->
-                                <!--                                                <div class="single-contact-btn">-->
-                                <!--                                                    <button class="contact-btn" href="#" role="button">send message</button>-->
-                                <!--                                                </div>&lt;!&ndash;/.single-single-contact-btn&ndash;&gt;-->
-                                <!--                                            </div>&lt;!&ndash;/.col&ndash;&gt;-->
-                                <!--                                        </div>&lt;!&ndash;/.row&ndash;&gt;-->
-                                <!--                                    </form>&lt;!&ndash;/form&ndash;&gt;-->
-
-                                <!--                                </div>&lt;!&ndash;/.contact-form&ndash;&gt;-->
-
+                                <hr>
                             </div><!--/.bl-article-single-txt-->
                         </div><!--/.blog-left-->
+                        <!--                        <div class="blog-left">-->
+                        <!--                            <div class="bl-article-single-txt">-->
+                        <!--                                <div class="bl-single-para">-->
+                        <!--                                    <p style="text-indent: 2em" v-if="rows"-->
+                        <!--                                       v-for="people in (rows.content || '').split('|')">-->
+                        <!--                                        {{people}}-->
+                        <!--                                    </p>-->
+                        <!--                                </div>&lt;!&ndash;/.bl-single-para&ndash;&gt;-->
 
+                        <!--&lt;!&ndash;                                <div class="bl-single-contact-box">&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                    <ul>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                        <li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                            <div class="bl-list-icon">&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                <ul>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                    <li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                        <a href="#">&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                            share :&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                        </a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                    </li>&lt;!&ndash; / li &ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                    <li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                        <a href="#">&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                            <img src="assets/images/blog/facebook.png" alt="facebook">&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                        </a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                    </li>&lt;!&ndash; / li &ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                    <li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                        <a href="#">&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                            <img src="assets/images/blog/g.png" alt="google-plus">&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                        </a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                    </li>&lt;!&ndash; / li &ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                    <li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                        <a href="#">&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                            <img src="assets/images/blog/linkedin.png" alt="linkedin">&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                        </a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                    </li>&lt;!&ndash; / li &ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                    <li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                        <a href="#">&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                            <img src="assets/images/blog/tw.png" alt="twitter">&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                        </a>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                    </li>&lt;!&ndash; / li &ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                                </ul>&lt;!&ndash; / ul &ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                            </div>&lt;!&ndash; /.bl-list-icon &ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                        </li>&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                    </ul>&lt;!&ndash;/ul&ndash;&gt;&ndash;&gt;-->
+                        <!--&lt;!&ndash;                                </div>&lt;!&ndash;/.bl-single-contact-box&ndash;&gt;&ndash;&gt;-->
+                        <!--                                <hr>-->
+                        <!--                            </div>&lt;!&ndash;/.bl-article-single-txt&ndash;&gt;-->
+                        <!--                        </div>&lt;!&ndash;/.blog-left&ndash;&gt;-->
                     </div><!--/.col-->
-
-                    <div class="col-md-4">
-                        <div class="blog-right">
-
-                            <!--									<div class="blogs-widget">-->
-                            <!--										<form>-->
-                            <!--											<input type="text" class="form-control" placeholder="Search">-->
-                            <!--										</form>&lt;!&ndash;/.form&ndash;&gt;-->
-                            <!--										<div class="blog-search-icon">-->
-                            <!--											<a href="#">-->
-                            <!--												<span class="lnr lnr-magnifier">-->
-                            <!--													-->
-                            <!--												</span>-->
-                            <!--											</a>-->
-                            <!--										</div>&lt;!&ndash;/.blog-search-icon&ndash;&gt;-->
-                            <!--									</div>&lt;!&ndash;/.blog-widget&ndash;&gt;-->
-
-                            <!--									<div class="blogs-widget">-->
-                            <!--										<h2>categories</h2>-->
-                            <!--										<div class="blog-categories-list">-->
-                            <!--											<ul>-->
-                            <!--												<li><a href="#">all</a></li>-->
-                            <!--												<li><a href="#">busisness</a></li>-->
-                            <!--												<li><a href="#">consultency</a></li>-->
-                            <!--												<li><a href="#">corporate</a></li>-->
-                            <!--												<li><a href="#">politics</a></li>-->
-                            <!--												<li><a href="#">marketing</a></li>-->
-                            <!--												<li><a href="#">lifestyle</a></li>-->
-                            <!--											</ul>-->
-                            <!--										</div>&lt;!&ndash;/.blog-categories-list&ndash;&gt;-->
-                            <!--									</div>&lt;!&ndash;/.blog-widget&ndash;&gt;-->
-
-                            <div class="blogs-widget">
-                                <h2>相关作品/商品</h2>
-                                <div class="blog-related-news">
-                                    <div class="bl-txt">
-                                        <div class="bl-img">
-                                            <a href="#">
-                                                <img src="assets/images/blog/rp1.jpg" alt="image" />
-                                            </a>
-                                        </div><!--/.bl-img-->
-                                        <p>
-                                            <a href="#">
-                                                CFOs focused on retaining key talent
-                                            </a>
-
-                                        </p>
-                                    </div><!--/.bl-txt-->
-                                    <div class="bl-txt">
-                                        <div class="bl-img">
-                                            <a href="#">
-                                                <img src="assets/images/blog/rp2.jpg" alt="image" />
-                                            </a>
-                                        </div><!--/.bl-img-->
-                                        <p>
-                                            <a href="#">
-                                                Accenture acquires for the undisclosed sum
-                                            </a>
-
-                                        </p>
-                                    </div><!--/.bl-txt-->
-                                    <div class="bl-txt">
-                                        <div class="bl-img">
-                                            <a href="#">
-                                                <img src="assets/images/blog/rp3.jpg" alt="image" />
-                                            </a>
-                                        </div><!--/.bl-img-->
-                                        <p>
-                                            <a href="#">
-                                                Startup investments drop on venturing rises
-                                            </a>
-
-                                        </p>
-                                    </div><!--/.bl-txt-->
-                                </div><!--/.blog-related-news-->
-                            </div><!--/.blog-widget-->
-
-                            <!--									<div class="blogs-widget">-->
-                            <!--										<h2>Archives</h2>-->
-                            <!--										<div class="blog-categories-list">-->
-                            <!--											<ul>-->
-                            <!--												<li>-->
-                            <!--													<a href="#">-->
-                            <!--														<i class="fa fa-angle-right" aria-hidden="true">-->
-                            <!--															-->
-                            <!--														</i>-->
-                            <!--														November 2017-->
-                            <!--													</a>-->
-                            <!--												</li>-->
-                            <!--												<li>-->
-                            <!--													<a href="#">-->
-                            <!--														<i class="fa fa-angle-right" aria-hidden="true">-->
-                            <!--															-->
-                            <!--														</i>-->
-                            <!--														October 2017-->
-                            <!--													</a>-->
-                            <!--												</li>-->
-                            <!--												<li>-->
-                            <!--													<a href="#">-->
-                            <!--														<i class="fa fa-angle-right" aria-hidden="true">-->
-                            <!--															-->
-                            <!--														</i>-->
-                            <!--														September 2017-->
-                            <!--													</a>-->
-                            <!--												</li>-->
-                            <!--												<li>-->
-                            <!--													<a href="#">-->
-                            <!--														<i class="fa fa-angle-right" aria-hidden="true">-->
-                            <!--													-->
-                            <!--														</i>-->
-                            <!--														August 2017-->
-                            <!--													</a>-->
-                            <!--												</li>-->
-                            <!--												<li>-->
-                            <!--													<a href="#">-->
-                            <!--														<i class="fa fa-angle-right" aria-hidden="true">-->
-                            <!--													-->
-                            <!--														</i>-->
-                            <!--														July 2017-->
-                            <!--													</a>-->
-                            <!--												</li>-->
-                            <!--												<li>-->
-                            <!--													<a href="#">-->
-                            <!--														<i class="fa fa-angle-right" aria-hidden="true">-->
-                            <!--													-->
-                            <!--														</i>-->
-                            <!--														June 2017-->
-                            <!--													</a>-->
-                            <!--												</li>-->
-                            <!--												-->
-                            <!--											</ul>-->
-                            <!--										</div>-->
-                            <!--									</div>&lt;!&ndash;/.blog-widget&ndash;&gt;-->
-
-                            <div class="blogs-widget">
-                                <h2>popular tags</h2>
-                                <div class="blog-tags">
-                                    <button type="button" class="btn btn-default">busisness</button>
-                                    <button type="button" class="btn btn-default">consultency</button>
-                                    <button type="button" class="btn btn-default">market</button><br />
-                                    <button type="button" class="btn btn-default">sales</button>
-                                    <button type="button" class="btn btn-default">corporate</button>
-                                    <button type="button" class="btn btn-default">politics</button>
-                                </div><!--/.blog-tags-->
-                            </div><!--/.blog-widget-->
-
-                        </div><!--/.blog-right-->
-
-                    </div><!--/.col-->
-
+                    <!--                    <div class="col-md-8">-->
+                    <!--                        <div class="blog-left">-->
+                    <!--&lt;!&ndash;                            <div class="bl-article-post-img">&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                <a href="blogsinglesideber.html">&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                    <img src="assets/images/banner/banner2.jpg" alt="image" width="1150px" height="200px"/>&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                </a>&ndash;&gt;-->
+                    <!--&lt;!&ndash;                            </div>&lt;!&ndash;/.bl-article-post-img&ndash;&gt;&ndash;&gt;-->
+                    <!--                            <div class="bl-article-single-txt" style="width: 1150px;">-->
+                    <!--                                <div class="bl-single-para" style="width: 844px;margin-left:155px;">-->
+                    <!--&lt;!&ndash;                                    <p style="text-indent: 2em" v-for="cloth in (rows.content|| '').split('|')">&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                        {{cloth}}&ndash;&gt;-->
+                    <!--&lt;!&ndash;                                    </p>&ndash;&gt;-->
+                    <!--                                    <p>asfagggsg</p>-->
+                    <!--                                </div>-->
+                    <!--                            </div>&lt;!&ndash;/.bl-article-single-txt&ndash;&gt;-->
+                    <!--                        </div>&lt;!&ndash;/.blog-left&ndash;&gt;-->
+                    <!--                    </div>&lt;!&ndash;/.col&ndash;&gt;-->
                 </div><!--/.row-->
             </div><!--/.news-card-->
         </div><!--/news-details-->
@@ -741,7 +409,7 @@
 
 <!--vue-->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-<script src="assets/js/museum-prop-details.js"></script>
+<script src="assets/js/museum-clothing-details.js"></script>
 <!--endif-->
 
 <!--modernizr.min.js-->
