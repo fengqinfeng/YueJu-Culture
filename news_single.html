@@ -73,56 +73,6 @@
 		<!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
-		
-
-		<!--header start-->
-		<section class="header">
-			<div class="container">	
-				<div class="header-left">
-					<ul class="pull-left">
-<!--						<li>-->
-<!--							<a href="#">-->
-<!--								<i class="fa fa-phone" aria-hidden="true"></i> +992 563 542-->
-<!--							</a>-->
-<!--						</li>&lt;!&ndash;/li&ndash;&gt;-->
-<!--						<li>-->
-<!--							<a href="#">-->
-<!--								<i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com-->
-<!--							</a>-->
-<!--						</li>&lt;!&ndash;/li&ndash;&gt;-->
-					</ul><!--/ul-->
-				</div><!--/.header-left -->
-				<div class="header-right pull-right">
-					<ul>
-						<li class="reg">
-							<a href="#" data-toggle="modal" data-target=".bs-example-modal-sm">
-								Register
-							</a>
-								/
-							<a href="#" data-toggle="modal" data-target=".bs-example-modal-lg">
-								Log in
-							</a>
-							
-
-
-						</li><!--/li -->
-						<li>
-							<div class="social-icon">
-								<ul>
-									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-									<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-									<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-								</ul><!--/.ul -->
-							</div><!--/.social-icon -->
-						</li><!--/li -->
-					</ul><!--/ul -->
-				</div><!--/.header-right -->
-			</div><!--/.container -->	
-
-		</section><!--/.header-->	
-		<!--header end-->
-		
 		<!--menu start-->
 		<section id="menu">
 			<div class="container">
@@ -147,25 +97,35 @@
 							<ul class="nav navbar-nav navbar-right">
 								<li class="active"><a href="index.html">首页</a></li>
 								<li><a href="yueju_infomation.html?pn=1">资讯</a></li>
-								<li><a href="yueju_museum.html?pn=1">越剧博物馆</a></li>
-								<li><a href="project.html"></a></li>
-								<li><a href="team.html"></a></li>
-								<li><a href="blog.html"></a></li>
-								<li><a href="contact.html"></a></li>
-								<li>
-									<a href="#">
-										<span class="lnr lnr-cart"></span>
-									</a>
+								<li  >
+									<a  href="yueju_museum.html?pn=1" >越剧博物馆</a>
+
 								</li>
+								<li><a href="video_index.html">视频</a></li>
+
+
 								<li class="search">
+
 									<form action="">
-										<input type="text" name="search" placeholder="Search....">
+										<input name="search" placeholder="Search...." type="text">
 										<a href="#">
 											<span class="lnr lnr-magnifier"></span>
 										</a>
 									</form>
 								</li>
-							</ul><!-- / ul -->
+								<li class="dropdown">
+									<img style="margin-top: 15px;margin-left: 42px;" src="assets/images/user/uf01.gif_52x52.gif"
+										 alt="" width="50px" height="50px" class="img-circle dropdown-toggle" data-toggle="dropdown">
+									<ul class="dropdown-menu" >
+										<!-- href="#feature-tab"绑定详情页ID可定位 data-tab可以使用TAB切换选项 -->
+										<li><a href="#feature-tab" data-tab="tab-chrome" style="color: black;">Chrome</a></li>
+										<li><a href="#feature-tab" data-tab="tab-firefox" style="color: black;">Firefox</a></li>
+										<li><a href="#feature-tab" data-tab="tab-safari" style="color: black;">Safari</a></li>
+										<li><a href="#feature-tab" data-tab="tab-opera" style="color: black;">Opera</a></li>
+										<li><a href="#feature-tab" data-tab="tab-ie" style="color: black;">IE</a></li>
+									</ul>
+								</li>
+							</ul>
 						</div><!-- /.navbar-collapse -->
 					</nav><!--/nav -->
 				</div><!--/.menubar -->
@@ -178,7 +138,7 @@
 		<section class="about-part">
 			<div class="container">
 				<div class="about-part-details text-center"> 
-					<h2>news</h2>
+					<h2>最新资讯</h2>
 					<div class="about-part-content">
 						<div class="breadcrumbs">
 							<div class="container">
@@ -197,198 +157,120 @@
 
 		<!--nwes start -->
 		<section  class="news" >
-			<div class="container">
+			<div class="container" style="margin-top: -129px;">
 				<div class="news-details">
-					<div class="section-header text-center">
-						<h2>最新资讯</h2>
-<!--						<p>-->
-<!--							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
-<!--						</p>-->
-					</div><!--/.section-header-->
+<!--					<div class="section-header text-center">-->
+<!--&lt;!&ndash;						<h2>最新资讯</h2>&ndash;&gt;-->
+<!--&lt;!&ndash;						<p>&ndash;&gt;-->
+<!--&lt;!&ndash;							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. &ndash;&gt;-->
+<!--&lt;!&ndash;						</p>&ndash;&gt;-->
+<!--					</div>&lt;!&ndash;/.section-header&ndash;&gt;-->
 					<div class="news-card">
 						<div class="row">
 
 							<div class="col-md-8">
-								<div class="blog-left" id="newsingle">
+<!--								<div class="blog-left" id="newsingle">-->
+<!--									<div class="bl-article-single-txt" >-->
+<!--										<div class="bl-single-head">-->
+<!--											<h3>-->
+<!--												<a >-->
+<!--													{{rows.title}}-->
+<!--												</a>-->
+<!--											</h3>-->
+<!--											<p>-->
+<!--												来源 :  <span>{{rows.author}}</span>  时间： <span>{{rows.publishTime}}</span>-->
+<!--											</p>-->
+<!--										</div>&lt;!&ndash;/.bl-single-head&ndash;&gt;-->
 
-									<div class="bl-article-post-img">
-										<a href="blogsinglesideber.html">
-											<img src="assets/images/blog/bl7.jpg" alt="image" width="750px"/>
-										</a>
-									</div><!--/.bl-article-post-img-->
+<!--										<div class="bl-single-para">-->
+<!--											<p style="text-indent: 2em" v-for="newscontent in (rows.content || '').split('|')">{{newscontent}}</p>-->
+<!--										</div>&lt;!&ndash;/.bl-single-para&ndash;&gt;-->
 
+<!--										<div class="bl-single-contact-box">-->
+
+<!--											<ul>-->
+
+<!--												<li>-->
+<!--													<div class="bl-list-icon">-->
+<!--														<ul>-->
+<!--															-->
+<!--															<li>-->
+<!--																<a href="#">-->
+<!--																	share : -->
+<!--																</a>-->
+<!--															</li>&lt;!&ndash; / li &ndash;&gt;-->
+<!--															<li>-->
+<!--																<a href="#">-->
+<!--																	<img src="assets/images/blog/facebook.png" alt="facebook">-->
+<!--																</a>-->
+<!--															</li>&lt;!&ndash; / li &ndash;&gt;-->
+<!--															<li>-->
+<!--																<a href="#">-->
+<!--																	<img src="assets/images/blog/g.png" alt="google-plus">-->
+<!--																</a>-->
+<!--																-->
+<!--															</li>&lt;!&ndash; / li &ndash;&gt;-->
+<!--															<li>-->
+<!--																<a href="#">-->
+<!--																	<img src="assets/images/blog/linkedin.png" alt="linkedin">-->
+<!--																</a>-->
+<!--																-->
+<!--															</li>&lt;!&ndash; / li &ndash;&gt;-->
+<!--															<li>-->
+<!--																<a href="#">-->
+<!--																	<img src="assets/images/blog/tw.png" alt="twitter">-->
+<!--																</a>-->
+<!--															</li>&lt;!&ndash; / li &ndash;&gt;-->
+<!--														</ul>&lt;!&ndash; / ul &ndash;&gt;-->
+<!--													</div>&lt;!&ndash; /.bl-list-icon &ndash;&gt;-->
+<!--												</li>-->
+
+<!--&lt;!&ndash;												<li>&ndash;&gt;-->
+<!--&lt;!&ndash;													<div class="bl-single-tag">&ndash;&gt;-->
+<!--&lt;!&ndash;														<p>&ndash;&gt;-->
+<!--&lt;!&ndash;															Tag : &ndash;&gt;-->
+<!--&lt;!&ndash;															<span>&ndash;&gt;-->
+<!--&lt;!&ndash;																<a href="#">Business,</a>&ndash;&gt;-->
+<!--&lt;!&ndash;																<a href="#">Property,</a>&ndash;&gt;-->
+<!--&lt;!&ndash;																<a href="#">Finance</a>&ndash;&gt;-->
+<!--&lt;!&ndash;															</span> &ndash;&gt;-->
+<!--&lt;!&ndash;														</p>&ndash;&gt;-->
+<!--&lt;!&ndash;													</div>&lt;!&ndash;/.bl-single-tag&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;												</li>&ndash;&gt;-->
+
+<!--											</ul>&lt;!&ndash;/ul&ndash;&gt;-->
+
+<!--										</div>&lt;!&ndash;/.bl-single-contact-box&ndash;&gt;-->
+<!--									</div>&lt;!&ndash;/.bl-article-single-txt&ndash;&gt;-->
+<!--								</div>&lt;!&ndash;/.blog-left&ndash;&gt;-->
+								<div class="blog-left" id="newsingle" style="width: 651px;margin-left: 57px;">
 									<div class="bl-article-single-txt" >
-
 										<div class="bl-single-head">
 											<h3>
 												<a >
-													{{rows.title}}
+													激情七月！杭州越剧院好戏不断撒打发撒旦飞洒发生撒旦发生
 												</a>
 											</h3>
 											<p>
-												来源 :  <span>{{rows.author}}</span>  时间： <span>{{rows.publishTime}}</span>
+												来源 :  <span>中国越剧戏迷网</span>  时间： <span>2019年07月10日</span>责任编辑：<span>何东铭
+												作者：<span>xxx</span>最后更新：<span>2019年07月10日</span>
+</span>
 											</p>
 										</div><!--/.bl-single-head-->
 
 										<div class="bl-single-para">
-											<p style="text-indent: 2em" v-for="newscontent in (rows.content || '').split('|')">{{newscontent}}</p>
+											<p style="text-indent: 2em;width: 600px;">
+												雅歌春韵，芬芳四季。80年来，已故越剧名家毕春芳所创的毕派艺术为越剧贡献了独树一帜的喜剧表演风格和美学价值。为纪念这样一位德艺双馨的艺术家，今天起，纪念毕春芳先生舞台艺术80周年“
+												深入基层、扎根人民”系列活动在静安区文化馆拉开帷幕，而这里也正是当年戚雅仙、毕春芳携手重建静安越剧团的起点。
+											</p>
 										</div><!--/.bl-single-para-->
-
-										<div class="bl-single-contact-box">
-
-											<ul>
-
-												<li>
-													<div class="bl-list-icon">
-														<ul>
-															
-															<li>
-																<a href="#">
-																	share : 
-																</a>
-															</li><!-- / li -->
-															<li>
-																<a href="#">
-																	<img src="assets/images/blog/facebook.png" alt="facebook">
-																</a>
-															</li><!-- / li -->
-															<li>
-																<a href="#">
-																	<img src="assets/images/blog/g.png" alt="google-plus">
-																</a>
-																
-															</li><!-- / li -->
-															<li>
-																<a href="#">
-																	<img src="assets/images/blog/linkedin.png" alt="linkedin">
-																</a>
-																
-															</li><!-- / li -->
-															<li>
-																<a href="#">
-																	<img src="assets/images/blog/tw.png" alt="twitter">
-																</a>
-															</li><!-- / li -->
-														</ul><!-- / ul -->
-													</div><!-- /.bl-list-icon -->
-												</li>
-
-<!--												<li>-->
-<!--													<div class="bl-single-tag">-->
-<!--														<p>-->
-<!--															Tag : -->
-<!--															<span>-->
-<!--																<a href="#">Business,</a>-->
-<!--																<a href="#">Property,</a>-->
-<!--																<a href="#">Finance</a>-->
-<!--															</span> -->
-<!--														</p>-->
-<!--													</div>&lt;!&ndash;/.bl-single-tag&ndash;&gt;-->
-<!--												</li>-->
-
-											</ul><!--/ul-->
-
-										</div><!--/.bl-single-contact-box-->
-
-										<div  class="comments-area" style="width: 750px;">
-											<h3>3 comments</h3>
-											<ol class="comment-list">
-												<li  class="comment">
-													<div  class="comment-body xtra-comment-body">
-														<div class="comment-meta">
-															<div class="">
-																<img src="assets/images/blog/cmn1.jpg" alt="image" width="48px" height="48px" class="img-circle"/>
-															</div><!-- .comment-author -->
-														</div><!-- .comment-meta -->
-																
-														<div class="comment-content">
-															<b class="fn">
-																<a href="#">
-																	jone doe
-																	<span>17th June 2017</span>
-																</a>
-															</b>
-															
-															<div class="reply">
-																<a href="#">Reply</a>
-															</div>			
-															<p style="width: 664px;">
-																Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempo in the khabo koi jab cidid unt ut labore et dolore magna aliqua.
-															</p>
-														</div><!-- .comment-content -->
-													</div><!-- .comment-body -->
-													
-													<ol class="children">
-														<li class="comment">
-															<div class="comment-body xtra-comment-body">
-																<div class="comment-meta">
-																	<div class="">
-																		<img src="assets/images/blog/cmn2.jpg" alt="image" width="24px" height="24px" class="img-circle"/>
-																	</div><!-- .comment-author -->
-																</div><!-- .comment-meta -->
-																
-																<div class="comment-content">
-																	<b class="fn">
-																		<a href="#">
-																			jone doe
-																			<span>17th June 2017</span>
-																		</a>
-																	</b>
-																	
-																	<div class="reply">
-																		<a href="#">Reply</a>
-																	</div>			
-																	<p style="width: 563px;">
-																		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiumod tempo in the khabo koi jab cidid unt ut labore et dolore magna aliqua.
-																	</p>
-																</div><!-- .comment-content -->
-															</div><!-- .comment-body -->
-														</li><!-- #comment-## -->
-													</ol><!-- .children -->
-
-
-												</li><!--/.comment-->
-											</ol><!--/.comment-list-->
-										</div><!--/.comments-area-->
-
-										<div class="contact-form blog-single-form">
-											<h3>发表评论</h3>
-											<form>
-												<div class="row">
-													<div class="col-sm-6 col-xs-12">
-														<div class="form-group">
-														  <input type="text" class="form-control" id="firstname" placeholder="Name" name="firstname">
-														</div><!--/.form-group-->
-													</div><!--/.col-->
-													<div class="col-sm-6 col-xs-12">
-														<div class="form-group">
-															<input type="email" class="form-control" id="email" placeholder="Email" name="email">
-														</div><!--/.form-group-->
-													</div><!--/.col-->
-												</div><!--/.row-->
-												<div class="row">
-													<div class="col-sm-12">
-														<div class="form-group">
-															<textarea class="form-control" rows="7" id="comment" placeholder="Message" ></textarea>
-														</div><!--/.form-group-->
-													</div><!--/.col-->
-												</div><!--/.row-->
-												<div class="row">
-													<div class="col-sm-12">
-														<div class="single-contact-btn">
-															<button class="contact-btn" href="#" role="button">send message</button>
-														</div><!--/.single-single-contact-btn-->
-													</div><!--/.col-->
-												</div><!--/.row-->
-											</form><!--/form-->
-										</div><!--/.contact-form-->
-
+										<hr>
 									</div><!--/.bl-article-single-txt-->
 								</div><!--/.blog-left-->
 
 							</div><!--/.col-->
 
-							<div class="col-md-4">
+							<div class="col-md-4" style="margin-left: -29px;">
 								<div class="blog-right">
 
 
@@ -399,7 +281,7 @@
 											<div class="bl-txt">
 												<div class="bl-img">
 													<a href="#">
-														<img src="assets/images/blog/rp1.jpg" alt="image" />
+														<img src="assets/images/famous/team5.jpg" alt="image" />
 													</a>
 												</div>
 												<p>
@@ -437,21 +319,6 @@
 											</div><!--/.bl-txt-->
 										</div><!--/.blog-related-news-->
 									</div><!--/.blog-widget-->
-
-
-
-<!--									<div class="blogs-widget">-->
-<!--										<h2>popular tags</h2>-->
-<!--										<div class="blog-tags">-->
-<!--											<button type="button" class="btn btn-default">busisness</button>-->
-<!--											<button type="button" class="btn btn-default">consultency</button>-->
-<!--											<button type="button" class="btn btn-default">market</button><br />-->
-<!--											<button type="button" class="btn btn-default">sales</button>-->
-<!--											<button type="button" class="btn btn-default">corporate</button>-->
-<!--											<button type="button" class="btn btn-default">politics</button>-->
-<!--										</div>&lt;!&ndash;/.blog-tags&ndash;&gt;-->
-<!--									</div>&lt;!&ndash;/.blog-widget&ndash;&gt;-->
-
 								</div><!--/.blog-right-->
 
 							</div><!--/.col-->

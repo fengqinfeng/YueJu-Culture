@@ -2390,3 +2390,42 @@ footer .foot_bottom .foot_info p:last-child a:hover{
     background-color: #0092C2;
 }
 
+.rank-tab-wrap {
+    background: #edf2f9;
+    padding: 0;
+    border-radius: 4px;
+    clear: both;
+    height: 40px;
+    transition:box-shadow 1s;
+}
+.rank-tab-wrap .rank-tab {
+    float: left;
+}
+.rank-tab-wrap .rank-tab li {
+    float: left;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center; 
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+}
+.rank-tab-wrap .rank-tab .active {
+    color: #00a1d6;
+}
+/*.ranklist_item:hover{*/
+/*    transition:box-shadow 0.5s;*/
+/*    box-shadow: #99a2aa 0.5px 2px 1px 1px;*/
+/*}*/
+.ranklist_item .num {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    color: #b8c0cc;
+    font-family: simhei;
+    margin-left: 16px;
+}
+

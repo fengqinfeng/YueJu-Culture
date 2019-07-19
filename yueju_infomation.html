@@ -149,24 +149,32 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">首页</a></li>
                         <li><a href="yueju_infomation.html?pn=1">资讯</a></li>
-                        <li><a href="yueju_museum.html?pn=1">越剧博物馆</a></li>
-                        <li><a href="project.html"></a></li>
-                        <li><a href="team.html"></a></li>
-                        <li><a href="blog.html"></a></li>
-                        <li><a href="contact.html"></a></li>
+                        <li class="dropdown" >
+                            <a  href="yueju_museum.html?pn=1">越剧博物馆</a>
+                        </li>
+                        <li><a href="video_index.html">视频</a></li>
+                        <!--                        <li style="background: gray;border-radius: 60px;position: relative;top: 12px;" onClick="play()">-->
+
+                        <!--                                <img alt="" class="img-circle xuanzhuan" id="musicicon"-->
+                        <!--                                 src="assets/images/home/music3.png" style="width: 28px;height: 28px;">-->
+
+                        <!--                        </li>-->
                         <li>
                             <a href="#">
                                 <span class="lnr lnr-cart"></span>
                             </a>
                         </li>
+
                         <li class="search">
+
                             <form action="">
-                                <input type="text" name="search" placeholder="Search....">
+                                <input name="search" placeholder="Search...." type="text">
                                 <a href="#">
                                     <span class="lnr lnr-magnifier"></span>
                                 </a>
                             </form>
                         </li>
+
                     </ul><!-- / ul -->
                 </div><!-- /.navbar-collapse -->
             </nav><!--/nav -->
@@ -180,7 +188,7 @@
 <section class="about-part">
     <div class="container">
         <div class="about-part-details text-center">
-            <h2>news</h2>
+            <h2>最新资讯</h2>
 
         </div><!--/.about-part-details-->
     </div><!--/.container-->
@@ -189,14 +197,11 @@
 <!--about-part end-->
 
 <!--nwes start -->
-<section class="news">
+<section class="news" style="margin-top: -129px;">
     <div class="container">
         <div class="news-details">
             <div class="section-header text-center">
-                <h2>最新资讯</h2>
-                <!--						<p>-->
-                <!--							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
-                <!--						</p>-->
+<!--                <h2>最新资讯</h2>-->
             </div><!--/.section-header-->
             <div class="news-card">
                 <div class="row">
@@ -205,26 +210,48 @@
                             <div class="mu-from-blog-content" id="newsall">
                                 <div>
                                     <div class="row ">
-                                        <div class="col-md-4 independentline" v-for="news in rows.list">
+<!--                                        <div class="col-md-4 independentline" v-for="news in rows.list">-->
+<!--                                            <article class="mu-blog-item">-->
+<!--                                                <a href="#"><img v-bind:src="'assets/images/news/'+newinfo.picture" alt="blgo image"-->
+<!--                                                                 class="allnews"></a>-->
+<!--                                                <div class="mu-blog-item-content">-->
+<!--                                                    <ul class="mu-blog-meta">-->
+<!--                                                        <li>来源: <span>{{news.author}}</span></li>-->
+<!--                                                        &lt;!&ndash;                                    <li><a href="#"><i class="fa fa-comment-o"></i>26</a></li>&ndash;&gt;-->
+<!--                                                        &lt;!&ndash;                                    <li><i class="fa fa-heart-o"></i>250</li>&ndash;&gt;-->
+<!--                                                        <li>发布时间：<span>{{news.publishTime}}</span></li>-->
+<!--                                                    </ul>-->
+<!--                                                    <h2 class="mu-blog-item-title">-->
+<!--                                                        <a href="#">-->
+<!--                                                            <p data-toggle="tooltip" v-bind:title="news.title"-->
+<!--                                                                style="width: 189px;height: 37px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word">-->
+<!--                                                            {{news.title}}-->
+<!--                                                        </p>-->
+<!--                                                        </a>-->
+<!--                                                    </h2>-->
+<!--                                                    <a class="mu-blg-readmore-btn"  v-bind:href="'news_single.html?id='+news.id">Read more <i-->
+<!--                                                            class="fa fa-long-arrow-right"></i></a>-->
+<!--                                                </div>-->
+<!--                                            </article>-->
+<!--                                        </div>-->
+                                        <div class="col-md-4 independentline" >
                                             <article class="mu-blog-item">
-                                                <a href="#"><img v-bind:src="'assets/images/news/'+newinfo.picture" alt="blgo image"
+                                                <a href="#"><img src="assets/images/news/log2.jpg" alt="blgo image"
                                                                  class="allnews"></a>
                                                 <div class="mu-blog-item-content">
                                                     <ul class="mu-blog-meta">
-                                                        <li>来源: <span>{{news.author}}</span></li>
-                                                        <!--                                    <li><a href="#"><i class="fa fa-comment-o"></i>26</a></li>-->
-                                                        <!--                                    <li><i class="fa fa-heart-o"></i>250</li>-->
-                                                        <li>发布时间：<span>{{news.publishTime}}</span></li>
+                                                        <li>来源: <span>xxx</span></li>
+                                                        <li>发布时间：<span>xxxx</span></li>
                                                     </ul>
                                                     <h2 class="mu-blog-item-title">
                                                         <a href="#">
-                                                            <p data-toggle="tooltip" v-bind:title="news.title"
-                                                                style="width: 189px;height: 37px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word">
-                                                            {{news.title}}
-                                                        </p>
+                                                            <p data-toggle="tooltip"
+                                                               style="width: 189px;height: 37px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word">
+                                                                xxxx
+                                                            </p>
                                                         </a>
                                                     </h2>
-                                                    <a class="mu-blg-readmore-btn"  v-bind:href="'news_single.html?id='+news.id">Read more <i
+                                                    <a class="mu-blg-readmore-btn" >Read more <i
                                                             class="fa fa-long-arrow-right"></i></a>
                                                 </div>
                                             </article>

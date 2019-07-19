@@ -73,57 +73,6 @@
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
     your browser</a> to improve your experience and security.</p>
 <![endif]-->
-
-
-<!--header start-->
-<section class="header">
-    <div class="container">
-        <div class="header-left">
-            <ul class="pull-left">
-<!--                <li>-->
-<!--                    <a href="#">-->
-<!--                        <i class="fa fa-phone" aria-hidden="true"></i> +992 563 542-->
-<!--                    </a>-->
-<!--                </li>&lt;!&ndash;/li&ndash;&gt;-->
-<!--                <li>-->
-<!--                    <a href="#">-->
-<!--                        <i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com-->
-<!--                    </a>-->
-<!--                </li>&lt;!&ndash;/li&ndash;&gt;-->
-            </ul><!--/ul-->
-        </div><!--/.header-left -->
-        <div class="header-right pull-right">
-            <ul>
-                <li class="reg">
-                    <a href="#" >
-                        Register
-                    </a>
-                    /
-                    <a href="login.html" >
-                        Log in
-                    </a>
-
-
-
-
-                </li><!--/li -->
-                <li>
-                    <div class="social-icon">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        </ul><!--/.ul -->
-                    </div><!--/.social-icon -->
-                </li><!--/li -->
-            </ul><!--/ul -->
-        </div><!--/.header-right -->
-    </div><!--/.container -->
-
-</section><!--/.header-->
-<!--header end-->
-
 <!--menu start-->
 <section id="menu">
     <div class="container">
@@ -149,24 +98,32 @@
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">首页</a></li>
                         <li><a href="yueju_infomation.html?pn=1">资讯</a></li>
-                        <li><a href="yueju_museum.html?pn=1">越剧博物馆</a></li>
-                        <li><a href="project.html"></a></li>
-                        <li><a href="team.html"></a></li>
-                        <li><a href="blog.html"></a></li>
-                        <li><a href="contact.html"></a></li>
+                        <li class="dropdown" >
+                            <a  href="yueju_museum.html?pn=1">越剧博物馆</a>
+                        </li>
+                        <li><a href="video_index.html">视频</a></li>
+                        <!--                        <li style="background: gray;border-radius: 60px;position: relative;top: 12px;" onClick="play()">-->
+
+                        <!--                                <img alt="" class="img-circle xuanzhuan" id="musicicon"-->
+                        <!--                                 src="assets/images/home/music3.png" style="width: 28px;height: 28px;">-->
+
+                        <!--                        </li>-->
                         <li>
                             <a href="#">
                                 <span class="lnr lnr-cart"></span>
                             </a>
                         </li>
+
                         <li class="search">
+
                             <form action="">
-                                <input type="text" name="search" placeholder="Search....">
+                                <input name="search" placeholder="Search...." type="text">
                                 <a href="#">
                                     <span class="lnr lnr-magnifier"></span>
                                 </a>
                             </form>
                         </li>
+
                     </ul><!-- / ul -->
                 </div><!-- /.navbar-collapse -->
             </nav><!--/nav -->
@@ -180,8 +137,7 @@
 <section class="about-part">
     <div class="container">
         <div class="about-part-details text-center">
-            <h2>museum</h2>
-
+            <h2>越剧名家</h2>
         </div><!--/.about-part-details-->
     </div><!--/.container-->
 
@@ -189,14 +145,10 @@
 <!--about-part end-->
 
 <!--nwes start -->
-<section class="news">
+<section class="news" style="margin-top: -129px;">
     <div class="container">
         <div class="news-details">
             <div class="section-header text-center">
-                <h2>越剧名家</h2>
-                <!--						<p>-->
-                <!--							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
-                <!--						</p>-->
             </div><!--/.section-header-->
             <div class="news-card">
                 <div class="row">
@@ -204,22 +156,85 @@
                     <div class="col-md-7 col-md-offset-1">
                         <div class="blog-left">
 
-                            <div class="row" id="museumpeople">
-                                <div class="col-md-4" v-for="people in rows.list">
-                                    <div class="team-card">
-                                        <div class="single-team-box "
-                                        :style="'background:url(assets/images/famous/'+people.picture+') no-repeat'">
-                                            <div class="team-box-inner">
-                                                <h3>{{people.title}}</h3>
-                                                <p class="team-meta" style="width: 189px;height: 17px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word">
-                                                    {{people.remark}}
-                                                </p>
-                                                <a v-bind:href="'yueju_museum_people_details.html?id='+people.id" class="learn-btn">
-                                                    learn more
-                                                </a>
-                                            </div><!--/.famous-box-inner-->
+<!--                            <div class="row" id="museumpeople">-->
+<!--                                <div class="col-md-4" v-for="people in rows.list">-->
+<!--                                    <div class="team-card">-->
+<!--                                        <div class="single-team-box "-->
+<!--                                        :style="'background:url(assets/images/famous/'+people.picture+') no-repeat'">-->
+<!--                                            <div class="team-box-inner">-->
+<!--                                                <h3>{{people.title}}</h3>-->
+<!--                                                <p class="team-meta" style="width: 189px;height: 17px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word">-->
+<!--                                                    {{people.remark}}-->
+<!--                                                </p>-->
+<!--                                                <a v-bind:href="'yueju_museum_people_details.html?id='+people.id" class="learn-btn">-->
+<!--                                                    learn more-->
+<!--                                                </a>-->
+<!--                                            </div>&lt;!&ndash;/.famous-box-inner&ndash;&gt;-->
 
-                                        </div><!--/.single-famous-box-->
+<!--                                        </div>&lt;!&ndash;/.single-famous-box&ndash;&gt;-->
+<!--                                    </div>-->
+<!--                                </div>-->
+
+<!--                            </div>-->
+                            <div class="isotope" id="museumtroupe">
+                                <div class="item" style="margin-left: 20px;margin-top: 20px;">
+                                    <img  src="assets/images/famous/team5.jpg" class="img-rounded" style="width: 180px;height: 180px;">
+                                    <div class="isotope-overlay">
+                                        <a  >
+                                            <span class="lnr lnr-link"></span>
+
+                                        </a>
+                                        <h3>
+                                            <a  >
+                                                xxx
+                                            </a>
+                                        </h3>
+                                        <!--                                        <p>busisness planning</p>-->
+                                    </div>
+                                </div>
+                                <div class="item" style="margin-left: 20px;margin-top: 20px;">
+                                    <img  src="assets/images/famous/team5.jpg" class="img-rounded" style="width: 180px;height: 180px;">
+                                    <div class="isotope-overlay">
+                                        <a  >
+                                            <span class="lnr lnr-link"></span>
+
+                                        </a>
+                                        <h3>
+                                            <a  >
+                                                xxx
+                                            </a>
+                                        </h3>
+                                        <!--                                        <p>busisness planning</p>-->
+                                    </div>
+                                </div>
+                                <div class="item" style="margin-left: 20px;margin-top: 20px;">
+                                    <img  src="assets/images/famous/team5.jpg" class="img-rounded" style="width: 180px;height: 180px;">
+                                    <div class="isotope-overlay">
+                                        <a  >
+                                            <span class="lnr lnr-link"></span>
+
+                                        </a>
+                                        <h3>
+                                            <a  >
+                                                xxx
+                                            </a>
+                                        </h3>
+                                        <!--                                        <p>busisness planning</p>-->
+                                    </div>
+                                </div>
+                                <div class="item" style="margin-left: 20px;margin-top: 20px;">
+                                    <img  src="assets/images/famous/team5.jpg" class="img-rounded" style="width: 180px;height: 180px;">
+                                    <div class="isotope-overlay">
+                                        <a  >
+                                            <span class="lnr lnr-link"></span>
+
+                                        </a>
+                                        <h3>
+                                            <a  >
+                                                xxx
+                                            </a>
+                                        </h3>
+                                        <!--                                        <p>busisness planning</p>-->
                                     </div>
                                 </div>
 

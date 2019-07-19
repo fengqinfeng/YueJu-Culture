@@ -86,54 +86,7 @@
 <![endif]-->
 
 
-<!--header start-->
-<section class="header">
-    <div class="container">
-        <div class="header-left">
-            <ul class="pull-left">
-<!--                <li>-->
-<!--                    <a href="#">-->
-<!--                        <i class="fa fa-phone" aria-hidden="true"></i> +992 563 542-->
-<!--                    </a>-->
-<!--                </li>&lt;!&ndash;/li&ndash;&gt;-->
-<!--                <li>-->
-<!--                    <a href="#">-->
-<!--                        <i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com-->
-<!--                    </a>-->
-<!--                </li>&lt;!&ndash;/li&ndash;&gt;-->
-            </ul><!--/ul-->
-        </div><!--/.header-left -->
-        <div class="header-right pull-right">
-            <ul>
-                <li class="reg">
-                    <a href="#" >
-                        Register
-                    </a>
-                    /
-                    <a href="login.html" >
-                        Log in
-                    </a>
 
-
-
-
-                </li><!--/li -->
-                <li>
-                    <div class="social-icon">
-                        <ul>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                        </ul><!--/.ul -->
-                    </div><!--/.social-icon -->
-                </li><!--/li -->
-            </ul><!--/ul -->
-        </div><!--/.header-right -->
-    </div><!--/.container -->
-
-</section><!--/.header-->
-<!--header end-->
 
 <!--menu start-->
 <section id="menu">
@@ -191,7 +144,7 @@
 <section class="about-part">
     <div class="container">
         <div class="about-part-details text-center">
-            <h2>museum</h2>
+            <h2>道具百科</h2>
             <!--            <div class="about-part-content">-->
             <!--                <div class="breadcrumbs">-->
             <!--                    <div class="container">-->
@@ -209,84 +162,241 @@
 <!--about-part end-->
 
 <!--nwes start -->
-<section class="news">
+<section class="news" style="margin-top: -129px;">
     <div class="container">
         <div class="news-details" >
             <div class="section-header text-center">
-                <h2>道具百科</h2>
-                <!--						<p>-->
-                <!--							Pallamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. -->
-                <!--						</p>-->
             </div><!--/.section-header-->
             <div class="news-card">
                 <div class="row">
-
-                    <div class="col-md-12">
+                    <div class="col-md-7 col-md-offset-1">
                         <div class="blog-left">
 
-                            <div id="masonry" class="container-fluid">
-                                <div class="isotope" id="propinfo">
-                                    <div class="box" v-for="prop in rows.list">
-                                        <div class="item">
-                                            <img v-bind:src="'assets/images/prop/'+prop.picture">
-                                            <div class="isotope-overlay">
-                                                <a  v-bind:href="'yueju_museum_prop_details.html?id='+prop.id">
-                                                    <span class="lnr lnr-link"></span>
+                            <!--                            <div  id=" masonry " class="container-fluid" >-->
+                            <!--                                <div class="isotope" id="clothinginfo">-->
+                            <!--                                    <div class="box" v-for="clo in rows.list">-->
+                            <!--                                        <div class="item">-->
+                            <!--                                            <img v-bind:src="'assets/images/clothing/'+clo.picture">-->
+                            <!--                                            <div class="isotope-overlay">-->
+                            <!--                                                <a v-bind:href="'yueju_museum_clothing_details.html?id='+clo.id">-->
+                            <!--                                                    <span class="lnr lnr-link"></span>-->
 
-                                                </a>
-                                                <h3>
-                                                    <a v-bind:href="'yueju_museum_prop_details.html?id='+prop.id">
-                                                        {{prop.title}}
-                                                    </a>
-                                                </h3>
-<!--                                                <p>busisness planning</p>-->
-                                            </div><!-- /.isotope-overlay -->
-                                        </div>
+                            <!--                                                </a>-->
+                            <!--                                                <h3>-->
+                            <!--                                                    <a  v-bind:href="'yueju_museum_clothing_details.html?id='+clo.id">-->
+                            <!--                                                        {{clo.title}}-->
+                            <!--                                                    </a>-->
+                            <!--                                                </h3>-->
+                            <!--                                                &lt;!&ndash;                                                <p>busisness planning</p>&ndash;&gt;-->
+                            <!--                                            </div>&lt;!&ndash; /.isotope-overlay &ndash;&gt;-->
+                            <!--                                        </div>-->
+                            <!--                                    </div>-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                            <div class="isotope" id="museumtroupe">
+                                <div class="item" style="margin-left: 20px;margin-top: 20px;">
+                                    <img  src="assets/images/clothing/clo1.png" class="img-rounded" style="width: 180px;height: 180px;">
+                                    <div class="isotope-overlay">
+                                        <a  >
+                                            <span class="lnr lnr-link"></span>
+
+                                        </a>
+                                        <h3>
+                                            <a  >
+                                                xxx
+                                            </a>
+                                        </h3>
+                                        <!--                                        <p>busisness planning</p>-->
                                     </div>
                                 </div>
+                                <div class="item" style="margin-left: 20px;margin-top: 20px;">
+                                    <img  src="assets/images/clothing/clo1.png" class="img-rounded" style="width: 180px;height: 180px;">
+                                    <div class="isotope-overlay">
+                                        <a  >
+                                            <span class="lnr lnr-link"></span>
+
+                                        </a>
+                                        <h3>
+                                            <a  >
+                                                xxx
+                                            </a>
+                                        </h3>
+                                        <!--                                        <p>busisness planning</p>-->
+                                    </div>
+                                </div>
+                                <div class="item" style="margin-left: 20px;margin-top: 20px;">
+                                    <img  src="assets/images/clothing/clo1.png" class="img-rounded" style="width: 180px;height: 180px;">
+                                    <div class="isotope-overlay">
+                                        <a  >
+                                            <span class="lnr lnr-link"></span>
+
+                                        </a>
+                                        <h3>
+                                            <a  >
+                                                xxx
+                                            </a>
+                                        </h3>
+                                        <!--                                        <p>busisness planning</p>-->
+                                    </div>
+                                </div>
+                                <div class="item" style="margin-left: 20px;margin-top: 20px;">
+                                    <img  src="assets/images/clothing/clo1.png" class="img-rounded" style="width: 180px;height: 180px;">
+                                    <div class="isotope-overlay">
+                                        <a  >
+                                            <span class="lnr lnr-link"></span>
+
+                                        </a>
+                                        <h3>
+                                            <a  >
+                                                xxx
+                                            </a>
+                                        </h3>
+                                        <!--                                        <p>busisness planning</p>-->
+                                    </div>
+                                </div>
+
                             </div>
 
-                            <div class="pagination-part text-center col-md-12">
-                                <div class="col-md-6" id="paging">
+
+                            <div class="pagination-part text-center">
+                                <div class="col-md-8" id="paging">
                                     <div class="col-md-12" style="position:relative;left:-77px;top: 20px;">
                                         当前第 <span v-text="rows2.pageNum"></span>  页.总共 <span v-text="rows2.pages"></span>  页.一共 <span v-text="rows2.total"></span>  条记录
                                     </div>
                                     <nav aria-label="Page navigation" style="position:relative;left:126px;">
                                         <ul class="pagination">
-                                            <li ><a v-bind:href="'yueju_museum_prop.html?pn='+rows2.firstPage">首页</a></li>
+                                            <li ><a v-bind:href="'yueju_infomation.html?pn='+rows2.firstPage">首页</a></li>
                                             <!--上一页-->
                                             <li id="">
                                                 <!--<div >-->
-                                                <a v-if="rows2.hasPreviousPage" v-bind:href="'yueju_museum_prop.html?pn='+rows2.prePage"
+                                                <a v-if="rows2.hasPreviousPage" v-bind:href="'yueju_infomation.html?pn='+rows2.prePage"
                                                    aria-label="Previous">
                                                     <span aria-hidden="true">«</span>
                                                 </a>
                                                 <!--</div>-->
                                             </li>
                                             <li  v-for="page_num in rows2.navigatepageNums" v-bind:class="page_num==rows2.pageNum?'active':''" >
-                                                <a v-if="page_num==rows2.pageNum" v-text="page_num" v-bind:href="'yueju_museum_prop.html?pn='+page_num"></a>
-                                                <a v-if="page_num!=rows2.pageNum" v-text="page_num" v-bind:href="'yueju_museum_prop.html?pn='+page_num"></a>
+                                                <a v-if="page_num==rows2.pageNum" v-text="page_num" v-bind:href="'yueju_infomation.html?pn='+page_num"></a>
+                                                <a v-if="page_num!=rows2.pageNum" v-text="page_num" v-bind:href="'yueju_infomation.html?pn='+page_num"></a>
                                             </li>
                                             <!--下一页-->
                                             <li >
-                                                <a v-if="rows2.hasNextPage" v-bind:href="'yueju_museum_prop.html?pn='+rows2.nextPage"
+                                                <a v-if="rows2.hasNextPage" v-bind:href="'yueju_infomation.html?pn='+rows2.nextPage"
                                                    aria-label="Next">
                                                     <span aria-hidden="true">»</span>
                                                 </a>
                                             </li>
                                             <li >
                                                 <!--                                                <a th:href="@{qry_sku_info(pn=${pageInfo.pages},class_id='0401',sortField=sale_number,sortMode=desc)}">尾页</a>-->
-                                                <a v-bind:href="'yueju_museum_prop.html?pn='+rows2.lastPage">尾页</a>
+                                                <a v-bind:href="'yueju_infomation.html?pn='+rows2.lastPage">尾页</a>
                                             </li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div><!--/.pagination-part(&raquo;)-->
 
-
                         </div><!--/.blog-left-->
 
                     </div><!--/.col-->
+                    <div class="col-md-3">
+                        <div class="blog-right">
+
+                            <div class="blogs-widget">
+                                <form>
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </form><!--/.form-->
+                                <div class="blog-search-icon">
+                                    <a href="#">
+                            												<span class="lnr lnr-magnifier">
+
+                            												</span>
+                                    </a>
+                                </div><!--/.blog-search-icon-->
+                            </div><!--/.blog-widget-->
+
+                            <div class="blogs-widget"  >
+                                <h2>分类</h2>
+                                <div class="blog-categories-list" id="classi">
+                                    <ul>
+                                        <li v-for="classify in rows3">
+                                            <a v-bind:href="classify.url+'?pn=1'">{{classify.name}}</a>
+                                        </li>
+
+                                    </ul>
+                                </div><!--/.blog-categories-list-->
+                            </div><!--/.blog-widget-->
+
+
+                        </div><!--/.blog-right-->
+
+                    </div><!--/.col-->
+
+                    <!--                    <div class="col-md-12">-->
+<!--                        <div class="blog-left">-->
+
+<!--                            <div id="masonry" class="container-fluid">-->
+<!--                                <div class="isotope" id="propinfo">-->
+<!--                                    <div class="box" v-for="prop in rows.list">-->
+<!--                                        <div class="item">-->
+<!--                                            <img v-bind:src="'assets/images/prop/'+prop.picture">-->
+<!--                                            <div class="isotope-overlay">-->
+<!--                                                <a  v-bind:href="'yueju_museum_prop_details.html?id='+prop.id">-->
+<!--                                                    <span class="lnr lnr-link"></span>-->
+
+<!--                                                </a>-->
+<!--                                                <h3>-->
+<!--                                                    <a v-bind:href="'yueju_museum_prop_details.html?id='+prop.id">-->
+<!--                                                        {{prop.title}}-->
+<!--                                                    </a>-->
+<!--                                                </h3>-->
+<!--&lt;!&ndash;                                                <p>busisness planning</p>&ndash;&gt;-->
+<!--                                            </div>&lt;!&ndash; /.isotope-overlay &ndash;&gt;-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="pagination-part text-center col-md-12">-->
+<!--                                <div class="col-md-6" id="paging">-->
+<!--                                    <div class="col-md-12" style="position:relative;left:-77px;top: 20px;">-->
+<!--                                        当前第 <span v-text="rows2.pageNum"></span>  页.总共 <span v-text="rows2.pages"></span>  页.一共 <span v-text="rows2.total"></span>  条记录-->
+<!--                                    </div>-->
+<!--                                    <nav aria-label="Page navigation" style="position:relative;left:126px;">-->
+<!--                                        <ul class="pagination">-->
+<!--                                            <li ><a v-bind:href="'yueju_museum_prop.html?pn='+rows2.firstPage">首页</a></li>-->
+<!--                                            &lt;!&ndash;上一页&ndash;&gt;-->
+<!--                                            <li id="">-->
+<!--                                                &lt;!&ndash;<div >&ndash;&gt;-->
+<!--                                                <a v-if="rows2.hasPreviousPage" v-bind:href="'yueju_museum_prop.html?pn='+rows2.prePage"-->
+<!--                                                   aria-label="Previous">-->
+<!--                                                    <span aria-hidden="true">«</span>-->
+<!--                                                </a>-->
+<!--                                                &lt;!&ndash;</div>&ndash;&gt;-->
+<!--                                            </li>-->
+<!--                                            <li  v-for="page_num in rows2.navigatepageNums" v-bind:class="page_num==rows2.pageNum?'active':''" >-->
+<!--                                                <a v-if="page_num==rows2.pageNum" v-text="page_num" v-bind:href="'yueju_museum_prop.html?pn='+page_num"></a>-->
+<!--                                                <a v-if="page_num!=rows2.pageNum" v-text="page_num" v-bind:href="'yueju_museum_prop.html?pn='+page_num"></a>-->
+<!--                                            </li>-->
+<!--                                            &lt;!&ndash;下一页&ndash;&gt;-->
+<!--                                            <li >-->
+<!--                                                <a v-if="rows2.hasNextPage" v-bind:href="'yueju_museum_prop.html?pn='+rows2.nextPage"-->
+<!--                                                   aria-label="Next">-->
+<!--                                                    <span aria-hidden="true">»</span>-->
+<!--                                                </a>-->
+<!--                                            </li>-->
+<!--                                            <li >-->
+<!--                                                &lt;!&ndash;                                                <a th:href="@{qry_sku_info(pn=${pageInfo.pages},class_id='0401',sortField=sale_number,sortMode=desc)}">尾页</a>&ndash;&gt;-->
+<!--                                                <a v-bind:href="'yueju_museum_prop.html?pn='+rows2.lastPage">尾页</a>-->
+<!--                                            </li>-->
+<!--                                        </ul>-->
+<!--                                    </nav>-->
+<!--                                </div>-->
+<!--                            </div>&lt;!&ndash;/.pagination-part(&raquo;)&ndash;&gt;-->
+
+
+<!--                        </div>&lt;!&ndash;/.blog-left&ndash;&gt;-->
+
+<!--                    </div>&lt;!&ndash;/.col&ndash;&gt;-->
 
                     <!--                    <div class="col-md-4">-->
                     <!--                        <div class="blog-right">-->
