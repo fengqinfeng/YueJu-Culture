@@ -73,7 +73,51 @@
     <script src="http://vjs.zencdn.net/5.0.2/video.js"></script>
     <!--    endif-->
     <link href="assets/video-css/common.css" rel="stylesheet">
+    <style>
+        .share-box {
+            display: none;
+            position: absolute;
+            top: 497px;
+            left: 307px;
+        }
 
+        .share-pos {
+            position: absolute;
+            right: -160px;
+            top: 35px;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            padding: 20px;
+            width: 320px;
+            z-index: 30;
+            color: #505050;
+            background: #fff;
+            border: 1px solid #e5e9ef;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .14);
+            border-radius: 2px;
+        }
+
+        .share-pos .box-a {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-align: center;
+            align-items: center;
+        }
+
+        .share-pos .box-a .share-down {
+            margin-bottom: 20px;
+        }
+
+        .share-pos .box-a .share-down .share-btn {
+            margin-right: 10px;
+            display: inline-block;
+            cursor: pointer;
+            color: #505050;
+            transition: all .3s;
+        }
+    </style>
 </head>
 
 <body>
@@ -144,7 +188,7 @@
                 <p style="color:#999;font-size: 12px;">
                     2019-07-12 12:00:44
                 </p>
-                <p style="color:#999;font-size: 12px;">49.9万播放 · 4570弹幕 <span
+                <p style="color:#999;font-size: 12px;">49.9万播放 <span
                         class="glyphicon glyphicon-warning-sign"></span>未经作者授权，禁止转载</p>
             </div>
             <!--视频播放-->
@@ -171,91 +215,79 @@
             <!--             收藏分享-->
             <div style="height: 55px;width: 640px;background: #fff;margin-top: 25px;">
                 <div style="position: relative;width:100px;">
-                    <!--                    <img src="assets/images/logo/likes.png" alt="" width="28px" height="28px">-->
-                    <!--                    <span style="position: relative;top: 4px;color: #1296db;">7.0 <span>万</span></span>-->
-                    <img src="assets/images/logo/unlikes.png" alt="" width="28px" height="28px">
-                    <span style="position: relative;top: 4px;color: #999;">7.0 <span>万</span></span>
+                    <a href="">
+                        <!--                    <img src="assets/images/logo/likes.png" alt="" width="28px" height="28px">-->
+                        <!--                    <span style="position: relative;top: 4px;color: #1296db;">7.0 <span>万</span></span>-->
+                        <img src="assets/images/logo/unlikes.png" alt="" width="28px" height="28px">
+                        <!--                        <i class="test" style="background:url(assets/images/logo/unlikes.png) no-repeat;"></i>-->
+
+                        <span style="position: relative;top: 4px;color: #999;">7.0 <span>万</span></span>
+                    </a>
                 </div>
                 <div style="position: relative;top: -28px;left: 100px;width: 100px;">
                     <img src="assets/images/logo/collect.png" alt="" width="28px" height="28px">
                     <span style="position: relative;top: 4px;color: #999;">7.0 <span>万</span></span>
                 </div>
                 <div style="position: relative;top: -56px;left: 200px;width: 100px;">
-                    <img src="assets/images/logo/share.png" alt="" width="28px" height="28px">
-                    <span style="position: relative;top: 4px;color: #999;">分享</span>
+                    <a class="share" href="">
+                        <img src="assets/images/logo/share.png" alt="" width="28px" height="28px">
+                        <span style="position: relative;top: 4px;color: #999;">分享</span>
+                    </a>
                 </div>
                 <div style="position: relative;top: -76px;left:560px;color: #999;width: 74px;">
-                    <p>稿件投诉</p>
+                    <p><a href="">稿件投诉</a></p>
+                </div>
+                <div class="share-box">
+                    <div class="share-pos">
+                        <div class="box-a">
+                            <div class="share-address">
+                                <div class="share-down">
+                                    <span class="share-btn">ddd</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
                 <hr style="margin-top: -62px;">
             </div>
-<!--            关注-->
+            <!--            关注-->
             <div>
-                <div class="people" style="position: relative;float: left;width: 150px;height: 96px;">
-                    <img src="assets/images/login/log1.jpg" alt="" width="60px;" height="60px;" class="img-circle">
-                    <div style="position: relative;top: -43px;left: 57px;">
-                        <span style="position: relative;left: 10px;">大大大灯泡</span>
-                        <p style="position: relative;left: 9px;width: 84px;color: #999;">饰xx</p>
-                        <!--                    <p style="font-size:12px;color: #999;width: 293px;height: 17px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">-->
-                        <!--                        脑洞恶搞偶尔做动画的月更鸽子；闲聊群：94</p>-->
-                        <!--                    <a href="###" class='focus'> + 关注</a>-->
-                        <!--                    <a href="" class='liked' style="position: relative;left: -20px;">已关注</a>-->
-                        <div style="width: 20px;height: 20px;background: red;position: relative;left: -38px;top: -2px;border-radius: 60px;">
-                            <img src="assets/images/logo/follow.png" alt="" width="10px" height="10px"
-                                 style="position: relative;top: 2px;left: 5px;">
-                        </div>
+                <div class="people" style="position: relative;float: left;width: 110px;height: 96px;margin-left:87px;">
 
+                    <img src="assets/images/login/log1.jpg" alt="" width="60px;" height="60px;" class="img-circle">
+                    <div style="position: relative;top:13px;left: -23px;width: 106px;height: 20px;text-align: center;">
+                        <span>大大大灯泡</span>
+                    </div>
+                    <div style="width: 20px;height: 20px;background: red;position: relative;left: 21px;top: -31px;border-radius: 60px;">
+                        <img src="assets/images/logo/follow.png" alt="" width="10px" height="10px"
+                             style="position: relative;top: 3px;left: 5px;">
                     </div>
                 </div>
-                <div class="people" style="position: relative;float: left;width: 150px;height: 96px;">
-                    <img src="assets/images/login/log1.jpg" alt="" width="60px;" height="60px;" class="img-circle">
-                    <div style="position: relative;top: -43px;left: 57px;">
-                        <span style="position: relative;left: 10px;">大大大灯泡</span>
-                        <p style="position: relative;left: 9px;width: 84px;color: #999;">饰xx</p>
-                        <!--                    <p style="font-size:12px;color: #999;width: 293px;height: 17px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">-->
-                        <!--                        脑洞恶搞偶尔做动画的月更鸽子；闲聊群：94</p>-->
-                        <!--                    <a href="###" class='focus'> + 关注</a>-->
-                        <!--                    <a href="" class='liked' style="position: relative;left: -20px;">已关注</a>-->
-                        <div style="width: 20px;height: 20px;background: red;position: relative;left: -38px;top: -2px;border-radius: 60px;">
-                            <img src="assets/images/logo/follow.png" alt="" width="10px" height="10px"
-                                 style="position: relative;top: 2px;left: 5px;">
-                        </div>
+                <div class="people" style="position: relative;float: left;width: 110px;height: 96px;margin-left:87px;">
 
+                    <img src="assets/images/login/log1.jpg" alt="" width="60px;" height="60px;" class="img-circle">
+                    <div style="position: relative;top:13px;left: -23px;width: 106px;height: 20px;text-align: center;">
+                        <span>大大大灯泡</span>
+                    </div>
+                    <div style="width: 20px;height: 20px;background: red;position: relative;left: 21px;top: -31px;border-radius: 60px;">
+                        <img src="assets/images/logo/follow.png" alt="" width="10px" height="10px"
+                             style="position: relative;top: 3px;left: 5px;">
                     </div>
                 </div>
-                <div class="people" style="position: relative;float: left;width: 150px;height: 96px;">
-                    <img src="assets/images/login/log1.jpg" alt="" width="60px;" height="60px;" class="img-circle">
-                    <div style="position: relative;top: -43px;left: 57px;">
-                        <span style="position: relative;left: 10px;">大大大灯泡</span>
-                        <p style="position: relative;left: 9px;width: 84px;color: #999;">饰xx</p>
-                        <!--                    <p style="font-size:12px;color: #999;width: 293px;height: 17px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">-->
-                        <!--                        脑洞恶搞偶尔做动画的月更鸽子；闲聊群：94</p>-->
-                        <!--                    <a href="###" class='focus'> + 关注</a>-->
-                        <!--                    <a href="" class='liked' style="position: relative;left: -20px;">已关注</a>-->
-                        <div style="width: 20px;height: 20px;background: red;position: relative;left: -38px;top: -2px;border-radius: 60px;">
-                            <img src="assets/images/logo/follow.png" alt="" width="10px" height="10px"
-                                 style="position: relative;top: 2px;left: 5px;">
-                        </div>
+                <div class="people" style="position: relative;float: left;width: 110px;height: 96px;margin-left:87px;">
 
+                    <img src="assets/images/login/log1.jpg" alt="" width="60px;" height="60px;" class="img-circle">
+                    <div style="position: relative;top:13px;left: -23px;width: 106px;height: 20px;text-align: center;">
+                        <span>大大大灯泡</span>
+                    </div>
+                    <div style="width: 20px;height: 20px;background: red;position: relative;left: 21px;top: -31px;border-radius: 60px;">
+                        <img src="assets/images/logo/follow.png" alt="" width="10px" height="10px"
+                             style="position: relative;top: 3px;left: 5px;">
                     </div>
                 </div>
-                <div class="people" style="position: relative;float: left;width: 150px;height: 96px;">
-                    <img src="assets/images/login/log1.jpg" alt="" width="60px;" height="60px;" class="img-circle">
-                    <div style="position: relative;top: -43px;left: 57px;">
-                        <span style="position: relative;left: 10px;">大大大灯泡</span>
-                        <p style="position: relative;left: 9px;width: 84px;color: #999;">饰xx</p>
-                        <!--                    <p style="font-size:12px;color: #999;width: 293px;height: 17px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">-->
-                        <!--                        脑洞恶搞偶尔做动画的月更鸽子；闲聊群：94</p>-->
-                        <!--                    <a href="###" class='focus'> + 关注</a>-->
-                        <!--                    <a href="" class='liked' style="position: relative;left: -20px;">已关注</a>-->
-                        <div style="width: 20px;height: 20px;background: red;position: relative;left: -38px;top: -2px;border-radius: 60px;">
-                            <img src="assets/images/logo/follow.png" alt="" width="10px" height="10px"
-                                 style="position: relative;top: 2px;left: 5px;">
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
             <hr style="position: relative;top: 77px;width: 640px;">
             <!--            视频简介-->
@@ -272,7 +304,7 @@
             </div>
             <hr style="width: 640px;">
 
-<!--评论-->
+            <!--评论-->
             <section class='comment ' style="position: relative;left: -198px;">
                 <div class='com_title'><span>全部评论</span></div>
                 <div class='com_self clearfix'>
@@ -557,128 +589,14 @@
                     </div>
                 </div>
             </section>
-            <!--评论-->
-            <!--            <div class="comments-area">-->
-            <!--                <h3>3 评论</h3>-->
-            <!--                <div style="height: 200px;width: 640px;">-->
-            <!--                    <div class="row">-->
-            <!--                        &lt;!&ndash;                        <img style="position: relative;top:35px;left: 20px;" src="assets/images/login/log1.jpg" alt="" width="48px;" height="48px;" class="img-circle">&ndash;&gt;-->
-            <!--                        <form>-->
-            <!--                            <div class="row">-->
-            <!--                            </div>&lt;!&ndash;/.row&ndash;&gt;-->
-            <!--                            <div class="row">-->
-            <!--                                <div class="col-sm-12">-->
-            <!--                                    <div class="form-group">-->
-            <!--                                        <textarea class="form-control" rows="4" id="comment"-->
-            <!--                                                  placeholder="Message"></textarea>-->
-            <!--                                    </div>&lt;!&ndash;/.form-group&ndash;&gt;-->
-            <!--                                </div>&lt;!&ndash;/.col&ndash;&gt;-->
-            <!--                            </div>&lt;!&ndash;/.row&ndash;&gt;-->
-            <!--                            <div class="row">-->
-            <!--                                <div class="col-sm-12">-->
-            <!--                                    <div class="single-contact-btn">-->
-            <!--                                        <button class="contact-btn" href="#" role="button">发布评论</button>-->
-            <!--                                    </div>&lt;!&ndash;/.single-single-contact-btn&ndash;&gt;-->
-            <!--                                </div>&lt;!&ndash;/.col&ndash;&gt;-->
-            <!--                            </div>&lt;!&ndash;/.row&ndash;&gt;-->
-            <!--                        </form>&lt;!&ndash;/form&ndash;&gt;-->
-            <!--                    </div>-->
-            <!--                </div>-->
-            <!--                <ol class="comment-list">-->
-            <!--                    <li class="comment">-->
-            <!--                        <div>-->
-            <!--                            <div class="comment-body xtra-comment-body">-->
-            <!--                                <div class="comment-meta">-->
-            <!--                                    <div class="comment-autho">-->
-            <!--                                        <img src="assets/images/login/log1.jpg" alt="image" width="48px" height="48px"-->
-            <!--                                             class="img-circle"/>-->
-            <!--                                    </div>&lt;!&ndash; .comment-author &ndash;&gt;-->
-            <!--                                </div>&lt;!&ndash; .comment-meta &ndash;&gt;-->
-
-            <!--                                <div class="comment-content">-->
-            <!--                                    <b class="fn">-->
-            <!--                                        <a href="#" style="font-size: 12px;">-->
-            <!--                                            jone doe-->
-            <!--                                            <span style="font-size: 12px;">17th June 2017</span>-->
-            <!--                                        </a>-->
-            <!--                                    </b>-->
-
-            <!--                                    <div class="reply">-->
-            <!--                                        <a href="#">Reply</a>-->
-            <!--                                    </div>-->
-            <!--                                    <p style="font-size: 14px;width: 547px;">-->
-            <!--                                        请这位主播尊重你的粉丝，不要把背对着摄像头-->
-            <!--                                    </p>-->
-            <!--                                </div>&lt;!&ndash; .comment-content &ndash;&gt;-->
-            <!--                            </div>&lt;!&ndash; .comment-body &ndash;&gt;-->
-
-            <!--                            <ol class="children">-->
-            <!--                                <li class="comment">-->
-            <!--                                    <div class="comment-body xtra-comment-body" style="margin-top: -20px;">-->
-            <!--                                        <div class="comment-meta">-->
-            <!--                                            <div class="">-->
-            <!--                                                <img src="assets/images/login/log1.jpg" alt="image" width="24px"-->
-            <!--                                                     height="24px" class="img-circle"/>-->
-            <!--                                            </div>&lt;!&ndash; .comment-author &ndash;&gt;-->
-            <!--                                        </div>&lt;!&ndash; .comment-meta &ndash;&gt;-->
-            <!--                                        <div class="comment-content">-->
-            <!--                                            <b class="fn">-->
-            <!--                                                <a href="#" style="font-size: 12px;">-->
-            <!--                                                    jone doe-->
-            <!--                                                    <span style="font-size: 12px;">17th June 2017</span>-->
-            <!--                                                </a>-->
-            <!--                                            </b>-->
-
-            <!--                                            <div class="reply">-->
-            <!--                                                <a href="#">回复</a>-->
-            <!--                                            </div>-->
-            <!--                                            <p style="font-size: 14px;width: 457px;">-->
-            <!--                                                笑死我对你有什么好处吗-->
-            <!--                                            </p>-->
-            <!--                                        </div>&lt;!&ndash; .comment-content &ndash;&gt;-->
-            <!--                                    </div>&lt;!&ndash; .comment-body &ndash;&gt;-->
-            <!--                                    <div class="comment-body xtra-comment-body" style="margin-top: -20px;">-->
-            <!--                                        <div class="comment-meta">-->
-            <!--                                            <div class="">-->
-            <!--                                                <img src="assets/images/login/log1.jpg" alt="image" width="24px"-->
-            <!--                                                     height="24px" class="img-circle"/>-->
-            <!--                                            </div>&lt;!&ndash; .comment-author &ndash;&gt;-->
-            <!--                                        </div>&lt;!&ndash; .comment-meta &ndash;&gt;-->
-            <!--                                        <div class="comment-content">-->
-            <!--                                            <b class="fn">-->
-            <!--                                                <a href="#" style="font-size: 12px;">-->
-            <!--                                                    jone doe-->
-            <!--                                                    <span style="font-size: 12px;">17th June 2017</span>-->
-            <!--                                                </a>-->
-            <!--                                            </b>-->
-
-            <!--                                            <div class="reply">-->
-            <!--                                                <a href="#">回复</a>-->
-            <!--                                            </div>-->
-            <!--                                            <p style="font-size: 14px;width: 457px;">-->
-            <!--                                                背上至少还有2块凸出来的骨头-->
-            <!--                                            </p>-->
-            <!--                                        </div>&lt;!&ndash; .comment-content &ndash;&gt;-->
-            <!--                                    </div>&lt;!&ndash; .comment-body &ndash;&gt;-->
-            <!--                                </li>&lt;!&ndash; #comment-## &ndash;&gt;-->
-            <!--                                <p style="position: relative;top: -31px;">共24条回复，<span><a href="">点击查看</a></span></p>-->
-            <!--                            </ol>&lt;!&ndash; .children &ndash;&gt;-->
-            <!--                        </div>-->
-
-            <!--                    </li>&lt;!&ndash;/.comment&ndash;&gt;-->
-            <!--                </ol>&lt;!&ndash;/.comment-list&ndash;&gt;-->
-
-            <!--            </div>&lt;!&ndash;/.comments-area&ndash;&gt;-->
-
         </div>
         <div class="col-md-3" style="margin-left: 59px;">
-
 
 
             <!--            视频推荐-->
             <div>
                 <p style="font-size: 16px;">相关推荐</p>
-                <div style="margin-top: 20px;width: 346px;height:96px;">
+                <div style="margin-top: 30px;width: 346px;height:96px;">
                     <a href="#" class="sctnLftCtt-a time">
                         <div class="videoBox">
                             <img src="assets/images/repertoire/reper1.png" alt="">
@@ -688,41 +606,19 @@
                             </div>
                         </div>
                         <div style="margin-top: -8px;margin-left: -4px;">
-                        <p style="width: 177px;position: relative;left: 173px;top: -94px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
-                            【用小猪佩奇的方式打开明日方舟】德克萨斯&能天使
-                        </p>
-                        <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 173px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
-                            大大大灯泡
-                        </p>
-                        <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 173px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
-                            12万 <span>播放</span>
-                        </p>
-                        </div>
-                    </a>
-                </div>
-                <div style="margin-top: 20px;width: 346px;height:96px;">
-                    <a href="#" class="sctnLftCtt-a time">
-                        <div class="videoBox">
-                            <img src="assets/images/repertoire/reper1.png" alt="">
-                            <div class="videoBox-mask">
-                                <span>16:36</span>
-                                <span class="clock"></span>
-                            </div>
-                        </div>
-                        <div style="margin-top: -8px;margin-left: -4px;">
-                            <p style="width: 177px;position: relative;left: 173px;top: -94px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
+                            <p style="width: 177px;position: relative;left: 192px;top: -112px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                                 【用小猪佩奇的方式打开明日方舟】德克萨斯&能天使
                             </p>
-                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 173px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
+                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 194px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                                 大大大灯泡
                             </p>
-                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 173px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
+                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 194px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                                 12万 <span>播放</span>
                             </p>
                         </div>
                     </a>
                 </div>
-                <div style="margin-top: 20px;width: 346px;height:96px;">
+                <div style="margin-top: 30px;width: 346px;height:96px;">
                     <a href="#" class="sctnLftCtt-a time">
                         <div class="videoBox">
                             <img src="assets/images/repertoire/reper1.png" alt="">
@@ -732,19 +628,19 @@
                             </div>
                         </div>
                         <div style="margin-top: -8px;margin-left: -4px;">
-                            <p style="width: 177px;position: relative;left: 173px;top: -94px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
+                            <p style="width: 177px;position: relative;left: 192px;top: -112px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                                 【用小猪佩奇的方式打开明日方舟】德克萨斯&能天使
                             </p>
-                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 173px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
+                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 194px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                                 大大大灯泡
                             </p>
-                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 173px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
+                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 194px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                                 12万 <span>播放</span>
                             </p>
                         </div>
                     </a>
                 </div>
-                <div style="margin-top: 20px;width: 346px;height:96px;">
+                <div style="margin-top: 30px;width: 346px;height:96px;">
                     <a href="#" class="sctnLftCtt-a time">
                         <div class="videoBox">
                             <img src="assets/images/repertoire/reper1.png" alt="">
@@ -754,18 +650,41 @@
                             </div>
                         </div>
                         <div style="margin-top: -8px;margin-left: -4px;">
-                            <p style="width: 177px;position: relative;left: 173px;top: -94px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
+                            <p style="width: 177px;position: relative;left: 192px;top: -112px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                                 【用小猪佩奇的方式打开明日方舟】德克萨斯&能天使
                             </p>
-                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 173px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
+                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 194px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                                 大大大灯泡
                             </p>
-                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 173px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
+                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 194px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
                                 12万 <span>播放</span>
                             </p>
                         </div>
                     </a>
                 </div>
+                <div style="margin-top: 30px;width: 346px;height:96px;">
+                    <a href="#" class="sctnLftCtt-a time">
+                        <div class="videoBox">
+                            <img src="assets/images/repertoire/reper1.png" alt="">
+                            <div class="videoBox-mask">
+                                <span>16:36</span>
+                                <span class="clock"></span>
+                            </div>
+                        </div>
+                        <div style="margin-top: -8px;margin-left: -4px;">
+                            <p style="width: 177px;position: relative;left: 192px;top: -112px;height: 40px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
+                                【用小猪佩奇的方式打开明日方舟】德克萨斯&能天使
+                            </p>
+                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 194px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
+                                大大大灯泡
+                            </p>
+                            <p style="font-size: 12px;color: #999;position: relative;top: -74px;left: 194px;width: 177px;overflow:hidden;text-overflow:ellipsis;word-wrap: break-word;">
+                                12万 <span>播放</span>
+                            </p>
+                        </div>
+                    </a>
+                </div>
+
 
             </div>
 
@@ -817,6 +736,17 @@
 
     var player = videojs('my_video_1', {
         playbackRates: [0.5, 1, 1.5, 2]
+    });
+
+    $('.share').hover(function () {
+        $('.share-box').css("display", "flex");
+    }, function () {
+        $('.share-box').css("display", "none");
+    });
+    $('.share-box').hover(function () {
+        $('.share-box').css("display", "flex");
+    }, function () {
+        $('.share-box').css("display", "none");
     });
 
 
